@@ -1,0 +1,142 @@
+import React from 'react';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Slider from "react-slick";
+import { motion } from "framer-motion";
+
+const slides = [
+  {
+    title: "Master the Art of Flying",
+    subtitle: "ELITE PILOT TRAINING",
+    text: "Join the next generation of aviators with our comprehensive Commercial Pilot License programs.",
+    // Image of a pilot in the cockpit
+    image: "https://images.unsplash.com/photo-1569154941061-e231b4725ef1?auto=format&fit=crop&q=80&w=1600"
+  },
+  {
+    title: "Your Career Takes Flight",
+    subtitle: "GLOBAL CERTIFICATION",
+    text: "Train on modern glass-cockpit aircraft and state-of-the-art flight simulators.",
+    // Image of an airplane on the runway/sky
+    image: "https://images.unsplash.com/photo-1559627814-ddb77c856a9b?auto=format&fit=crop&q=80&w=1600"
+  },
+  {
+    title: "Command the Skies",
+    subtitle: "PROFESSIONAL EXCELLENCE",
+    text: "Experience world-class aviation mentorship from senior industry captains.",
+    // Image of a pilot standing in front of an aircraft
+    image: "https://images.unsplash.com/photo-1506012733851-4629783934f1?auto=format&fit=crop&q=80&w=1600"
+  }
+];
+
+// Modern glass-effect arrows
+const NextArrow = ({ onClick }) => (
+  <button 
+    className="absolute right-6 top-1/2 -translate-y-1/2 z-20 w-12 h-12 flex items-center justify-center bg-white/10 hover:bg-blue-600 text-white rounded-full backdrop-blur-md transition-all border border-white/20 group shadow-lg"
+    onClick={onClick}
+  >
+    <svg className="w-5 h-5 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" /></svg>
+  </button>
+);
+
+const PrevArrow = ({ onClick }) => (
+  <button 
+    className="absolute left-6 top-1/2 -translate-y-1/2 z-20 w-12 h-12 flex items-center justify-center bg-white/10 hover:bg-blue-600 text-white rounded-full backdrop-blur-md transition-all border border-white/20 group shadow-lg"
+    onClick={onClick}
+  >
+    <svg className="w-5 h-5 group-hover:-translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" /></svg>
+  </button>
+);
+
+function AviationCarousel() {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 1200,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    cssEase: "cubic-bezier(0.25, 1, 0.5, 1)",
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
+  };
+
+  return (
+    // Outer container with Gray background context
+    <div className="w-full bg-slate-50 py-12">
+      <div className="max-w-[1400px] mx-auto px-4">
+        <div className="relative h-[500px] md:h-[650px] overflow-hidden rounded-[2.5rem] shadow-2xl shadow-blue-900/10 border border-gray-200">
+          <Slider {...settings}>
+            {slides.map((slide, i) => (
+              <div key={i} className="relative h-[500px] md:h-[650px] outline-none">
+                
+                {/* Image Layer */}
+                <div className="absolute inset-0">
+                  <img src={slide.image} className="w-full h-full object-cover" alt="Aviation Training" />
+                  {/* Subtle Blue/Gray Overlay for text readability */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-slate-900/80 via-slate-900/40 to-transparent"></div>
+                </div>
+
+                {/* Content Layout */}
+                <div className="relative h-full flex items-center px-8 md:px-24">
+                  <div className="max-w-2xl text-white">
+                    <motion.div
+                      initial={{ opacity: 0, x: -30 }}
+                      whileInView={{ opacity: 1, x: 0 }}
+                      transition={{ duration: 0.8 }}
+                    >
+                      <div className="flex items-center gap-4 mb-6">
+                        <span className="h-[2px] w-12 bg-blue-500"></span>
+                        <span className="text-blue-400 font-bold tracking-[0.3em] text-xs md:text-sm uppercase">
+                          {slide.subtitle}
+                        </span>
+                      </div>
+
+                      <h2 className="text-5xl md:text-7xl font-extrabold mb-8 leading-[1.1] tracking-tight text-white">
+                        {slide.title}
+                      </h2>
+
+                      <p className="text-gray-200 text-lg md:text-xl mb-10 max-w-lg font-light leading-relaxed">
+                        {slide.text}
+                      </p>
+
+                      <div className="flex flex-wrap gap-5">
+                        <button className="bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 rounded-xl font-bold transition-all shadow-xl shadow-blue-600/20 active:scale-95">
+                          Enquire Now
+                        </button>
+                        <button className="bg-white/10 hover:bg-white text-white hover:text-blue-900 backdrop-blur-md px-10 py-4 rounded-xl font-bold transition-all border border-white/30 active:scale-95">
+                          Explore Fleet
+                        </button>
+                      </div>
+                    </motion.div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </Slider>
+        </div>
+      </div>
+
+      <style jsx global>{`
+        .slick-dots { bottom: 40px !important; }
+        .slick-dots li { margin: 0 6px; }
+        .slick-dots li button:before {
+          content: '' !important;
+          width: 12px;
+          height: 6px;
+          background: white;
+          border-radius: 10px;
+          opacity: 0.3;
+          transition: all 0.4s ease;
+        }
+        .slick-dots li.slick-active button:before {
+          opacity: 1;
+          background: #3b82f6;
+          width: 30px;
+        }
+      `}</style>
+    </div>
+  );
+}
+
+export default AviationCarousel;
