@@ -20,11 +20,11 @@ const slides = [
     title: "Modern Fleet",
     desc: "Our diamond aircraft are equipped with the latest Garmin G1000."
   },
-  // {
-  //   image: "https://images.unsplash.com/photo-1436491865332-7a61a109c0f2",
-  //   title: "Global Reach",
-  //   desc: "Certifications recognized by EASA, FAA, and DGCA."
-  // }
+  {
+    image: "https://images.unsplash.com/photo-1436491865332-7a61a109c0f2",
+    title: "Global Reach",
+    desc: "Certifications recognized by EASA, FAA, and DGCA."
+  }
 ];
 
 const SuperFlowSlider = () => {
