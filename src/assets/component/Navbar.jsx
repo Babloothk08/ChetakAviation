@@ -26,10 +26,12 @@ function Navbar() {
             </Link>
             <Link to="">
             <div className="relative">
+              <Link to="/courses">
               <li className=" cursor-pointer transition">
               <button onClick={() => setOpen(!open)} className="cursor-pointer">
                 Courses
                 </button>
+              
               { open ? (
                 <div className="absolute w-50 -right-34 pt-5">
                 <ul className=" bg-white text-blue-800 rounded-2xl">
@@ -43,6 +45,7 @@ function Navbar() {
 
               }
             </li>
+            </Link>
             </div>
             </Link>
             <Link to="/about">

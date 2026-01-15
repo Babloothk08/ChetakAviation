@@ -10,6 +10,7 @@ import FlightInstructorCourse from "./assets/pages/FlightInstructorCourse";
 import CommercialPilotLicence from "./assets/pages/CommercialPilotLicence";
 import ConversionFlying from "./assets/pages/ConversionFlying";
 import PrivatePilotLicence from "./assets/pages/PrivatePilotLicence";
+import Courses from "./assets/pages/Courses";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={ <About/>}/>
           <Route path="/contact" element={<Contact/>}/>
+          <Route path="/courses" element={<Courses/>}/>
           <Route path="/flightInstructorCourse" element={<FlightInstructorCourse/>}/>
           <Route path="/commercialPilotLicence" element={<CommercialPilotLicence/>}/>
           <Route path="/ConversionFlying" element={<ConversionFlying/>}/>
