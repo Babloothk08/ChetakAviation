@@ -4,8 +4,8 @@ import AboutComponent from '../component/AboutComponent'
 import VideoComponent from '../component/VedioComponent'
 import EnquirySliderComponent from '../component/EnquirySliderComponent'
 import LatestAnnouncement from '../component/LatestAnnouncement'
-import TestimonialComponent from '../component/TestiMonialComponent'
 import QuestionsComponent from '../component/QuestionsComponent'
+import TestimonialComponent from '../component/TestimonialComponent'
 
 function Home() {
   return (
