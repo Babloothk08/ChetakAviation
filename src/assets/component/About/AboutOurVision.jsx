@@ -1,4 +1,5 @@
 import React from "react";
+import OurMission from "/public/aboutUsPage/Our-Vision.jpg"
 
 function AboutOurVision() {
   return (
@@ -17,7 +18,7 @@ function AboutOurVision() {
             {/* LEFT: Content Box (previously right) */}
             <div className="w-[440px] h-full">
               <img
-                src="/logo/AboutUs.jpg"
+                src={OurMission}
                 alt="Chetak Aviation Training"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
