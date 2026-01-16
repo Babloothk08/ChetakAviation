@@ -15,14 +15,12 @@ function AboutOurVision() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-14 items-center p-10 md:p-16">
 
             {/* LEFT: Content Box (previously right) */}
-            <div className="relative">
-              <div className="bg-slate-100 rounded-2xl p-8 md:p-10">
-                <p className="text-black/80 leading-relaxed text-base md:text-lg">
-                 We aim to set high standards in aviation education by continuously improving training quality, maintaining professional discipline, and supporting students throughout their aviation journey
-                </p>
-
-                
-              </div>
+            <div className="w-full h-full">
+              <img
+                src="/logo/AboutUs.jpg"
+                alt="Chetak Aviation Training"
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+              />
             </div>
 
             {/* RIGHT: Mission Title + Intro (previously left) */}
@@ -35,6 +33,9 @@ function AboutOurVision() {
 
               <p className="mt-8 text-black/70 text-base md:text-lg leading-relaxed">
                 Our vision is to become a trusted and respected flying training academy in India, recognized for producing competent, confident, and ethically trained pilots.
+              </p>
+              <p className="mt-8 text-black/70 text-base md:text-lg leading-relaxed">
+                 We aim to set high standards in aviation education by continuously improving training quality, maintaining professional discipline, and supporting students throughout their aviation journey
               </p>
             </div>
 

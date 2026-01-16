@@ -6,22 +6,22 @@ import "slick-carousel/slick/slick-theme.css";
 
 const slides = [
   {
-    image: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957",
+    image: "/public/superSlider/Commercial-Pilot-License_Course.jpg",
     title: "Precision Training",
     desc: "Experience the cockpit of a modern Boeing 737 simulator."
   },
   {
-    image: "https://images.unsplash.com/photo-1506012733851-4629783934f1",
+    image: "/public/superSlider/Conversion_Flying_Course.jpg",
     title: "Elite Mentorship",
     desc: "Learn from captains with over 20,000 flight hours."
   },
   {
-    image: "https://images.unsplash.com/photo-1520437358207-323b43b50729",
+    image: "/public/superSlider/Flight_Instructor_Course.jpg",
     title: "Modern Fleet",
     desc: "Our diamond aircraft are equipped with the latest Garmin G1000."
   },
   {
-    image: "https://images.unsplash.com/photo-1436491865332-7a61a109c0f2",
+    image: "/public/superSlider/Private_Pilot_License_Course.jpg",
     title: "Global Reach",
     desc: "Certifications recognized by EASA, FAA, and DGCA."
   }

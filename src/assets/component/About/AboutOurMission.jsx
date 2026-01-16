@@ -1,4 +1,5 @@
 import React from "react";
+import AboutUs from "/public/logo/AboutUs.jpg"
 
 function AboutOurMission() {
   return (
@@ -27,18 +28,21 @@ function AboutOurMission() {
                 builds strong theoretical knowledge, disciplined thinking, and a
                 safety-first mindset among aspiring pilots.
               </p>
-            </div>
-
-            {/* Right Content */}
-            <div className="relative">
-              <div className="bg-slate-100 rounded-2xl p-8 md:p-10">
-                <p className="text-black/80 leading-relaxed text-base md:text-lg">
-                  We are committed to guiding students through DGCA-oriented
+              <p className="mt-8 text-black/70 text-base md:text-lg leading-relaxed">
+                 We are committed to guiding students through DGCA-oriented
                   training with integrity, professionalism, and academic
                   excellence, ensuring they are well-prepared for advanced
                   flight training and long-term aviation careers.
-                </p>
-              </div>
+              </p>
+            </div>
+
+            {/* Right Content */}
+            <div className="w-full h-full">
+              <img
+                src="/logo/AboutUs.jpg"
+                alt="Chetak Aviation Training"
+                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+              />
             </div>
 
           </div>

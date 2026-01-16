@@ -1,4 +1,5 @@
 import React from "react";
+import FlyingTraining from "/public/aboutUsPage//Chetak-Aviation-A-Flying-Training-Academy.jpg"
 
 function AboutComponentContent() {
   return (
@@ -8,7 +9,7 @@ function AboutComponentContent() {
 
           {/* TEXT CONTENT */}
           <div className="w-full md:w-1/2 space-y-5">
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 leading-tight">
+            <h1 className="text-3xl md:text-4xl font-bold text-blue-900 leading-tight">
               Chetak Aviation – A Flying Training Academy
             </h1>
 
@@ -64,7 +65,7 @@ function AboutComponentContent() {
                 bg-white">
 
   <img 
-    src="/logo/AboutUs.jpg"
+    src={FlyingTraining}
     alt="Chetak Aviation Training"
     className="h-full w-full object-cover transition-transform duration-700 hover:scale-105"
   />
