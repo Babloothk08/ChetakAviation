@@ -15,7 +15,7 @@ function AboutOurVision() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-14 items-center p-10 md:p-16">
 
             {/* LEFT: Content Box (previously right) */}
-            <div className="w-full h-full">
+            <div className="w-[440px] h-full">
               <img
                 src="/logo/AboutUs.jpg"
                 alt="Chetak Aviation Training"

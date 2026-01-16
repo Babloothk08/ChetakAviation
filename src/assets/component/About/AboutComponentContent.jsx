@@ -1,5 +1,5 @@
 import React from "react";
-import FlyingTraining from "/public/aboutUsPage//Chetak-Aviation-A-Flying-Training-Academy.jpg"
+import FlyingTraining from "/public/aboutUsPage/Chetak-Aviation-–-A-Flying-Training-Academy.jpg"
 
 function AboutComponentContent() {
   return (

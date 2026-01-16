@@ -25,7 +25,7 @@ function WhyChooseChetakAviation() {
             <div className="relative w-full max-w-lg h-[520px] md:h-[600px] rounded-[2.5rem] overflow-hidden shadow-2xl group">
 
               <img
-                src={}
+                src={WhyChetakAviation}
                 alt="Chetak Aviation Training"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
