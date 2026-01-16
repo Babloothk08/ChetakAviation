@@ -16,20 +16,30 @@ function App() {
   return (
     <>
       <BrowserRouter>
-      <WatsAppIcon/>
         <Navbar />
+
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={ <About/>}/>
-          <Route path="/contact" element={<Contact/>}/>
-          <Route path="/courses" element={<Courses/>}/>
-          <Route path="/flightInstructorCourse" element={<FlightInstructorCourse/>}/>
-          <Route path="/commercialPilotLicence" element={<CommercialPilotLicence/>}/>
-          <Route path="/ConversionFlying" element={<ConversionFlying/>}/>
-          <Route path="/PrivatePilotLicence" element={<PrivatePilotLicence/>}/>
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/courses" element={<Courses />} />
+          <Route
+            path="/flightInstructorCourse"
+            element={<FlightInstructorCourse />}
+          />
+          <Route
+            path="/commercialPilotLicence"
+            element={<CommercialPilotLicence />}
+          />
+          <Route path="/ConversionFlying" element={<ConversionFlying />} />
+          <Route
+            path="/PrivatePilotLicence"
+            element={<PrivatePilotLicence />}
+          />
         </Routes>
+        <WatsAppIcon/>
       </BrowserRouter>
-      <Footer/>
+      <Footer />
     </>
   );
 }
