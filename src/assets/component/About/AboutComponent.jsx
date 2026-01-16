@@ -1,5 +1,5 @@
 import React from 'react'
-
+import AboutUs from "/public/logo/AboutUs.jpg"
 function AboutComponent() {
   return (
     <div className="w-full max-w-screen mx-auto px-6 py-10 bg-white">
@@ -24,7 +24,7 @@ function AboutComponent() {
         </div>
 
         <div className="w-full md:w-1/2 flex justify-center items-center bg-gray-100 rounded-2xl h-92    ">
-          <img src='/public/logo/AboutUs.jpg' alt='about' className='h-full w-399 rounded-2xl'/>
+          <img src={AboutUs} alt='about' className='h-full w-399 rounded-2xl'/>
         </div>
       </div>
       

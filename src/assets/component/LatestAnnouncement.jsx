@@ -1,4 +1,5 @@
 import React from "react";
+import LatestUpdate from "/public//couroselComponent/Latest_announcement.jpg"
 
 function LatestAnnouncement() {
   
@@ -12,7 +13,7 @@ function LatestAnnouncement() {
       <div className="flex flex-col md:flex-row items-start justify-between gap-8">
         
         <div className="w-full md:w-1/2 flex justify-center items-center bg-gray-100 rounded-2xl overflow-hidden">
-          <img src="/public/couroselComponent/Latest_announcement.jpg" alt="Latest Announcement" className=""/>
+          <img src={LatestUpdate} alt="Latest Announcement" className=""/>
         </div>
 
         <div className="w-full md:w-1/2 space-y-6">

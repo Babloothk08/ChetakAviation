@@ -4,30 +4,34 @@ import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
 import { motion } from "framer-motion";
 
+
+import FlightInstrutor from "/public/couroselComponent/Flight-Instructor-Course.jpg"
+import PrivatePilotLicence from "/public/couroselComponent/Private-Pilot-License.jpg"
+
 const slides = [
   {
     title: "Master the Art of Flying",
     subtitle: "ELITE PILOT TRAINING",
     text: "Join the next generation of aviators with our comprehensive Commercial Pilot License programs.",
-    image: "/public/couroselComponent/SliderImage.jpg"
+    image: "../couroselComponent/SliderImage.jpg"
   },
   {
     title: "Your Career Takes Flight",
     subtitle: "GLOBAL CERTIFICATION",
     text: "Train on modern glass-cockpit aircraft and state-of-the-art flight simulators.",
-    image: "/public/couroselComponent/Slider_Image-2.jpg"
+    image: "../couroselComponent/Slider_Image-2.jpg"
   },
   {
     title: "Command the Skies",
     subtitle: "PROFESSIONAL EXCELLENCE",
     text: "Experience world-class aviation mentorship from senior industry captains.",
-    image: "/public/couroselComponent/Flight-Instructor-Course.jpg"
+    image: "/couroselComponent/Flight-Instructor-Course.jpg"
   },
   {
     title: "Command the Skies",
     subtitle: "PROFESSIONAL EXCELLENCE",
     text: "Experience world-class aviation mentorship from senior industry captains.",
-    image: "/public/couroselComponent/Private-Pilot-License.jpg"
+    image: "/couroselComponent/Private-Pilot-License.jpg"
   }
 ];
 
