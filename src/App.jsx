@@ -3,7 +3,6 @@ import "./App.css";
 import Navbar from "./assets/component/Navbar";
 import Home from "./assets/pages/Home";
 import Footer from "./assets/component/Footer";
-import WatsAppIcon from "./assets/component/WatsappIcon";
 import About from "./assets/pages/About";
 import Contact from "./assets/pages/Contact";
 import FlightInstructorCourse from "./assets/pages/FlightInstructorCourse";
@@ -11,6 +10,7 @@ import CommercialPilotLicence from "./assets/pages/CommercialPilotLicence";
 import ConversionFlying from "./assets/pages/ConversionFlying";
 import PrivatePilotLicence from "./assets/pages/PrivatePilotLicence";
 import Courses from "./assets/pages/Courses";
+import WatsAppIcon from "./assets/component/WatsAppIcon";
 
 function App() {
   return (
