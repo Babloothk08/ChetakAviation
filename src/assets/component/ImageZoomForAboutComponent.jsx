@@ -1,9 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
 
 const IMAGES = [
-  "/public/imageZoomForAboutSection/About_Us_Class_Banner.jpg",
-  "/public/imageZoomForAboutSection/About_Us_Plane_Image.jpg",
-  "/public/imageZoomForAboutSection/three_pilots_group.jpg",
+  "../imageZoomForAboutSection/About_Us_Class_Banner.jpg",
+  "../imageZoomForAboutSection/About_Us_Plane_Image.jpg",
+  "../imageZoomForAboutSection/three_pilots_group.jpg",
 ];
 
 const ImageZoomForAboutComponent = () => {
