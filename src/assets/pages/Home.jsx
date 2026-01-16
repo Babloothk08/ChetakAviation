@@ -1,11 +1,11 @@
-import React from 'react'
+
 import Navbar from '../component/Navbar'
-import AboutComponent from '../component/AboutComponent'
 import VideoComponent from '../component/VedioComponent'
 import EnquirySliderComponent from '../component/EnquirySliderComponent'
 import LatestAnnouncement from '../component/LatestAnnouncement'
 import QuestionsComponent from '../component/QuestionsComponent'
 import TestimonialComponent from '../component/TestimonialComponent'
+import AboutComponent from '../component/About/AboutComponent'
 
 function Home() {
   return (
