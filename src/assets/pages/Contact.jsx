@@ -1,13 +1,14 @@
 import React from 'react'
 import ContactData from '../component/contact/ContactData'
+import ContactBanner from "/public/contact/Contect_us_Banner.jpg"
 
 function Contact() {
   return (
      <>
      <div
-      className="min-h-screen w-full bg-cover bg-center bg-no-repeat"
+      className="h-[500px] w-full bg-cover bg-center bg-no-repeat"
       style={{
-        backgroundImage: "url('https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSEDaMEoX0Tkzqw74YSBab3HI2czZ14hUpGxq1Wuko5h6hGPVhF')",
+        backgroundImage:`url(${ContactBanner})`,
       }}
     >
     </div>

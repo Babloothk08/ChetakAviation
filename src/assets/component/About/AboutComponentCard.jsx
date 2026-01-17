@@ -2,7 +2,7 @@ import React from 'react'
 
 function AboutComponentCard() {
   return (
-    <div className='h-min-screen text-center px-25'>
+    <div className='h-min-screen text-center bg-gray-100 px-25'>
       <h1 className='text-4xl font-bold'>A History of Achievements</h1>
       <p>Embraer was founded in 1969, and in more than five decades, we have delivered over 9,000 aircraft to more than 100 countries and 60 armed forces on five continents. We have also designed and certified more than 40 aircraft models that carry our unique DNA.</p>
       <div className='flex max-w-7xl mx-auto'>

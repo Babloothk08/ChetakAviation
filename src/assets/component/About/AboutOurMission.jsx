@@ -1,9 +1,9 @@
 import React from "react";
-import OurMission from "/public/aboutUsPage/Our_Mission.jpg"
+import OurMission from "/public/aboutUsPage/Our-Mission.jpg"
 
 function AboutOurMission() {
   return (
-    <section className="w-full bg-slate-50 py-20 md:py-8">
+    <section className="w-full bg-gray-100 py-20 md:py-8">
       <div className="max-w-6xl mx-auto px-6 md:px-12">
 
         {/* Mission Card */}

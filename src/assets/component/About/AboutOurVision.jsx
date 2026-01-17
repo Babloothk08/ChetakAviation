@@ -1,5 +1,5 @@
 import React from "react";
-import OurMission from "/public/aboutUsPage/Our-Vision.jpg"
+import OurVision from "/public/aboutUsPage/Our-Vision.jpg"
 
 function AboutOurVision() {
   return (
@@ -10,7 +10,7 @@ function AboutOurVision() {
         <div className="relative bg-white rounded-[2.5rem] shadow-xl overflow-hidden">
 
           {/* Decorative Side Accent */}
-          <div className="absolute left-0 top-0 h-full w-2 bg-blue-700" />
+          <div className="absolute right-0 top-0 h-full w-2 bg-blue-700" />
 
           {/* Content */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-14 items-center p-10 md:p-16">
@@ -18,7 +18,7 @@ function AboutOurVision() {
             {/* LEFT: Content Box (previously right) */}
             <div className="w-[440px] h-full">
               <img
-                src={OurMission}
+                src={OurVision}
                 alt="Chetak Aviation Training"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
