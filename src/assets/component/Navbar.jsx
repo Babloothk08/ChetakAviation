@@ -38,7 +38,7 @@ function Navbar() {
                   <Link to="/flightInstructorCourse"><li onClick={()=>setOpen(!open)} className="p-2 hover:bg-blue-800 hover:text-white hover:rounded-t-2xl">Flight Instructor Course</li></Link>
                   <Link to="/PrivatePilotLicence"><li onClick={()=>setOpen(!open)} className="p-2 hover:bg-blue-800 hover:text-white ">Private Pilot License</li></Link>
                   <Link to="/ConversionFlying"><li onClick={()=>setOpen(!open)} className="p-2 hover:bg-blue-800 hover:text-white">Conversion Flying</li></Link>
-                  <Link to="/commercialPilotLicence"><li onClick={()=>(!open)} className="p-2 hover:bg-blue-800 hover:text-white hover:rounded-b-2xl">Commercial Pilot License</li></Link>
+                  <Link to="/commercialPilotLicence"><li onClick={()=>setOpen(!open)} className="p-2 hover:bg-blue-800 hover:text-white hover:rounded-b-2xl">Commercial Pilot License</li></Link>
                 </ul>
               </div>
               ): ""

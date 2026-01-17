@@ -6,8 +6,12 @@ import LatestAnnouncement from '../component/LatestAnnouncement'
 import QuestionsComponent from '../component/QuestionsComponent'
 import TestimonialComponent from '../component/TestimonialComponent'
 import AboutComponent from '../component/About/AboutComponent'
+import { useEffect } from 'react'
 
 function Home() {
+  useEffect(() => {
+      window.scroll(0, 0);
+    });
   return (
     <div>
       <Navbar/>
