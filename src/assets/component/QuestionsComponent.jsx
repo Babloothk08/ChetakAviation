@@ -3,12 +3,11 @@ import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 import { motion, AnimatePresence } from "framer-motion";
 
 const faqs = [
-  { q: "Is there a free trial available?", a: "Yes! We offer a 14-day free trial with full access to all cockpit simulation features." },
-  { q: "What certifications do you provide?", a: "Our certifications are recognized by EASA, FAA, and DGCA global aviation authorities." },
-  { q: "How many flight hours are included?", a: "The standard program includes 200 hours of flight time on Diamond DA40/42 aircraft." },
-  { q: "Are there any age requirements?", a: "You must be at least 17 years old to begin training and 18 to receive a commercial license." },
-  { q: "How many flight hours are included?", a: "The standard program includes 200 hours of flight time on Diamond DA40/42 aircraft." },
-  { q: "Are there any age requirements?", a: "You must be at least 17 years old to begin training and 18 to receive a commercial license." },
+  { q: "What courses does Chetak Aviation offer?", a: "Chetak Aviation offers DGCA-oriented aviation ground training for aspiring pilots, covering core subjects such as Air Regulations, Aviation Meteorology, Air Navigation, and Aircraft Technical Knowledge. Our courses are designed to build a strong academic foundation required for commercial pilot training and further flying education." },
+  { q: "Is Chetak Aviation suitable for beginners with no aviation background?", a: "Yes, Chetak Aviation is ideal for students with no prior aviation experience. Our training begins with fundamental aviation concepts and gradually progresses to advanced topics, ensuring students develop clarity, confidence, and discipline from the very beginning of their pilot training journey." },
+  { q: " Does Chetak Aviation provide DGCA-oriented training?", a: "Yes, all training at Chetak Aviation is aligned with DGCA syllabus and examination requirements. We focus on conceptual understanding, exam preparation, and regulatory awareness to help students meet DGCA standards and prepare for future flight training." },
+  { q: "What qualifications are required to join Chetak Aviation?", a: "Students who have completed 10+2 with Physics and Mathematics are eligible to begin pilot ground training at Chetak Aviation. Our instructors also guide students on medical requirements, licensing pathways, and the overall process of becoming a professional pilot." },
+ 
   
 ];
 

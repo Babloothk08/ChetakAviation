@@ -1,29 +1,75 @@
-import React from 'react'
+import React from 'react';
+import { motion } from 'framer-motion';
 
 function AboutComponentCard() {
+  const cards = [
+    {
+      title: "PASSION FOR AVIATION",
+      img: "https://www.embraer.com/media/lqfphzwa/phenom-300e_exterior_5.jpg?v=1dbafa4b3f7f230",
+      desc: "Our DNA is built on the thrill of flight. We push boundaries to ensure every takeoff is a masterpiece of engineering and human ambition."
+    },
+    {
+      title: "READY FOR THE FUTURE",
+      img: "https://www.embraer.com/media/ykamihh5/embraer-range.jpg?v=1db1ecc92212910",
+      desc: "Innovation isn't just a word; it's our flight path. We are pioneering sustainable aviation and next-generation cockpit technologies."
+    },
+    {
+      title: "CUSTOMER CENTRIC",
+      img: "https://www.embraer.com/media/znhfj3be/embraer-ethos.jpg?v=1db2e93bc7c6220",
+      desc: "We don't just deliver aircraft; we build partnerships. Our global support network ensures your fleet stays in the sky, where it belongs."
+    }
+  ];
+
   return (
-    <div className='h-min-screen text-center bg-gray-100 px-25'>
-      <h1 className='text-4xl font-bold'>A History of Achievements</h1>
-      <p>Embraer was founded in 1969, and in more than five decades, we have delivered over 9,000 aircraft to more than 100 countries and 60 armed forces on five continents. We have also designed and certified more than 40 aircraft models that carry our unique DNA.</p>
-      <div className='flex max-w-7xl mx-auto'>
-        <div className=''>
-            <img src="https://www.embraer.com/media/lqfphzwa/phenom-300e_exterior_5.jpg?v=1dbafa4b3f7f230" alt="" className='w-90 h-70'/>
-            <h2>PASSION FOR AVIATION</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, architecto eos. Distinctio aspernatur magnam provident repellat maxime nisi quas, sapiente, sint illo, voluptas voluptate! Autem a at amet in voluptas.</p>
-        </div>
-        <div>
-            <img src="https://www.embraer.com/media/ykamihh5/embraer-range.jpg?v=1db1ecc92212910" alt="" className='w-90 h-70' />
-            <h2>READY FOR THE FUTURE</h2>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi aspernatur reprehenderit id reiciendis vel quod magni fugit adipisci quia? Tempora impedit porro ducimus! A tenetur blanditiis reprehenderit illum repudiandae! Ipsum?</p>
-        </div>
-        <div>
-            <img src="https://www.embraer.com/media/znhfj3be/embraer-ethos.jpg?v=1db2e93bc7c6220" alt="" className='w-90 h-70'/>
-            <h2>CUSTOMER CENTRIC PHILOSOPHY</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus sunt temporibus esse mollitia similique, consequatur aspernatur explicabo animi neque blanditiis perferendis delectus reiciendis enim libero cupiditate, totam ipsa illo unde?</p>
-        </div>
+    <div className='py-5 bg-gray-100 px-6 md:px-12 lg:px-24 cursor-pointer'>
+      {/* Header Section */}
+      <div className="max-w-4xl mx-auto text-center mb-20">
+        <motion.h1 
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          className='text-4xl md:text-5xl font-black text-slate-900 mb-6 tracking-tight'
+        >
+          A History of <span className="text-blue-600">Achievements</span>
+        </motion.h1>
+        <p className="text-slate-500 text-lg leading-relaxed">
+          Founded in 1969, we have spent more than five decades delivering over 9,000 aircraft 
+          to more than 100 countries. We design unique DNA into every model we certify.
+        </p>
+      </div>
+
+      {/* Cards Grid */}
+      <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-7xl mx-auto'>
+        {cards.map((card, index) => (
+          <motion.div 
+            key={index}
+            whileHover={{ y: -10 }}
+            className='group bg-white rounded-[2rem] overflow-hidden border border-slate-100 shadow-xl shadow-blue-900/5 transition-all duration-500'
+          >
+            {/* Image Container with Zoom effect */}
+            <div className="h-64 overflow-hidden relative">
+              <img 
+                src={card.img} 
+                alt={card.title} 
+                className='w-full h-full object-cover transition-transform duration-700 group-hover:scale-110'
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-blue-900/20 to-transparent" />
+            </div>
+
+            {/* Text Content */}
+            <div className='p-8'>
+              <div className="w-12 h-1 bg-blue-600 mb-6 rounded-full group-hover:w-20 transition-all duration-500" />
+              <h2 className='text-xl font-bold text-slate-900 mb-4 tracking-wide group-hover:text-blue-600 transition-colors'>
+                {card.title}
+              </h2>
+              <p className="text-slate-600 leading-relaxed text-sm font-light">
+                {card.desc}
+              </p>
+            </div>
+          </motion.div>
+        ))}
       </div>
     </div>
   )
 }
 
-export default AboutComponentCard
+export default AboutComponentCard;

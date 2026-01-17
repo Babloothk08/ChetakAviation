@@ -10,12 +10,14 @@ function Navbar() {
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex justify-between items-center h-28">
        
-          <div className="flex items-center gap-2  p-10 pb-20">
+          <div className="flex items-center gap-2  p-10 pb-20 cursor-pointer">
+            <Link to="/">
             <img
               src="/logo/LogoChetakAviation.png"
               alt="Chetak Aviation"
               className="w-52 h-35 pt-8 object-contain"
             />
+            </Link>
           </div>
 
           <ul className="hidden md:flex gap-8 text-white font-medium">

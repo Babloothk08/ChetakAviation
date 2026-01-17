@@ -7,30 +7,31 @@ import { motion } from "framer-motion";
 
 import FlightInstrutor from "/public/couroselComponent/Flight-Instructor-Course.jpg"
 import PrivatePilotLicence from "/public/couroselComponent/Private-Pilot-License.jpg"
+import { Link } from 'react-router-dom';
 
 const slides = [
   {
-    title: "Master the Art of Flying",
+    title: "Command the Skies with Confidence",
     subtitle: "ELITE PILOT TRAINING",
-    text: "Join the next generation of aviators with our comprehensive Commercial Pilot License programs.",
+    text: "Learn from experienced aviation professionals. Train with purpose. Fly with precision.",
     image: "../couroselComponent/SliderImage.jpg"
   },
   {
-    title: "Your Career Takes Flight",
+    title: "Command the Skies with Confidence",
     subtitle: "GLOBAL CERTIFICATION",
-    text: "Train on modern glass-cockpit aircraft and state-of-the-art flight simulators.",
+    text: "Learn from experienced aviation professionals. Train with purpose. Fly with precision.",
     image: "../couroselComponent/Slider_Image-2.jpg"
   },
   {
-    title: "Command the Skies",
+    title: "Command the Skies with Confidence",
     subtitle: "PROFESSIONAL EXCELLENCE",
-    text: "Experience world-class aviation mentorship from senior industry captains.",
+    text: "Learn from experienced aviation professionals. Train with purpose. Fly with precision.",
     image: "/couroselComponent/Flight-Instructor-Course.jpg"
   },
   {
-    title: "Command the Skies",
+    title: "Command the Skies with Confidence",
     subtitle: "PROFESSIONAL EXCELLENCE",
-    text: "Experience world-class aviation mentorship from senior industry captains.",
+    text: "Learn from experienced aviation professionals. Train with purpose. Fly with precision.",
     image: "/couroselComponent/Private-Pilot-License.jpg"
   }
 ];
@@ -104,11 +105,9 @@ function EnquirySliderComponent() {
 
                       <div className="flex flex-wrap gap-5">
                         <button className="bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 rounded-xl font-bold transition-all shadow-xl shadow-blue-600/20 active:scale-95 cursor-pointer">
-                          Enquire Now
+                          <Link to="/contact">Enquire Now</Link>
                         </button>
-                        <button className="bg-white/10 hover:bg-white text-white hover:text-blue-900 backdrop-blur-md px-10 py-4 rounded-xl font-bold transition-all border border-white/30 active:scale-95 cursor-pointer">
-                          Explore Fleet
-                        </button>
+                        
                       </div>
                     </motion.div>
                   </div>

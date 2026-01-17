@@ -6,19 +6,23 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 
 const DATA = [
-  { title: "Global Reach", desc: "Non-stop travel to the world's most remote airfields.", img: "https://plus.unsplash.com/premium_photo-1661963915349-d8581d7c66a4?w=600" },
-  { title: "Elite Crew", desc: "Ex-military aviators with decades of flight precision.", img: "https://images.unsplash.com/photo-1714064501972-341e02222b78?w=600" },
-  { title: "Secure Hangar", desc: "Private biometric access for your personal aircraft.", img: "https://plus.unsplash.com/premium_photo-1661515266973-95b312c9fcd8?w=600" },
-  { title: "Aero Tech", desc: "Next-gen avionics and real-time flight tracking.", img: "https://plus.unsplash.com/premium_photo-1661515916124-1802ce3e220d?w=600" },
-  { title: "Luxury Wing", desc: "Tailored interiors with Italian leather finishes.", img: "https://plus.unsplash.com/premium_photo-1661505014355-9b2db23156e4?w=600" },
+  { title: "Aman Sharma", desc: "Commercial Pilot Trainee", para:"Chetak Aviation gave me a strong foundation in aviation theory and discipline. The instructors focus on concept clarity and DGCA requirements, which helped me gain confidence before moving into advanced flight training.",  img: "https://plus.unsplash.com/premium_photo-1661963915349-d8581d7c66a4?w=600" },
+
+  { title: "Rohit Verma", desc: "Aspiring Airline Pilot", para:"The structured teaching approach and personal attention at Chetak Aviation made a huge difference in my learning. Complex subjects were explained clearly, and doubts were always addressed with patience and professionalism.",  img: "https://images.unsplash.com/photo-1714064501972-341e02222b78?w=600" },
+
+  { title: "Nikhil Singh", desc: "CPL Ground Training Student", para:"What I appreciated most was the professional environment. The instructors don’t just teach for exams—they train you to think like a pilot. This mindset has been extremely valuable in my aviation journey.", img: "https://plus.unsplash.com/premium_photo-1661515266973-95b312c9fcd8?w=600" },
+
+  { title: "Aditya Kumar", desc: "Pilot Training Candidate",  para:"Chetak Aviation helped me understand the realities of pilot training and career progression. The guidance I received was honest, practical, and aligned with DGCA standards.", img: "https://plus.unsplash.com/premium_photo-1661515916124-1802ce3e220d?w=600" },
+
+  { title: "Vivek Mishra", desc: "Aviation Student", para:"The academy maintains strong discipline and a safety-focused learning culture. It prepared me academically and mentally for the responsibilities that come with professional aviation.", img: "https://plus.unsplash.com/premium_photo-1661505014355-9b2db23156e4?w=600" },
 ];
 
 const TestimonialComponent = () => {
   return (
-    <section className=" px-[5%] min-h-screen flex flex-col justify-center overflow-hidden">
+    <section className=" px-[5%] h-[75vh] flex flex-col justify-center overflow-hidden my-20">
       <div className="text-center mb-12">
         <h2 className="text-blue-900 text-4xl md:text-5xl font-black pb-2">CHETAK AVIATION</h2>
-        <h1 className="text-blue-800 text-xl md:text-2xl font-black">ALUMNI TESTIMONIALS</h1>
+        <h1 className="text-blue-800 text-xl md:text-2xl font-black">TESTIMONIALS</h1>
       </div>
 
       <Swiper
@@ -51,7 +55,7 @@ const TestimonialComponent = () => {
                 
                 <div className="flex items-center ">
                   <div className="h-[2px]  transition-all duration-500 group-hover:bg-blue-800 " />
-                  <span className="text-white text-[10px] tracking-widest font-semibold text-2xl transition-colors group-hover:text-blue-800">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid autem, laboriosam similique voluptate sit cumque maxime quidem id beatae recusandae labore ipsa tenetur ipsam tempora voluptatum sed ipsum a praesentium!</span>
+                  <span className="text-white text-[10px] tracking-widest font-semibold text-2xl transition-colors group-hover:text-blue-800">{item.para}</span>
                 </div>
               </div>
 
