@@ -1,98 +1,80 @@
-import React from 'react'
-import { motion } from 'framer-motion';
-import { FiCheckCircle, FiUsers, FiTrendingUp } from 'react-icons/fi';
+import React from "react";
 
 function ConversionFlyingContent() {
   return (
-    <div className="bg-white pt-20 pb-16 px-6 md:px-20 lg:px-32 relative overflow-hidden">
-      {/* Subtle Background Aesthetic */}
-      <div className="absolute top-0 right-0 w-1/3 h-full bg-blue-50/40 skew-x-[-15deg] translate-x-20 z-0 hidden md:block" />
+    <section className="relative w-full bg-white overflow-hidden">
 
-      <div className="relative z-10 max-w-6xl mx-auto">
-        {/* Course Label & Heading */}
-        <div className="mb-12 text-center lg:text-left">
-          <motion.div
-            initial={{ opacity: 0, x: -20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            className="inline-flex items-center gap-2 bg-blue-50 text-blue-600 px-4 py-1.5 rounded-full text-[10px] font-black uppercase tracking-[0.2em] mb-6"
-          >
-            
-          </motion.div>
-          
-          <h1 className="text-4xl md:text-6xl font-black text-slate-900 tracking-tight leading-[1.1]">
-            Conversion  <br />
-            <span className="text-blue-600">Flying (CF)</span>
-          </h1>
-        </div>
+      {/* Background Subtle Pattern */}
+      <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-white" />
 
-        {/* Content Section */}
-        <div className="flex flex-col lg:flex-row gap-12 items-center">
-          
-          {/* Main Context */}
-          <div className="w-full lg:w-3/5 space-y-6">
-            <p className="text-xl text-slate-700 font-medium leading-relaxed">
-              Transition from a pilot to a mentor. Our Flight Instructor Course is designed to refine your flying precision and develop elite pedagogical skills.
-            </p>
-            <p className="text-slate-500 leading-relaxed text-lg">
-              Becoming an instructor is one of the most rewarding milestones in an aviation career. At Chetak Aviation, we focus on the "Art of Instruction"—teaching you how to communicate complex aerodynamic concepts, manage cockpit psychology, and shape the safety habits of future aviators.
+      <div className="relative max-w-7xl mx-auto px-6 md:px-12 py-20 md:py-28">
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+
+          {/* LEFT CONTENT */}
+          <div>
+
+            <span className="inline-block mb-4 px-5 py-2 rounded-full text-xl md:text-3xl font-semibold bg-blue-100 text-blue-700">
+              Conversion Flying
+            </span>
+
+            <h1 className="mt-4 text-4xl md:text-5xl xl:text-6xl font-extrabold text-gray-400 leading-tight">
+              Transition with <span className="text-blue-700">Confidence.</span>
+              <br /> Fly with <span className="text-blue-700">Precision.</span>
+            </h1>
+
+            <p className="mt-8 text-slate-600 text-lg leading-relaxed max-w-xl">
+              Conversion Flying at Chetak Aviation is designed for licensed pilots
+              who wish to convert or transition their flying experience from one
+              aircraft type, country, or training environment to another. This
+              program helps pilots adapt smoothly to new aircraft systems,
+              operating procedures, and regulatory standards.
             </p>
 
-            {/* Core Benefits Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 pt-4">
-              {[
-                'Instructional Technique Training',
-                'Advanced Flight Maneuvers',
-                'Safety Management Systems',
-                'Student Progress Monitoring'
-              ].map((item, i) => (
-                <div key={i} className="flex items-center gap-3 text-slate-600 font-semibold text-sm">
-                  <FiCheckCircle className="text-blue-500 flex-shrink-0" />
-                  {item}
-                </div>
-              ))}
-            </div>
+            <p className="mt-6 text-slate-600 text-lg leading-relaxed max-w-xl">
+              Conversion flying is a critical step in ensuring safe aircraft
+              handling, procedural accuracy, and professional confidence when
+              moving between different flying platforms.
+            </p>
+
           </div>
 
-          {/* Instructor Stat Card */}
-          <div className="w-full lg:w-2/5">
-            <div className="bg-slate-50 rounded-[2.5rem] p-10 border border-slate-100 shadow-2xl shadow-blue-900/5 relative overflow-hidden">
-              <div className="relative z-10 space-y-8">
-                <div className="flex items-center gap-5">
-                  <div className="h-12 w-12 bg-white rounded-2xl shadow-sm flex items-center justify-center text-blue-600">
-                    <FiUsers size={24} />
-                  </div>
-                  <div>
-                    <h4 className="text-slate-900 font-bold">Mentorship Focus</h4>
-                    <p className="text-xs text-slate-400 uppercase tracking-widest mt-1">1-on-1 Training</p>
-                  </div>
+          {/* RIGHT IMAGE */}
+          <div className="relative flex justify-center">
+
+            {/* Floating Frame */}
+            <div className="relative w-full max-w-md md:max-w-lg">
+
+              {/* Blue Glow Card */}
+              <div className="absolute -inset-4 bg-blue-100 rounded-[2.5rem] blur-2xl opacity-70" />
+
+              <div className="relative overflow-hidden rounded-[2.5rem] shadow-2xl border border-blue-200">
+
+                <img
+                  src="/logo/AboutUs.jpg"
+                  alt="Conversion Flying Training"
+                  className="w-full h-[420px] md:h-[520px] object-cover"
+                />
+
+                {/* Glass Overlay Badge */}
+                <div className="absolute bottom-6 left-6 bg-white/90 backdrop-blur-md px-6 py-4 rounded-2xl shadow-lg">
+                  <p className="text-blue-700 font-black text-2xl leading-none">
+                    CF
+                  </p>
+                  <p className="text-slate-600 text-xs font-semibold uppercase tracking-widest">
+                    Professional Transition Program
+                  </p>
                 </div>
 
-                <div className="flex items-center gap-5">
-                  <div className="h-12 w-12 bg-white rounded-2xl shadow-sm flex items-center justify-center text-blue-600">
-                    <FiTrendingUp size={24} />
-                  </div>
-                  <div>
-                    <h4 className="text-slate-900 font-bold">Career Growth</h4>
-                    <p className="text-xs text-slate-400 uppercase tracking-widest mt-1">High Demand Sector</p>
-                  </div>
-                </div>
-
-                <button className="w-full py-4 bg-blue-600 hover:bg-slate-900 text-white font-bold rounded-2xl transition-all duration-300 shadow-lg shadow-blue-200">
-                  Check Eligibility
-                </button>
-              </div>
-              
-              {/* Background Watermark */}
-              <div className="absolute -bottom-10 -right-10 opacity-[0.03] text-slate-900 pointer-events-none">
-                <FiUsers size={250} />
               </div>
             </div>
           </div>
 
         </div>
       </div>
-    </div>
-  )
+    </section>
+  );
 }
 
-export default ConversionFlyingContent
+export default ConversionFlyingContent;
+

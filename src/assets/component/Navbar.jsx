@@ -81,13 +81,15 @@ function Navbar() {
       {open && (
         <div className="md:hidden bg-gray-50 border-t">
           <ul className="flex flex-col items-center py-6 gap-6 text-gray-700 font-medium">
-            <li className="hover:text-blue-600">Home</li>
-            <li className="hover:text-blue-600">Courses</li>
-            <li className="hover:text-blue-600">About Us</li>
-            <li className="hover:text-blue-600">Contact Us</li>
+            <Link to="/"><li className="hover:text-blue-600">Home</li></Link>
+            <Link to="/courses"><li className="hover:text-blue-600">Courses</li></Link>
+            <Link to="/about"><li className="hover:text-blue-600">About Us</li></Link>
+            <Link to="/contact"><li className="hover:text-blue-600">Contact Us</li></Link>
+            <Link to="/contact">
             <button className="bg-blue-600 text-white px-6 py-2 rounded-full">
               Enroll Now
             </button>
+            </Link>
           </ul>
         </div>
       )}
