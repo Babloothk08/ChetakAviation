@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import ConversionPageBanner from "/public/course/Contect_Us_Bannerrr.jpg"
+import ConversionPageBanner from "/public/course/conversionFlying/Conversion_Flying_Banner.jpg"
 
 function ConversionFlyingBannerPage() {
   useEffect(() => {

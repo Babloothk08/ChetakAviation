@@ -51,9 +51,9 @@ function ConversionFlyingContent() {
               <div className="relative overflow-hidden rounded-[2.5rem] shadow-2xl border border-blue-200">
 
                 <img
-                  src="/logo/AboutUs.jpg"
+                  src="/public/course/conversionFlying/Transition_with_Confidence_Fly_with_Precision.jpg"
                   alt="Conversion Flying Training"
-                  className="w-full h-[420px] md:h-[520px] object-cover"
+                  className="w-[520px] h-[420px] md:h-[520px] object-cover"
                 />
 
                 {/* Glass Overlay Badge */}
