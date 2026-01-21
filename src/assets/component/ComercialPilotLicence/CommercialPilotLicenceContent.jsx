@@ -51,7 +51,7 @@ function CommercialPilotLicenceContent() {
               <div className="relative overflow-hidden rounded-[2.5rem] shadow-2xl border border-blue-200">
 
                 <img
-                  src="/logo/AboutUs.jpg"
+                  src="/course/commercialPilotLicence/Turn_Your_Passion_for_Flying-into_a_Professional_Career(FINAL).jpg"
                   alt="Commercial Pilot Licence Training"
                   className="w-full h-[420px] md:h-[520px] object-cover"
                 />

@@ -18,7 +18,7 @@ function ConversionFlyingCourseOverview() {
               <div className="relative bg-white rounded-[2.5rem] shadow-2xl border overflow-hidden">
 
                 <img
-                  src="/logo/AboutUs.jpg"
+                  src="/course/conversionFlying/Professional_Transition_Through_Conversion_Flying.jpg"
                   alt="Conversion Flying Training"
                   className="w-full h-[380px] md:h-[480px] object-cover"
                 />

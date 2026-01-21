@@ -18,7 +18,7 @@ function PrivatePilotLicenceCourseOverview() {
               <div className="relative bg-white rounded-[2.5rem] shadow-2xl border overflow-hidden">
 
                 <img
-                  src="/logo/AboutUs.jpg"
+                  src="/course/privatePilotLicence\Strong_Foundations_for_Safe_&_Confident_Flying.jpg"
                   alt="Private Pilot Licence Training"
                   className="w-full h-[380px] md:h-[480px] object-cover"
                 />
