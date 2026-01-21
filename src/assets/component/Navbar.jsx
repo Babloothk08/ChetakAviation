@@ -4,18 +4,19 @@ import { Link } from "react-router-dom";
 
 function Navbar() {
   const [open, setOpen] = useState(false);
+  const [mobileCoursesOpen, setMobileCoursesOpen] = useState(false);
 
   return (
     <nav className="w-full fixed top-0 left-0 z-50 bg-black/50 shadow-md">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="flex justify-between items-center h-28">
+        <div className="flex md:justify-between items-center  h-28">
        
-          <div className="flex items-center gap-2  p-10 pb-20 cursor-pointer">
+          <div className="flex md:items-center gap-2  md:p-12 md:pb-20 pr-49  cursor-pointer">
             <Link to="/">
             <img
               src="/logo/LogoChetakAviation.png"
-              alt="Chetak Aviation"
-              className="w-52 h-35 pt-8 object-contain"
+              alt="Chetak Aviation" 
+              className="w-32 h-35 pt-8  md:mb-1 mb-10 object-contain"
             />
             </Link>
           </div>
@@ -26,7 +27,7 @@ function Navbar() {
               Home
             </li>
             </Link>
-            <Link to="">
+            {/* <Link to=""> */}
             <div className="relative">
               <Link to="/courses">
               <li className=" cursor-pointer transition">
@@ -49,7 +50,7 @@ function Navbar() {
             </li>
             </Link>
             </div>
-            </Link>
+            {/* </Link> */}
             <Link to="/about">
             <li className="hover:text-blue-600 cursor-pointer transition">
               About Us
@@ -70,7 +71,7 @@ function Navbar() {
             </button>
           </div>
 
-          <div className="md:hidden">
+          <div className="md:hidden -mt-15 -mr-15 text-white">
             <button onClick={() => setOpen(!open)}>
               {open ? <FiX size={26} /> : <FiMenu size={26} />}
             </button>
@@ -79,24 +80,56 @@ function Navbar() {
       </div>
 
       {open && (
-        <div className="md:hidden bg-gray-50 border-t">
-          <ul className="flex flex-col items-center py-6 gap-6 text-gray-700 font-medium">
-            <Link to="/"><li className="hover:text-blue-600">Home</li></Link>
-            <div className="relative">
-              <Link to="/courses"><li className="hover:text-blue-600">Courses</li>
-              
-              </Link>
-            </div>
-            <Link to="/about"><li className="hover:text-blue-600">About Us</li></Link>
-            <Link to="/contact"><li className="hover:text-blue-600">Contact Us</li></Link>
-            <Link to="/contact">
-            <button className="bg-blue-600 text-white px-6 py-2 rounded-full">
-              Enroll Now
-            </button>
+  <div className="md:hidden  ml-55 -mt-30 -mb-30 ">
+    <ul className="flex flex-col items-start px-6 py-6 gap-6 font-medium bg-blue-800 text-white">
+
+      <Link to="/home" onClick={() => setOpen(false)}>
+        <li className="hover:text-blue-600">Home</li>
+      </Link>
+
+      {/* Mobile Courses Dropdown */}
+      <li className="w-full">
+        <button
+          onClick={() => setMobileCoursesOpen(!mobileCoursesOpen)}
+          className="w-full text-left hover:text-blue-600 flex justify-between items-center"
+        >
+          Courses
+          <span className="text-2xl">{mobileCoursesOpen ? "−" : "+"}</span>
+        </button>
+
+        {mobileCoursesOpen && (
+          <ul className="mt-3 -ml-4  flex flex-col gap-2 w-38 bg-gray-100 text-blue-800 p-1 rounded-xl text-sm">
+            <Link to="/flightInstructorCourse" onClick={() => setOpen(false)}>
+              <li className="hover:text-blue-600">Flight Instructor Course</li>
+            </Link>
+
+            <Link to="/PrivatePilotLicence" onClick={() => setOpen(false)}>
+              <li className="hover:text-blue-600">Private Pilot Licence</li>
+            </Link>
+
+            <Link to="/ConversionFlying" onClick={() => setOpen(false)}>
+              <li className="hover:text-blue-600">Conversion Flying</li>
+            </Link>
+
+            <Link to="/commercialPilotLicence" onClick={() => setOpen(false)}>
+              <li className="hover:text-blue-600">Commercial Pilot Licence</li>
             </Link>
           </ul>
-        </div>
-      )}
+        )}
+      </li>
+
+      <Link to="/about" onClick={() => setOpen(false)}>
+        <li className="hover:text-blue-600">About Us</li>
+      </Link>
+
+      <Link to="/contact" onClick={() => setOpen(false)}>
+        <li className="hover:text-blue-600">Contact Us</li>
+      </Link>
+
+    </ul>
+  </div>
+)}
+
     </nav>
   );
 }
