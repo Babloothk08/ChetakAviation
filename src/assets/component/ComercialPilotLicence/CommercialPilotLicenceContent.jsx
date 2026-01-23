@@ -2,7 +2,7 @@ import React from "react";
 
 function CommercialPilotLicenceContent() {
   return (
-    <section className="relative w-full bg-white overflow-hidden">
+    <section data-aos="zoom-in-down" className="relative w-full bg-white overflow-hidden">
 
       {/* Background Subtle Pattern */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-white" />

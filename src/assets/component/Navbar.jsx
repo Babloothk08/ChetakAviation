@@ -71,7 +71,7 @@ function Navbar() {
             </button>
           </div>
 
-          <div className="md:hidden -mt-15 -mr-15 text-white">
+          <div className="md:hidden -mt-5 -mr-15 text-white">
             <button onClick={() => setOpen(!open)}>
               {open ? <FiX size={26} /> : <FiMenu size={26} />}
             </button>
@@ -81,14 +81,14 @@ function Navbar() {
 
       {open && (
   <div className="md:hidden  ml-55 -mt-30 -mb-30 ">
-    <ul className="flex flex-col items-start px-6 py-6 gap-6 font-medium bg-blue-800 text-white">
-
+    <ul className="flex flex-col items-start px-6 pt-10 py-5 gap-6 font-medium bg-blue-800 rounded-2xl text-white">       
       <Link to="/home" onClick={() => setOpen(false)}>
         <li className="hover:text-blue-600">Home</li>
       </Link>
 
       {/* Mobile Courses Dropdown */}
       <li className="w-full">
+        <Link to="/courses">
         <button
           onClick={() => setMobileCoursesOpen(!mobileCoursesOpen)}
           className="w-full text-left hover:text-blue-600 flex justify-between items-center"
@@ -96,9 +96,10 @@ function Navbar() {
           Courses
           <span className="text-2xl">{mobileCoursesOpen ? "−" : "+"}</span>
         </button>
+        </Link>
 
         {mobileCoursesOpen && (
-          <ul className="mt-3 -ml-4  flex flex-col gap-2 w-38 bg-gray-100 text-blue-800 p-1 rounded-xl text-sm">
+          <ul className="mt-3 -ml-4  flex flex-col gap-2 w-38 bg-gray-100 text-blue-900 p-3 rounded-xl text-sm">
             <Link to="/flightInstructorCourse" onClick={() => setOpen(false)}>
               <li className="hover:text-blue-600">Flight Instructor Course</li>
             </Link>

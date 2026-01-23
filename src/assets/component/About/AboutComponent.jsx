@@ -3,11 +3,11 @@ import AboutUs from "/public/logo/AboutUs.jpg"
 import { Link } from 'react-router-dom';
 function AboutComponent() {
   return (
-    <div className="w-full max-w-screen mx-auto px-6 py-10 bg-white">
-      <div className="flex flex-col md:flex-row items-start justify-between gap-8">
+    <div data-aos="fade-up" className="w-full max-w-screen mx-auto px-6 py-10 bg-white">
+      <div className="flex flex-col md:flex-row items-start justify-between gap-8 ">
 
-        <div className="w-full md:w-1/2 space-y-2 px-4">
-          <h1 className='text-3xl font-semibold pb-3'>Chetak Aviation – A Flying Training Academy</h1>
+        <div  className="w-full md:w-1/2 space-y-2 px-4">
+          <h1 className='text-3xl font-semibold pb-3 text-blue-900'>Chetak Aviation – A Flying Training Academy</h1>
           <div>
            
             <p className='pb-4 text-slate-500'>Chetak Aviation is a professional flying training academy in Aligarh, dedicated to providing quality aviation education for aspiring pilots. We focus on building a strong foundation in aviation theory, discipline, and safety, which are essential for a successful career in flying.</p>
@@ -19,7 +19,7 @@ function AboutComponent() {
           </button>
         </div>
 
-        <div className="w-full md:w-1/2 flex justify-center items-center bg-gray-100 rounded-2xl h-92    ">
+        <div  className="w-full md:w-1/2 flex justify-center items-center bg-gray-100 rounded-2xl h-92    ">
           <img src={AboutUs} alt='about' className='h-full w-399 rounded-2xl cursor-pointer'/>
         </div>
       </div>

@@ -5,7 +5,7 @@ import { FiMail, FiPhone, FiMapPin, FiSend } from "react-icons/fi";
 function ContactData() {
   return (
     <>
-      <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white flex items-center justify-center py-16 px-4 md:px-10">
+      <div  className="min-h-screen bg-gradient-to-br from-blue-50 to-white flex items-center justify-center py-16 px-4 md:px-10">
         <div className="max-w-7xl w-full">
           {/* Main Card */}
           <div className="flex flex-col lg:flex-row bg-white rounded-[2.5rem] overflow-hidden shadow-[0_20px_50px_rgba(37,99,235,0.1)] border border-blue-100">

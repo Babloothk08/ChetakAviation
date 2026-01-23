@@ -19,7 +19,7 @@ function QuestionsComponent() {
   };
 
   return (
-    <div className='min-h-50% max-w-6xl mx-auto px-6 pb-10 text-white'>
+    <div data-aos="fade-up" className='min-h-50% max-w-6xl mx-auto px-6 pb-10 text-white'>
       <h1 className='pb-10 text-4xl font-black tracking-tight text-center md:text-left'>
         <span className="text-blue-500 text-center">Frequently Asked Questions (FAQ)</span>
       </h1>

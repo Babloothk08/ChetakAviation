@@ -2,7 +2,7 @@ import React from "react";
 
 function PrivateLicenceWhatYouLearn() {
   return (
-    <section className="w-full bg-slate-50 py-16 md:py-24 cursor-pointer">
+    <section data-aos="zoom-in-down" className="w-full bg-slate-50 py-16 md:py-24 cursor-pointer">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
 
         {/* Section Header */}

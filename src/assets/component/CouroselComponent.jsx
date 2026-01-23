@@ -63,7 +63,7 @@ function AviationCarousel() {
 
   return (
     // Outer container with Gray background context
-    <div className="w-full bg-slate-50 py-12">
+    <div data-aos="fade-up" className="w-full bg-slate-50 py-12">
       <div className="max-w-[1400px] mx-auto px-4">
         <div className="relative h-[500px] md:h-[650px] overflow-hidden rounded-[2.5rem] shadow-2xl shadow-blue-900/10 border border-gray-200">
           <Slider {...settings}>

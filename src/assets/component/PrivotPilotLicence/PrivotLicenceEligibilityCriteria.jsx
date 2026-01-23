@@ -68,7 +68,7 @@ function PrivotLicenceEligibilityCriteria() {
               <div className="relative bg-white rounded-[2.5rem] shadow-2xl border overflow-hidden md:mt-80">
 
                 <img
-                  src="/logo/AboutUs.jpg"
+                  src="/course/privatePilotLicence/Eligibility_Criteria_for_Private_Pilot_Licence_(PPL).jpg"
                   alt="Private Pilot Training Standards"
                   className="w-full h-[380px] md:h-[480px] object-cover"
                 />

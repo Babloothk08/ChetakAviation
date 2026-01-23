@@ -2,7 +2,7 @@ import React from "react";
 
 function FlightInstructorWhatYouLearn() {
   return (
-    <section className="w-full bg-slate-50 py-10 md:py-10">
+    <section data-aos="zoom-in-down" className="w-full bg-slate-50 py-10 md:py-10">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
 
         {/* Section Header */}

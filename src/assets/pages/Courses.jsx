@@ -18,7 +18,7 @@ function Courses() {
     >
     </div>
     
-    <div className="bg-white pt-20 pb-16 px-6 md:px-20 lg:px-32 relative overflow-hidden">
+    <div data-aos="fade-out" className="bg-white pt-20 pb-16 px-6 md:px-20 lg:px-32 relative overflow-hidden">
       {/* Subtle Background Element */}
       <div className="absolute top-0 right-0 w-1/2 h-full bg-blue-50/50 skew-x-12 translate-x-32 z-0" />
 

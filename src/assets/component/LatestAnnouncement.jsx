@@ -4,7 +4,7 @@ import LatestUpdate from "/public//couroselComponent/Latest_announcement.jpg"
 function LatestAnnouncement() {
   
   return (
-    <div className="w-full max-w-screen mx-auto px-6 py-10 bg-blue-700">
+    <div data-aos="fade-up" className="w-full max-w-screen mx-auto px-6 py-10 bg-blue-700">
       
       <h1 className="text-2xl font-bold text-center mb-10 text-white">
         Latest Announcements

@@ -68,7 +68,7 @@ function FlightInstructorEligibilityCriteria() {
               <div className="relative bg-white rounded-[2.5rem] shadow-2xl border overflow-hidden">
 
                 <img
-                  src="/logo/AboutUs.jpg"
+                  src="/course/flightInstructorCourse/Eligibility_Criteria_for_Flight_Instructor_Course.jpg"
                   alt="DGCA Aviation Standards"
                   className="w-full h-[380px] md:h-[480px] object-cover"
                 />

@@ -3,7 +3,7 @@ import React from 'react'
 function GetConnected() {
   return (
     // <div>
-      <div className="mt-20 max-w-full md:mx-12 mx-6 text-center bg-white border border-blue-300 rounded-3xl p-12 mb-20 shadow-lg">
+      <div data-aos="fade-out" className="mt-20 max-w-full md:mx-12 mx-6 text-center bg-white border border-blue-300 rounded-3xl p-12 mb-20 shadow-lg">
           <h3 className="text-3xl font-bold text-gray-800 mb-4">Still have questions?</h3>
           <p className="text-lg text-gray-600 mb-6 max-w-xl mx-auto">
             If you couldn't find an answer to your question, our support team is ready to help.

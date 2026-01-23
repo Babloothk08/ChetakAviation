@@ -19,7 +19,7 @@ const DATA = [
 
 const TestimonialComponent = () => {
   return (
-    <section className=" px-[5%] h-[75vh] flex flex-col justify-center overflow-hidden my-20">
+    <section data-aos="fade-out" className=" px-[5%] h-[75vh] flex flex-col justify-center overflow-hidden my-20">
       <div className="text-center mb-12">
         <h2 className="text-blue-900 text-4xl md:text-5xl font-black pb-2">CHETAK AVIATION</h2>
         <h1 className="text-blue-800 text-xl md:text-2xl font-black">TESTIMONIALS</h1>

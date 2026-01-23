@@ -2,7 +2,7 @@ import React from "react";
 
 function CommercialPilotElegibiltyCriteria() {
   return (
-    <section className="w-full bg-gray-200 py-20 md:py-28">
+    <section data-aos="zoom-in-up" className="w-full bg-gray-200 py-20 md:py-28">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -65,7 +65,7 @@ function CommercialPilotElegibiltyCriteria() {
               <div className="relative bg-white rounded-[2.5rem] shadow-2xl border overflow-hidden">
 
                 <img
-                  src="/logo/AboutUs.jpg"
+                  src="/course/commercialPilotLicence/Eligibility_Criteria_for_Commercial_Pilot_Licence.jpg"
                   alt="CPL Eligibility"
                   className="w-full h-[380px] md:h-[480px] object-cover"
                 />

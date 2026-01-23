@@ -11,8 +11,22 @@ import ConversionFlying from "./assets/pages/ConversionFlying";
 import PrivatePilotLicence from "./assets/pages/PrivatePilotLicence";
 import Courses from "./assets/pages/Courses";
 import WatsAppIcon from "./assets/component/WatsAppIcon";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import { useEffect } from "react";
+
 
 function App() {
+
+  
+  useEffect(() => {
+    AOS.init({
+      duration: 800,     // animation time
+      once: true,        // animation only once
+      easing: "ease-in-out",
+    });
+  }, []);
+
   return (
     <>
       <BrowserRouter>
