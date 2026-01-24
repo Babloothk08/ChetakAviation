@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 function VideoComponent() {
   return (
-    <section data-aos="zoom-in" className="relative w-full h-screen overflow-hidden">
+    <section  className="relative w-full h-screen overflow-hidden">
       <video
         className="absolute inset-0 w-full h-full object-cover"
         src="https://pub-46abb921323f4178ae158c624c4e9330.r2.dev/assets/videos/bannernewvideo.mp4"

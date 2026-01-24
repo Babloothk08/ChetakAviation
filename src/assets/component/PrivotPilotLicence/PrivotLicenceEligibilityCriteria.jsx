@@ -2,7 +2,7 @@ import React from "react";
 
 function PrivotLicenceEligibilityCriteria() {
   return (
-    <section className="w-full bg-gray-100 py-10 md:py-10">
+    <section data-aos="fade-up" className="w-full bg-gray-100 py-10 md:py-10">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">

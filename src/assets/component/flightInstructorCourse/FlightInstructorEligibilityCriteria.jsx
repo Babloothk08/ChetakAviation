@@ -2,7 +2,7 @@ import React from "react";
 
 function FlightInstructorEligibilityCriteria() {
   return (
-    <section className="w-full bg-gray-200 py-20 md:py-28">
+    <section data-aos="fade-up" className="w-full bg-gray-200 py-20 md:py-28">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">

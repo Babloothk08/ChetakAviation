@@ -2,7 +2,7 @@ import React from "react";
 
 function PrivotPilotLicenceContent() {
   return (
-    <section className="relative w-full bg-white overflow-hidden">
+    <section data-aos="fade-up" className="relative w-full bg-white overflow-hidden">
 
       {/* Subtle Background */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-white" />

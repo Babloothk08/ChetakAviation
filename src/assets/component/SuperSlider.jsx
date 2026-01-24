@@ -7,22 +7,22 @@ import "slick-carousel/slick/slick-theme.css";
 const slides = [
   {
     image: "../superSlider/Commercial-Pilot-License_Course.jpg",
-    title: "Precision Training",
+    // title: "Precision Training",
     desc: "Experience the cockpit of a modern Boeing 737 simulator."
   },
   {
     image: "../superSlider/Conversion_Flying_Course.jpg",
-    title: "Elite Mentorship",
+    // title: "Elite Mentorship",
     desc: "Learn from captains with over 20,000 flight hours."
   },
   {
     image: "../superSlider/Flight_Instructor_Course.jpg",
-    title: "Modern Fleet",
+    // title: "Modern Fleet",
     desc: "Our diamond aircraft are equipped with the latest Garmin G1000."
   },
   {
     image: "../superSlider/Private_Pilot_License_Course.jpg",
-    title: "Global Reach",
+    // title: "Global Reach",
     desc: "Certifications recognized by EASA, FAA, and DGCA."
   }
 ];
@@ -37,59 +37,50 @@ const SuperFlowSlider = () => {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
 
-  const slideWidth = windowWidth < 768 ? windowWidth * 0.92 : 650;
+  // 🔹 FIXED: Responsive Width Logic
+  const getSlideWidth = () => {
+    if (windowWidth < 640) return windowWidth - 40; // Mobile
+    if (windowWidth < 1024) return 500; // Tablet
+    return 750; // Desktop
+  };
 
   const settings = {
     dots: true,
     infinite: true,
     centerMode: true,
-    centerPadding: "0px",
+    centerPadding: windowWidth < 768 ? "20px" : "0px",
     slidesToShow: 1,
     variableWidth: true,
     speed: 1000,
     autoplay: true,
-    autoplaySpeed: 2500,
+    autoplaySpeed: 3000,
     beforeChange: (current, next) => setActiveSlide(next),
   };
 
   return (
-    /* FIXED: Removed py-10 and min-h-screen centering to pull content to the top */
-    <div className="w-full   pb-20 md:pt-20 md:pb-32 overflow-hidden">
-      <div className="max-w-[1440px] mx-auto w-full px-0">
+    <div className="w-full bg-white py-10 md:py-20 overflow-hidden">
+      <div className="max-w-[1440px] mx-auto">
         
-      
-
-        {/* Slider Section */}
-        <div className="relative cursor-grab active:cursor-grabbing 
-            [&_.slick-list]:overflow-visible
-            [&_.slick-dots]:bottom-[-50px]
-            [&_.slick-dots_li_button:before]:text-blue-500
-            [&_.slick-dots_li_button:before]:text-[10px]
-            [&_.slick-dots_li.slick-active_button:before]:text-white
-            [&_.slick-dots_li.slick-active_button:before]:scale-[1.5]">
-          
+        <div className="relative slick-custom-style">
           <Slider {...settings}>
             {slides.map((slide, index) => {
               const isActive = index === activeSlide;
               
               return (
-                <div 
+                <div data-aos="fade-up"
                   key={index} 
-                  className="px-2 md:px-6 py-4 md:py-10 [perspective:1200px]" 
-                  style={{ width: slideWidth }} 
+                  className="px-2 md:px-10 outline-none" 
+                  style={{ width: getSlideWidth() }} 
                 >
                   <motion.div
                     animate={{
-                      scale: isActive ? 1 : 0.8,
-                      rotateY: isActive ? 0 : (index < activeSlide ? 25 : -25),
-                      z: isActive ? 0 : -100,
-                      filter: isActive ? "blur(0px) brightness(1)" : "blur(4px) brightness(0.5)",
+                      scale: isActive ? 1 : 0.85,
+                      rotateY: isActive ? 0 : (index < activeSlide ? 15 : -15),
+                      filter: isActive ? "brightness(1)" : "brightness(0.4) blur(2px)",
                     }}
-                    transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
-                    className={`relative h-[400px] md:h-[350px] w-[550px] rounded-[2.5rem] md:rounded-[3.5rem] overflow-hidden shadow-2xl transition-all duration-700 ${
-                      isActive 
-                        ? "shadow-blue-500/30 border-2 border-blue-400/40 ring-4 ring-blue-500/5" 
-                        : "shadow-black/80 opacity-40"
+                    transition={{ duration: 0.8, ease: "easeOut" }}
+                    className={`relative h-[300px] sm:h-[400px] md:h-[450px] w-full rounded-[2rem] md:rounded-[4rem] overflow-hidden shadow-2xl transition-all ${
+                      isActive ? "ring-2 ring-blue-500/20" : ""
                     }`}
                   >
                     <img 
@@ -98,29 +89,32 @@ const SuperFlowSlider = () => {
                       alt={slide.title} 
                     />
                     
-                    <div className={`absolute inset-0 transition-opacity duration-700  to-transparent ${isActive ? "opacity-95" : "opacity-60"}`} />
+                    {/* Overlay Gradient */}
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
 
                     <AnimatePresence>
                       {isActive && (
                         <motion.div 
-                          initial={{ opacity: 0, y: 30 }}
+                          initial={{ opacity: 0, y: 40 }}
                           animate={{ opacity: 1, y: 0 }}
-                          exit={{ opacity: 0, y: -20 }}
-                          className="absolute inset-x-0 bottom-0 p-8 md:p-12 text-center"
+                          exit={{ opacity: 0, y: 20 }}
+                          className="absolute inset-0 flex flex-col justify-end p-6 md:p-16 text-center"
                         >
-                          <motion.h3 className="text-2xl md:text-5xl font-black text-white mb-2 md:mb-4 tracking-tighter">
+                          <h3 className="text-2xl md:text-6xl font-black text-white mb-2 tracking-tighter uppercase">
                             {slide.title}
-                          </motion.h3>
-                          <motion.p className="text-blue-100 text-xs md:text-lg font-light max-w-sm md:max-w-md mx-auto italic leading-relaxed">
+                          </h3>
+                          <p className="text-blue-100 text-[10px] md:text-lg font-medium max-w-lg mx-auto mb-6 md:mb-10 line-clamp-2 md:line-clamp-none">
                             {slide.desc}
-                          </motion.p>
-                          <motion.button 
-                            whileHover={{ scale: 1.05 }}
-                            whileTap={{ scale: 0.95 }}
-                            className="mt-6 md:mt-10 px-8 md:px-12 py-2.5 md:py-4 bg-blue-600 text-white text-[10px] md:text-xs font-black rounded-full shadow-xl shadow-blue-900/40 uppercase tracking-[0.2em] border border-blue-400/30"
-                          >
-                            Explore Now
-                          </motion.button>
+                          </p>
+                          <div>
+                            <motion.button 
+                              whileHover={{ scale: 1.1 }}
+                              whileTap={{ scale: 0.9 }}
+                              className="px-6 md:px-10 py-3 md:py-4 bg-blue-600 text-white text-[10px] md:text-xs font-black rounded-full shadow-xl shadow-blue-600/40 uppercase tracking-widest border border-blue-400/50"
+                            >
+                              Explore Course
+                            </motion.button>
+                          </div>
                         </motion.div>
                       )}
                     </AnimatePresence>
@@ -131,6 +125,24 @@ const SuperFlowSlider = () => {
           </Slider>
         </div>
       </div>
+
+      {/* 🔹 FIXED: Slick Dots Responsiveness */}
+      <style jsx global>{`
+        .slick-custom-style .slick-list {
+          overflow: visible !important;
+        }
+        .slick-custom-style .slick-dots {
+          bottom: -40px;
+        }
+        .slick-custom-style .slick-dots li button:before {
+          color: #3b82f6 !important;
+          font-size: 8px;
+        }
+        .slick-custom-style .slick-dots li.slick-active button:before {
+          color: #1e3a8a !important;
+          transform: scale(1.5);
+        }
+      `}</style>
     </div>
   );
 };

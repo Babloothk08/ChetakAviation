@@ -2,7 +2,7 @@ import React from "react";
 
 function FlightInstructorCourseContent() {
   return (
-    <section className="relative w-full bg-white overflow-hidden">
+    <section data-aos="fade-up" className="relative w-full bg-white overflow-hidden">
 
       {/* Background Subtle Pattern */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-white" />
@@ -53,7 +53,7 @@ function FlightInstructorCourseContent() {
               <div className="relative overflow-hidden rounded-[2.5rem] shadow-2xl border border-blue-200">
 
                 <img
-                  src="/public/course/flightInstructorCourse/Become_A_Certified_Flight-Instructor1.jpg"
+                  src="/course/flightInstructorCourse/Become_A_Certified_Flight-Instructor1.jpg"
                   alt="Flight Instructor Training"
                   className="w-full h-[420px] md:h-[520px] object-cover"
                 />

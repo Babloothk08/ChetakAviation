@@ -2,7 +2,7 @@ import React from "react";
 
 function ConversionFlyingContent() {
   return (
-    <section className="relative w-full bg-white overflow-hidden">
+    <section data-aos="fade-up" className="relative w-full bg-white overflow-hidden">
 
       {/* Background Subtle Pattern */}
       <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-white" />
@@ -51,7 +51,7 @@ function ConversionFlyingContent() {
               <div className="relative overflow-hidden rounded-[2.5rem] shadow-2xl border border-blue-200">
 
                 <img
-                  src="/public/course/conversionFlying/Transition_with_Confidence_Fly_with_Precision.jpg"
+                  src="/course/conversionFlying/Transition_with_Confidence_Fly_with_Precision.jpg"
                   alt="Conversion Flying Training"
                   className="w-[520px] h-[420px] md:h-[520px] object-cover"
                 />

@@ -3,7 +3,7 @@ import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaEnvelope, FaPhone, Fa
 
 function Footer() {
   return (
-    <footer className="bg-blue-950 text-white pt-16 pb-8">
+    <footer className="bg-blue-950 text-white md:pt-16 pb-8">
       <div className="max-w-350 mx-auto px-6">
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 mb-16">
