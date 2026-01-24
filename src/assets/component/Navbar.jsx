@@ -10,65 +10,96 @@ function Navbar() {
     <nav className="w-full fixed top-0 left-0 z-50 bg-black/50 shadow-md">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex md:justify-between items-center  h-28">
-       
           <div className="flex md:items-center gap-2  md:p-12 md:pb-20 pr-49  cursor-pointer">
             <Link to="/">
-            <img
-              src="/logo/LogoChetakAviation.png"
-              alt="Chetak Aviation" 
-              className="w-32 h-35 pt-8  md:mb-1 mb-10 object-contain"
-            />
+              <img
+                src="/logo/LogoChetakAviation.png"
+                alt="Chetak Aviation"
+                className="w-32 h-35 pt-8  md:mb-1 mb-10 object-contain"
+              />
             </Link>
           </div>
 
           <ul className="hidden md:flex gap-8 text-white font-medium">
             <Link to="/">
-            <li className="hover:text-blue-600 cursor-pointer transition">
-              Home
-            </li>
+              <li className="hover:text-blue-600 cursor-pointer transition">
+                Home
+              </li>
             </Link>
             {/* <Link to=""> */}
             <div className="relative">
               <Link to="/courses">
-              <li className=" cursor-pointer transition">
-              <button onClick={() => setOpen(!open)} className="cursor-pointer">
-                Courses
-                </button>
-              
-              { open ? (
-                <div className="absolute w-50 -right-34 pt-5">
-                <ul className=" bg-white text-blue-800 rounded-2xl">
-                  <Link to="/flightInstructorCourse"><li onClick={()=>setOpen(!open)} className="p-2 hover:bg-blue-800 hover:text-white hover:rounded-t-2xl">Flight Instructor Course</li></Link>
-                  <Link to="/PrivatePilotLicence"><li onClick={()=>setOpen(!open)} className="p-2 hover:bg-blue-800 hover:text-white ">Private Pilot License</li></Link>
-                  <Link to="/ConversionFlying"><li onClick={()=>setOpen(!open)} className="p-2 hover:bg-blue-800 hover:text-white">Conversion Flying</li></Link>
-                  <Link to="/commercialPilotLicence"><li onClick={()=>setOpen(!open)} className="p-2 hover:bg-blue-800 hover:text-white hover:rounded-b-2xl">Commercial Pilot License</li></Link>
-                </ul>
-              </div>
-              ): ""
+                <li className=" cursor-pointer transition">
+                  <button
+                    onClick={() => setOpen(!open)}
+                    className="cursor-pointer"
+                  >
+                    Courses
+                  </button>
 
-              }
-            </li>
-            </Link>
+                  {open ? (
+                    <div className="absolute w-50 -right-34 pt-5">
+                      <ul className=" bg-white text-blue-800 rounded-2xl">
+                        <Link to="/flightInstructorCourse">
+                          <li
+                            onClick={() => setOpen(!open)}
+                            className="p-2 hover:bg-blue-800 hover:text-white hover:rounded-t-2xl"
+                          >
+                            Flight Instructor Course
+                          </li>
+                        </Link>
+                        <Link to="/PrivatePilotLicence">
+                          <li
+                            onClick={() => setOpen(!open)}
+                            className="p-2 hover:bg-blue-800 hover:text-white "
+                          >
+                            Private Pilot License
+                          </li>
+                        </Link>
+                        <Link to="/ConversionFlying">
+                          <li
+                            onClick={() => setOpen(!open)}
+                            className="p-2 hover:bg-blue-800 hover:text-white"
+                          >
+                            Conversion Flying
+                          </li>
+                        </Link>
+                        <Link to="/commercialPilotLicence">
+                          <li
+                            onClick={() => setOpen(!open)}
+                            className="p-2 hover:bg-blue-800 hover:text-white hover:rounded-b-2xl"
+                          >
+                            Commercial Pilot License
+                          </li>
+                        </Link>
+                      </ul>
+                    </div>
+                  ) : (
+                    ""
+                  )}
+                </li>
+              </Link>
             </div>
             {/* </Link> */}
             <Link to="/about">
-            <li className="hover:text-blue-600 cursor-pointer transition">
-              About Us
-            </li>
+              <li className="hover:text-blue-600 cursor-pointer transition">
+                About Us
+              </li>
             </Link>
             <Link to="/contact">
-            <li className="hover:text-blue-600 cursor-pointer transition">
-              Contact Us
-            </li>
+              <li className="hover:text-blue-600 cursor-pointer transition">
+                Contact Us
+              </li>
             </Link>
           </ul>
 
           <div className="hidden md:block">
-            <button
-            className="bg-white w-40 h-10 text-blue-700 px-5 py-2 rounded-full border border-blue-200 transition-all duration-200 hover:text-blue-900 hover:font-semibold hover:shadow-md hover:border-blue-900 active:scale-95 cursor-pointer"
+            <a
+              href="tel:+18667603566"
+              className="bg-white w-40 h-10 text-blue-700 px-5 py-2 rounded-full border border-blue-200 transition-all duration-200 hover:text-blue-900 hover:font-semibold hover:shadow-md hover:border-blue-900 active:scale-95 cursor-pointer"
             >
               Enroll Now
-            </button>
+            </a>
           </div>
 
           <div className="md:hidden -mt-5 -mr-15 text-white">
@@ -80,57 +111,72 @@ function Navbar() {
       </div>
 
       {open && (
-  <div className="md:hidden  ml-55 -mt-30 -mb-30 ">
-    <ul className="flex flex-col items-start px-6 pt-10 py-5 gap-6 font-medium bg-blue-800 rounded-2xl text-white">       
-      <Link to="/home" onClick={() => setOpen(false)}>
-        <li className="hover:text-blue-600">Home</li>
-      </Link>
-
-      {/* Mobile Courses Dropdown */}
-      <li className="w-full">
-        <Link to="/courses">
-        <button
-          onClick={() => setMobileCoursesOpen(!mobileCoursesOpen)}
-          className="w-full text-left hover:text-blue-600 flex justify-between items-center"
-        >
-          Courses
-          <span className="text-2xl">{mobileCoursesOpen ? "−" : "+"}</span>
-        </button>
-        </Link>
-
-        {mobileCoursesOpen && (
-          <ul className="mt-3 -ml-4  flex flex-col gap-2 w-38 bg-gray-100 text-blue-900 p-3 rounded-xl text-sm">
-            <Link to="/flightInstructorCourse" onClick={() => setOpen(false)}>
-              <li className="hover:text-blue-600">Flight Instructor Course</li>
+        <div className="md:hidden  ml-55 -mt-30 -mb-30 ">
+          <ul className="flex flex-col items-start px-6 pt-10 py-5 gap-6 font-medium bg-blue-800 rounded-2xl text-white">
+            <Link to="/home" onClick={() => setOpen(false)}>
+              <li className="hover:text-blue-600">Home</li>
             </Link>
 
-            <Link to="/PrivatePilotLicence" onClick={() => setOpen(false)}>
-              <li className="hover:text-blue-600">Private Pilot Licence</li>
+            {/* Mobile Courses Dropdown */}
+            <li className="w-full">
+              <Link to="/courses">
+                <button
+                  onClick={() => setMobileCoursesOpen(!mobileCoursesOpen)}
+                  className="w-full text-left hover:text-blue-600 flex justify-between items-center"
+                >
+                  Courses
+                  <span className="text-2xl">
+                    {mobileCoursesOpen ? "−" : "+"}
+                  </span>
+                </button>
+              </Link>
+
+              {mobileCoursesOpen && (
+                <ul className="mt-3 -ml-4  flex flex-col gap-2 w-38 bg-gray-100 text-blue-900 p-3 rounded-xl text-sm">
+                  <Link
+                    to="/flightInstructorCourse"
+                    onClick={() => setOpen(false)}
+                  >
+                    <li className="hover:text-blue-600">
+                      Flight Instructor Course
+                    </li>
+                  </Link>
+
+                  <Link
+                    to="/PrivatePilotLicence"
+                    onClick={() => setOpen(false)}
+                  >
+                    <li className="hover:text-blue-600">
+                      Private Pilot Licence
+                    </li>
+                  </Link>
+
+                  <Link to="/ConversionFlying" onClick={() => setOpen(false)}>
+                    <li className="hover:text-blue-600">Conversion Flying</li>
+                  </Link>
+
+                  <Link
+                    to="/commercialPilotLicence"
+                    onClick={() => setOpen(false)}
+                  >
+                    <li className="hover:text-blue-600">
+                      Commercial Pilot Licence
+                    </li>
+                  </Link>
+                </ul>
+              )}
+            </li>
+
+            <Link to="/about" onClick={() => setOpen(false)}>
+              <li className="hover:text-blue-600">About Us</li>
             </Link>
 
-            <Link to="/ConversionFlying" onClick={() => setOpen(false)}>
-              <li className="hover:text-blue-600">Conversion Flying</li>
-            </Link>
-
-            <Link to="/commercialPilotLicence" onClick={() => setOpen(false)}>
-              <li className="hover:text-blue-600">Commercial Pilot Licence</li>
+            <Link to="/contact" onClick={() => setOpen(false)}>
+              <li className="hover:text-blue-600">Contact Us</li>
             </Link>
           </ul>
-        )}
-      </li>
-
-      <Link to="/about" onClick={() => setOpen(false)}>
-        <li className="hover:text-blue-600">About Us</li>
-      </Link>
-
-      <Link to="/contact" onClick={() => setOpen(false)}>
-        <li className="hover:text-blue-600">Contact Us</li>
-      </Link>
-
-    </ul>
-  </div>
-)}
-
+        </div>
+      )}
     </nav>
   );
 }

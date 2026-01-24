@@ -100,9 +100,7 @@ const SuperFlowSlider = () => {
                           exit={{ opacity: 0, y: 20 }}
                           className="absolute inset-0 flex flex-col justify-end p-6 md:p-16 text-center"
                         >
-                          <h3 className="text-2xl md:text-6xl font-black text-white mb-2 tracking-tighter uppercase">
-                            {slide.title}
-                          </h3>
+                          
                           <p className="text-blue-100 text-[10px] md:text-lg font-medium max-w-lg mx-auto mb-6 md:mb-10 line-clamp-2 md:line-clamp-none">
                             {slide.desc}
                           </p>
@@ -110,10 +108,12 @@ const SuperFlowSlider = () => {
                             <motion.button 
                               whileHover={{ scale: 1.1 }}
                               whileTap={{ scale: 0.9 }}
-                              className="px-6 md:px-10 py-3 md:py-4 bg-blue-600 text-white text-[10px] md:text-xs font-black rounded-full shadow-xl shadow-blue-600/40 uppercase tracking-widest border border-blue-400/50"
+                              className=""
                             >
+                            <a href="tel:+18667603566" className='px-6 md:px-10 py-3 md:py-4 bg-blue-600 text-white text-[10px] md:text-xs font-black rounded-full shadow-xl shadow-blue-600/40 uppercase tracking-widest border border-blue-400/50 cursor-pointer'>
                               Explore Course
-                            </motion.button>
+                            </a>
+                             </motion.button>
                           </div>
                         </motion.div>
                       )}

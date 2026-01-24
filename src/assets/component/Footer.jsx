@@ -23,10 +23,10 @@ function Footer() {
               skies begins with professional excellence.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="w-10 h-10 flex items-center justify-center rounded-full bg-white/5 hover:bg-blue-600 transition-colors border border-white/10"><FaFacebook /></a>
-              <a href="#" className="w-10 h-10 flex items-center justify-center rounded-full bg-white/5 hover:bg-blue-600 transition-colors border border-white/10"><FaTwitter /></a>
-              <a href="#" className="w-10 h-10 flex items-center justify-center rounded-full bg-white/5 hover:bg-blue-600 transition-colors border border-white/10"><FaInstagram /></a>
-              <a href="#" className="w-10 h-10 flex items-center justify-center rounded-full bg-white/5 hover:bg-blue-600 transition-colors border border-white/10"><FaLinkedin /></a>
+              <a href="https://www.facebook.com/" className="w-10 h-10 flex items-center justify-center rounded-full bg-white/5 hover:bg-blue-600 transition-colors border border-white/10"><FaFacebook /></a>
+              <a href="https://x.com/" className="w-10 h-10 flex items-center justify-center rounded-full bg-white/5 hover:bg-blue-600 transition-colors border border-white/10"><FaTwitter /></a>
+              <a href="https://www.instagram.com/" className="w-10 h-10 flex items-center justify-center rounded-full bg-white/5 hover:bg-blue-600 transition-colors border border-white/10"><FaInstagram /></a>
+              <a href="https://www.linkedin.com/login" className="w-10 h-10 flex items-center justify-center rounded-full bg-white/5 hover:bg-blue-600 transition-colors border border-white/10"><FaLinkedin /></a>
             </div>
           </div>
 
@@ -59,7 +59,7 @@ function Footer() {
               </li>
               <li className="flex items-center gap-3">
                 <FaPhone className="text-blue-500" />
-                <span>+91 98765 43210</span>
+               <a href="tel:+18667603566">+18554682227</a>
               </li>
               <li className="flex items-center gap-3">
                 <FaEnvelope className="text-blue-500" />
