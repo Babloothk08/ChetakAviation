@@ -10,7 +10,7 @@ function AboutComponentCard() {
     },
     {
       title: "READY FOR THE FUTURE",
-      img: "https://www.embraer.com/media/ykamihh5/embraer-range.jpg?v=1db1ecc92212910",
+      img: "/aboutUsPage/AHistoryofAchievements1.jpg.jpeg",
       desc: "Innovation isn't just a word; it's our flight path. We are pioneering sustainable aviation and next-generation cockpit technologies."
     },
     {
