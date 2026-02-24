@@ -91,6 +91,21 @@ function Navbar() {
                 Contact Us
               </li>
             </Link>
+            <Link to="/contact">
+              <li className="hover:text-blue-600 cursor-pointer transition">
+                Gallery
+              </li>
+            </Link>
+            <Link to="/contact">
+              <li className="hover:text-blue-600 cursor-pointer transition">
+                Career
+              </li>
+            </Link>
+            <Link to="/contact">
+              <li className="hover:text-blue-600 cursor-pointer transition">
+                Brochure
+              </li>
+            </Link>
           </ul>
 
           <div className="hidden md:block">
@@ -173,6 +188,15 @@ function Navbar() {
 
             <Link to="/contact" onClick={() => setOpen(false)}>
               <li className="hover:text-blue-600">Contact Us</li>
+            </Link>
+            <Link to="/contact" onClick={() => setOpen(false)}>
+              <li className="hover:text-blue-600">Gallery</li>
+            </Link>
+            <Link to="/contact" onClick={() => setOpen(false)}>
+              <li className="hover:text-blue-600">Career</li>
+            </Link>
+            <Link to="/contact" onClick={() => setOpen(false)}>
+              <li className="hover:text-blue-600">Brochure</li>
             </Link>
           </ul>
         </div>

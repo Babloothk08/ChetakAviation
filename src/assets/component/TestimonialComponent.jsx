@@ -10,11 +10,11 @@ const DATA = [
 
   { title: "Rohit Verma", desc: "Aspiring Airline Pilot", para:"The structured teaching approach and personal attention at Chetak Aviation made a huge difference in my learning. Complex subjects were explained clearly, and doubts were always addressed with patience and professionalism.",  img: "/HomePageTestimonial/Home-Page(TESTIMONIALS)-Slider 2.jpg.jpeg" },
 
-  { title: "Nikhil Singh", desc: "CPL Ground Training Student", para:"What I appreciated most was the professional environment. The instructors don’t just teach for exams—they train you to think like a pilot. This mindset has been extremely valuable in my aviation journey.", img: "/HomePageTestimonial/Home-Page(TESTIMONIALS)-Slider 3.jpg.jpeg" },
+  { title: "Ghanish", desc: "CPL Ground Training Student", para:"What I appreciated most was the professional environment. The instructors don’t just teach for exams—they train you to think like a pilot. This mindset has been extremely valuable in my aviation journey.", img: "/HomePageTestimonial/Home-Page(TESTIMONIALS)-Slider 3.jpg.jpeg" },
 
-  { title: "Aditya Kumar", desc: "Pilot Training Candidate",  para:"Chetak Aviation helped me understand the realities of pilot training and career progression. The guidance I received was honest, practical, and aligned with DGCA standards.", img: "/HomePageTestimonial/Home-Page(TESTIMONIALS)-Slider 4.jpg.jpeg" },
+  { title: "Shashank", desc: "Pilot Training Candidate",  para:"Chetak Aviation helped me understand the realities of pilot training and career progression. The guidance I received was honest, practical, and aligned with DGCA standards.", img: "/HomePageTestimonial/Home-Page(TESTIMONIALS)-Slider 4.jpg.jpeg" },
 
-  { title: "Vivek Mishra", desc: "Aviation Student", para:"The academy maintains strong discipline and a safety-focused learning culture. It prepared me academically and mentally for the responsibilities that come with professional aviation.", img: "/HomePageTestimonial/Home-Page(TESTIMONIALS)-Slider 5.jpg.jpeg" },
+  { title: "Rohit Kumar", desc: "Aviation Student", para:"The academy maintains strong discipline and a safety-focused learning culture. It prepared me academically and mentally for the responsibilities that come with professional aviation.", img: "/HomePageTestimonial/Home-Page(TESTIMONIALS)-Slider 5.jpg.jpeg" },
 ];
 
 const TestimonialComponent = () => {

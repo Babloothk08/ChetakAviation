@@ -13,25 +13,25 @@ const slides = [
   {
     title: "Command the Skies with Confidence",
     subtitle: "ELITE PILOT TRAINING",
-    text: "Learn from experienced aviation professionals. Train with purpose. Fly with precision.",
+    // text: "Learn from experienced aviation professionals. Train with purpose. Fly with precision.",
     image: "/HomePageImageSlider/Home-Page(Command-the-Skies-with-Confidence)-Slider 1.jpg.jpeg"
   },
   {
     title: "Command the Skies with Confidence",
     subtitle: "GLOBAL CERTIFICATION",
-    text: "Learn from experienced aviation professionals. Train with purpose. Fly with precision.",
+    // text: "Learn from experienced aviation professionals. Train with purpose. Fly with precision.",
     image: "/HomePageImageSlider/Home-Page(Command-the-Skies-with-Confidence)-Slider 2.jpg.jpeg"
   },
   {
     title: "Command the Skies with Confidence",
     subtitle: "PROFESSIONAL EXCELLENCE",
-    text: "Learn from experienced aviation professionals. Train with purpose. Fly with precision.",
+    // text: "Learn from experienced aviation professionals. Train with purpose. Fly with precision.",
     image: "/HomePageImageSlider/Home-Page(Command-the-Skies-with-Confidence)-Slider 3.jpg.jpeg"
   },
   {
     title: "Command the Skies with Confidence",
     subtitle: "PROFESSIONAL EXCELLENCE",
-    text: "Learn from experienced aviation professionals. Train with purpose. Fly with precision.",
+    // text: "Learn from experienced aviation professionals. Train with purpose. Fly with precision.",
     image: "/HomePageImageSlider/Home-Page(Command-the-Skies-with-Confidence)-Slider 4.jpg.jpeg"
   }
 ];
@@ -82,7 +82,7 @@ function EnquirySliderComponent() {
                 </div>
 
                 <div className="relative h-full flex items-center px-8 md:px-24">
-                  <div className="max-w-2xl text-white">
+                  <div className="max-w-2xl text-white md:pt-80">
                     <motion.div
                       initial={{ opacity: 0, x: -30 }}
                       whileInView={{ opacity: 1, x: 0 }}
@@ -95,7 +95,7 @@ function EnquirySliderComponent() {
                         </span>
                       </div>
 
-                      <h2 className="text-5xl md:text-7xl font-extrabold mb-8 leading-[1.1] tracking-tight text-white">
+                      <h2 className="text-2xl md:text-4xl font-extrabold mb-8 leading-[1.1] tracking-tight text-white">
                         {slide.title}
                       </h2>
 
