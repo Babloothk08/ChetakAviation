@@ -7,7 +7,7 @@ function CommercialPilotWhatYouLearn() {
 
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="mt-4 text-3xl md:text-4xl xl:text-5xl font-extrabold text-blue-800">
+          <h2 className="mt-4 text-3xl md:text-4xl xl:text-5xl font-extrabold text-blue-600">
             What You Will Learn
           </h2>
 
@@ -49,17 +49,17 @@ function CommercialPilotWhatYouLearn() {
           ].map((item, index) => (
             <div
               key={index}
-              className="cursor-pointer group relative bg-white rounded-2xl p-8 shadow-lg border transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl"
+              className="cursor-pointer group relative bg-white rounded-2xl p-8 shadow-2xl  transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl"
             >
               {/* Top Accent Line */}
-              <div className="absolute top-0 left-0 w-full h-[4px] bg-blue-600 rounded-t-2xl" />
+              <div className="absolute top-0 left-0 w-full h-[4px]  rounded-t-2xl" />
 
               {/* Index Badge */}
-              <div className="w-12 h-12 flex items-center justify-center rounded-full bg-blue-100 text-blue-700 font-extrabold mb-6">
+              <div className="w-12 h-12 flex items-center justify-center rounded-full bg-blue-100 text-blue-600 font-extrabold mb-6">
                 {index + 1}
               </div>
 
-              <h3 className="text-xl font-bold text-blue-800 mb-3">
+              <h3 className="text-xl font-bold text-blue-600 mb-3">
                 {item.title}
               </h3>
 

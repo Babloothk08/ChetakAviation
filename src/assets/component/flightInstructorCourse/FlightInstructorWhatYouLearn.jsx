@@ -49,10 +49,10 @@ function FlightInstructorWhatYouLearn() {
           ].map((item, index) => (
             <div
               key={index}
-              className="cursor-pointer group relative bg-white rounded-2xl p-8 shadow-lg border transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl"
+              className="cursor-pointer group relative bg-white rounded-2xl p-8 shadow-2xl  transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl"
             >
               {/* Top Accent Line */}
-              <div className="absolute top-0 left-0 w-full h-[4px] bg-blue-600 nn rounded-t-2xl" />
+              <div className="absolute top-0 left-0 w-full h-[4px] sh nn rounded-t-2xl" />
 
               {/* Index Badge */}
               <div className=" w-12 h-12 flex items-center justify-center rounded-full bg-blue-100 text-blue-700 font-extrabold mb-6">

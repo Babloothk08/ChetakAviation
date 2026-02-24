@@ -8,16 +8,16 @@ function CommercialPilotTrainingAtChetakAviation() {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
 
           {/* LEFT — TRAINING APPROACH */}
-          <div className="bg-white rounded-3xl shadow-xl border border-slate-200 p-10 md:p-14 relative overflow-hidden">
+          <div className="bg-white rounded-3xl shadow-2xl border border-slate-200 p-10 md:p-14 relative overflow-hidden">
 
             {/* Top Accent */}
-            <div className="absolute top-0 left-0 w-full h-[5px] bg-blue-600" />
+            <div className="absolute top-0 left-0 w-full h-[5px] " />
 
             <span className="inline-block mb-4 px-5 py-2 rounded-full text-xl md:text-3xl font-semibold bg-blue-100 text-blue-700">
               Training Philosophy
             </span>
 
-            <h2 className="mt-4 text-2xl md:text-3xl xl:text-4xl font-extrabold text-blue-800">
+            <h2 className="mt-4 text-2xl md:text-3xl xl:text-4xl font-extrabold text-blue-600">
               Training Approach at Chetak Aviation
             </h2>
 
@@ -52,16 +52,16 @@ function CommercialPilotTrainingAtChetakAviation() {
           </div>
 
           {/* RIGHT — CAREER OPPORTUNITIES */}
-          <div className="bg-white rounded-3xl shadow-xl border border-slate-200 p-10 md:p-14 relative overflow-hidden">
+          <div className="bg-white rounded-3xl shadow-2xl border border-slate-200 p-10 md:p-14 relative overflow-hidden">
 
             {/* Top Accent */}
-            <div className="absolute top-0 left-0 w-full h-[5px] bg-blue-600" />
+            <div className="absolute top-0 left-0 w-full h-[5px] " />
 
             <span className="inline-block mb-4 px-5 py-2 rounded-full text-2xl md:text-3xl font-semibold bg-blue-100 text-blue-700">
               Career Opportunities
             </span>
 
-            <h2 className="mt-4 text-2xl md:text-3xl xl:text-4xl font-extrabold text-blue-800">
+            <h2 className="mt-4 text-2xl md:text-3xl xl:text-4xl font-extrabold text-blue-600">
               Career Opportunities After CPL
             </h2>
 

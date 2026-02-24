@@ -22,9 +22,9 @@ function FlightCourseOverview() {
               <div className="relative bg-white rounded-[2.5rem] shadow-2xl border overflow-hidden">
 
                 <img
-                  src="/course/flightInstructorCourse//Professional_Training_for_Future_Flight_Instructors.jpg"
+                  src="/public/course/flightInstructorCourse/Course-in-all-Page(Course-Overview)-2.jpg.jpeg"
                   alt="Flight Instructor Classroom"
-                  className="w-full h-[380px] md:h-[450px]  object-cover"
+                  className="w-full h-full object-cover"
                 />
 
                 {/* Bottom Info Bar */}

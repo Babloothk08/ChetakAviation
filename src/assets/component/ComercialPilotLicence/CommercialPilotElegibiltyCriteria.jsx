@@ -5,13 +5,13 @@ function CommercialPilotElegibiltyCriteria() {
     <section data-aos="zoom-in-up" className="w-full bg-gray-200 py-20 md:py-28">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
         <div className="text-center">
-          <span className="inline-block mb-4 px-5 py-2 rounded-full text-xl md:text-3xl font-bold bg-blue-100 text-blue-700">
+          <span className="inline-block mb-4 px-5 py-2 rounded-full text-xl md:text-3xl font-bold bg-blue-100 text-blue-600">
               Admission Requirements
             </span>
 
             <h2 className="mt-4 text-3xl md:text-4xl xl:text-5xl font-extrabold text-gray-400 leading-tight">
               Eligibility Criteria for
-              <span className="text-blue-700"> Commercial Pilot Licence</span>
+              <span className="text-blue-600"> Commercial Pilot Licence</span>
             </h2>
 
             <p className="text-center mt-4 text-xl font-semibold text-gray-500 ">
@@ -65,16 +65,17 @@ function CommercialPilotElegibiltyCriteria() {
               {/* Background Glow */}
               <div className="absolute -bottom-10 -left-10 w-72 h-72 bg-blue-100 rounded-full blur-3xl opacity-70" />
 
-              <div className="relative bg-white rounded-[2.5rem] shadow-2xl border overflow-hidden">
-
-                <img
+              <div className="relative h-full w-full hover:scale-105 hover:transition-transform cursor-pointer  ">
+                <div className="h-full w-full rounded-full overflow-hidden">
+                  <img
                   src="/course/commercialPilotLicence/Eligibility_Criteria_for_Commercial_Pilot_Licence.jpg"
                   alt="CPL Eligibility"
-                  className="w-full  h-full object-cover"
+                  className="w-[515px] h-[510px] object-cover"
                 />
+                </div>
 
                 {/* Overlay Info */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
+                <div className="absolute inset-0   via-transparent to-transparent" />
 
                 <div className="absolute bottom-0 inset-x-0 p-6 text-white">
                   <p className="text-xl font-bold">

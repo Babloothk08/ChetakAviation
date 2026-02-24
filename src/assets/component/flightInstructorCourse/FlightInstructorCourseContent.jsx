@@ -53,7 +53,7 @@ function FlightInstructorCourseContent() {
               <div className="relative overflow-hidden rounded-[2.5rem] shadow-2xl border border-blue-200">
 
                 <img
-                  src="/course/flightInstructorCourse/Become_A_Certified_Flight-Instructor1.jpg"
+                  src="/course/flightInstructorCourse/Course-in-all-Page(Course-Overview)-2.jpg.jpeg"
                   alt="Flight Instructor Training"
                   className="w-full h-[420px] md:h-[520px] object-cover"
                 />

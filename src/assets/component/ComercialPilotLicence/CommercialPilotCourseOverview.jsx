@@ -20,11 +20,13 @@ function CommercialPilotCourseOverview() {
 
               <div className="relative bg-white rounded-[2.5rem] shadow-2xl border overflow-hidden ">
 
-                <img
-                  src="/course/commercialPilotLicence\Building-Professional-Excellence-Through-Commercial-Pilot-Training(FINAL).jpg"
+                <div className="w-full h-full hover:scale-105 cursor-pointer hover:duration-1000 hover:ease-in-out hover:transition-transform">
+                  <img
+                  src="/course/commercialPilotLicence/Course-in-all-Page(Course-Overview)-3.jpg.jpeg"
                   alt="Commercial Pilot Licence Training"
                   className="w-full h-[380px] md:h-[450px]  object-cover"
                 />
+                </div>
 
                 {/* Bottom Info Bar */}
                 <div className="absolute bottom-0 inset-x-0 bg-white/95 backdrop-blur-md p-6 border-t">

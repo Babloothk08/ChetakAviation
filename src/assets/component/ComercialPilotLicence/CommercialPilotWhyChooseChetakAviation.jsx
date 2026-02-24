@@ -50,7 +50,7 @@ function CommercialPilotWhyChooseChetakAviation() {
           {/* RIGHT — ENQUIRY CTA */}
           <div className="bg-white rounded-[2.5rem] shadow-2xl p-10 md:p-14 md:mt-42 border border-white/20">
 
-            <h3 className="mt-4 text-2xl md:text-3xl xl:text-4xl font-extrabold text-blue-800 leading-tight">
+            <h3 className="mt-4 text-2xl md:text-3xl xl:text-4xl font-extrabold text-blue-600 leading-tight">
               Enquire About the CPL Program
             </h3>
 
@@ -61,7 +61,7 @@ function CommercialPilotWhyChooseChetakAviation() {
             {/* CTA Buttons */}
             <div className="mt-10 flex flex-col sm:flex-row gap-4">
               <Link to="/contact">
-                <button className="cursor-pointer w-full sm:w-auto px-10 py-4 bg-blue-700 hover:bg-blue-800 text-white font-bold rounded-full shadow-xl transition-all duration-300">
+                <button className="cursor-pointer w-full sm:w-auto px-10 py-4 bg-blue-700 hover:bg-blue-600 text-white font-bold rounded-full shadow-2xl transition-all duration-300">
                   Enquire Now
                 </button>
               </Link>

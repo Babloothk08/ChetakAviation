@@ -18,12 +18,12 @@ function CommercialPilotLicenceContent() {
               Commercial Pilot Licence (CPL)
             </span>
 
-            <h1 className="mt-4 text-4xl md:text-5xl xl:text-6xl font-extrabold text-gray-400 leading-tight">
+            <h1 className="mt-4 text-4xl md:text-5xl font-extrabold text-gray-400 leading-tight">
               Turn Your Passion for Flying into a
-              <span className="text-blue-700"> Professional Career</span>
+              <span className="text-blue-600"> Professional Career</span>
             </h1>
 
-            <p className="mt-8 text-slate-600 text-lg leading-relaxed max-w-xl">
+            <p className="mt-4 text-slate-600 text-lg leading-relaxed max-w-xl">
               The Commercial Pilot Licence (CPL) program at Chetak Aviation is designed
               for aspiring pilots who aim to fly professionally and build a successful
               career in aviation. Our training combines structured flight instruction,
@@ -31,7 +31,7 @@ function CommercialPilotLicenceContent() {
               with DGCA requirements.
             </p>
 
-            <p className="mt-6 text-slate-600 text-lg leading-relaxed max-w-xl">
+            <p className="mt-2 text-slate-600 text-lg leading-relaxed max-w-xl">
               A CPL is the essential licence required to work as a commercial pilot,
               opening pathways toward airline operations, charter flying, and advanced
               aviation roles across the global aviation industry.
@@ -58,7 +58,7 @@ function CommercialPilotLicenceContent() {
 
                 {/* Glass Overlay Badge */}
                 <div className="absolute bottom-6 left-6 bg-white/90 backdrop-blur-md px-6 py-4 rounded-2xl shadow-lg">
-                  <p className="text-blue-700 font-black text-2xl leading-none">
+                  <p className="text-blue-600 font-black text-2xl leading-none">
                     CPL
                   </p>
                   <p className="text-slate-600 text-xs font-semibold uppercase tracking-widest">
