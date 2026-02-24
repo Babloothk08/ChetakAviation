@@ -20,7 +20,7 @@ function AboutComponent() {
         </div>
 
         <div  className="w-full md:w-1/2 flex justify-center items-center bg-gray-100 rounded-2xl h-92    ">
-          <img src={AboutUs} alt='about' className='h-full w-full rounded-2xl cursor-pointer'/>
+          <img src={AboutUs} alt='about' className='h-[370px] w-[720px] rounded-2xl cursor-pointer'/>
         </div>
       </div>
       
