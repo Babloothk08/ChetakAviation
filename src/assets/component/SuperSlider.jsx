@@ -6,22 +6,22 @@ import "slick-carousel/slick/slick-theme.css";
 
 const slides = [
   {
-    image: "../superSlider/Commercial-Pilot-License_Course.jpg",
+    image: "/course/courseSuperSlider/Course-Page(Course-Slider)-1.jpg.jpeg",
     // title: "Precision Training",
     desc: "Experience the cockpit of a modern Boeing 737 simulator."
   },
   {
-    image: "../superSlider/Conversion_Flying_Course.jpg",
+    image: "/course/courseSuperSlider/Course-Page(Course-Slider)-2.jpg.jpeg",
     // title: "Elite Mentorship",
     desc: "Learn from captains with over 20,000 flight hours."
   },
   {
-    image: "../superSlider/Flight_Instructor_Course.jpg",
+    image: "/course/courseSuperSlider/Course-Page(Course-Slider)-3.jpg.jpeg",
     // title: "Modern Fleet",
     desc: "Our diamond aircraft are equipped with the latest Garmin G1000."
   },
   {
-    image: "../superSlider/Private_Pilot_License_Course.jpg",
+    image: "/course/courseSuperSlider/Course-Page(Course-Slider)-4.jpg.jpeg",
     // title: "Global Reach",
     desc: "Certifications recognized by EASA, FAA, and DGCA."
   }
@@ -85,7 +85,7 @@ const SuperFlowSlider = () => {
                   >
                     <img 
                       src={slide.image} 
-                      className="absolute inset-0 w-full h-full object-cover" 
+                      className="absolute inset-0 w-[670px] h-[450px] object-cover" 
                       alt={slide.title} 
                     />
                     

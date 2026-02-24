@@ -4,13 +4,8 @@ function FlightInstructorEligibilityCriteria() {
   return (
     <section data-aos="fade-up" className="w-full bg-gray-200 py-20 md:py-28">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
-
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-
-          {/* LEFT — REGULATORY TEXT BLOCK */}
-          <div>
-
-            <span className="inline-block mb-4 px-5 py-2 rounded-full text-xl md:text-3xl font-semibold bg-blue-100 text-blue-700">
+        <div className="text-center">
+          <span className="inline-block mb-4 px-5 py-2 rounded-full text-xl md:text-3xl font-bold bg-blue-100 text-blue-700">
               Admission Requirements
             </span>
 
@@ -18,12 +13,17 @@ function FlightInstructorEligibilityCriteria() {
               Eligibility Criteria for
               <span className="text-blue-700"> Flight Instructor Course</span>
             </h2>
-
-            <p className="mt-8 text-slate-600 text-lg leading-relaxed max-w-xl">
+             <p className="text-center mt-4 text-xl font-semibold text-gray-500">
               To enroll in the Flight Instructor Course, candidates must meet
               professional aviation standards that ensure readiness for
               instructional responsibility and regulatory compliance.
-            </p>
+              </p>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center pt-5">
+
+          {/* LEFT — REGULATORY TEXT BLOCK */}
+          <div>
 
             {/* Criteria List */}
             <div className="mt-10 space-y-6 max-w-xl">
@@ -36,7 +36,7 @@ function FlightInstructorEligibilityCriteria() {
               ].map((item, index) => (
                 <div
                   key={index}
-                  className="flex items-start gap-5 bg-slate-50 p-6 rounded-xl border"
+                  className="flex items-start gap-5 bg-slate-50 p-3 rounded-xl border"
                 >
                   <div className="w-12 h-12 flex items-center justify-center rounded-full bg-blue-600 text-white font-extrabold text-lg shrink-0">
                     ✓
@@ -60,7 +60,7 @@ function FlightInstructorEligibilityCriteria() {
           {/* RIGHT — VISUAL INFO PANEL */}
           <div className="relative flex justify-center">
 
-            <div className="relative w-full md:pt-78 max-w-md md:max-w-lg">
+            <div className="relative w-full  max-w-md md:max-w-lg">
 
               {/* Background Glow */}
               <div className="absolute -bottom-10 -left-10 w-72 h-72 bg-blue-100 rounded-full blur-3xl opacity-70" />

@@ -1,10 +1,10 @@
 import React from "react";
-import LatestUpdate from "/public//couroselComponent/Latest_announcement.jpg"
+import LatestUpdate from "/LatestAnnouncement/Home-Page(Latest Announcement).jpg (1).jpeg"
 
 function LatestAnnouncement() {
   
   return (
-    <div data-aos="fade-up" className="w-full max-w-screen mx-auto px-6 py-10 bg-blue-700">
+    <div data-aos="fade-up" className="w-full max-w-screen mx-auto px-10 py-10 bg-blue-700">
       
       <h1 className="text-2xl font-bold text-center mb-10 text-white">
         Latest Announcements

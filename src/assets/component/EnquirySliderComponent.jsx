@@ -14,25 +14,25 @@ const slides = [
     title: "Command the Skies with Confidence",
     subtitle: "ELITE PILOT TRAINING",
     text: "Learn from experienced aviation professionals. Train with purpose. Fly with precision.",
-    image: "../couroselComponent/SliderImage.jpg"
+    image: "/HomePageImageSlider/Home-Page(Command-the-Skies-with-Confidence)-Slider 1.jpg.jpeg"
   },
   {
     title: "Command the Skies with Confidence",
     subtitle: "GLOBAL CERTIFICATION",
     text: "Learn from experienced aviation professionals. Train with purpose. Fly with precision.",
-    image: "../couroselComponent/Slider_Image-2.jpg"
+    image: "/HomePageImageSlider/Home-Page(Command-the-Skies-with-Confidence)-Slider 2.jpg.jpeg"
   },
   {
     title: "Command the Skies with Confidence",
     subtitle: "PROFESSIONAL EXCELLENCE",
     text: "Learn from experienced aviation professionals. Train with purpose. Fly with precision.",
-    image: "/couroselComponent/Flight-Instructor-Course.jpg"
+    image: "/HomePageImageSlider/Home-Page(Command-the-Skies-with-Confidence)-Slider 3.jpg.jpeg"
   },
   {
     title: "Command the Skies with Confidence",
     subtitle: "PROFESSIONAL EXCELLENCE",
     text: "Learn from experienced aviation professionals. Train with purpose. Fly with precision.",
-    image: "/couroselComponent/Private-Pilot-License.jpg"
+    image: "/HomePageImageSlider/Home-Page(Command-the-Skies-with-Confidence)-Slider 4.jpg.jpeg"
   }
 ];
 
@@ -77,7 +77,7 @@ function EnquirySliderComponent() {
               <div key={i} className="relative h-125 md:h-162.5 outline-none">
                 
                 <div className="absolute inset-0">
-                  <img src={slide.image} className="w-full h-full object-cover" alt="Aviation Training" />
+                  <img src={slide.image} className="w-[1370px] h-[650px] object-cover" alt="Aviation Training" />
                   <div className="absolute inset-0 bg-linear-to-r from-slate-900/80 via-slate-900/40 to-transparent"></div>
                 </div>
 

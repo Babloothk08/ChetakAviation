@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import FlightInstructorPageBanner from "/public/course/flightInstructorCourse/Flight_Instructor_Course_Banner.jpg";
+import FlightInstructorPageBanner from "/course/flightInstructorCourse/Flight_Instructor_Course_Banner.jpg";
 
 function FlightInstructorBannerPage() {
   useEffect(() => {

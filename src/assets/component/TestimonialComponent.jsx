@@ -6,15 +6,15 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 
 const DATA = [
-  { title: "Aman Sharma", desc: "Commercial Pilot Trainee", para:"Chetak Aviation gave me a strong foundation in aviation theory and discipline. The instructors focus on concept clarity and DGCA requirements, which helped me gain confidence before moving into advanced flight training.",  img: "https://plus.unsplash.com/premium_photo-1661963915349-d8581d7c66a4?w=600" },
+  { title: "Aman Sharma", desc: "Commercial Pilot Trainee", para:"Chetak Aviation gave me a strong foundation in aviation theory and discipline. The instructors focus on concept clarity and DGCA requirements, which helped me gain confidence before moving into advanced flight training.",  img: "/HomePageTestimonial/Home-Page(TESTIMONIALS)-Slider 1.jpg.jpeg" },
 
-  { title: "Rohit Verma", desc: "Aspiring Airline Pilot", para:"The structured teaching approach and personal attention at Chetak Aviation made a huge difference in my learning. Complex subjects were explained clearly, and doubts were always addressed with patience and professionalism.",  img: "https://images.unsplash.com/photo-1714064501972-341e02222b78?w=600" },
+  { title: "Rohit Verma", desc: "Aspiring Airline Pilot", para:"The structured teaching approach and personal attention at Chetak Aviation made a huge difference in my learning. Complex subjects were explained clearly, and doubts were always addressed with patience and professionalism.",  img: "/HomePageTestimonial/Home-Page(TESTIMONIALS)-Slider 2.jpg.jpeg" },
 
-  { title: "Nikhil Singh", desc: "CPL Ground Training Student", para:"What I appreciated most was the professional environment. The instructors don’t just teach for exams—they train you to think like a pilot. This mindset has been extremely valuable in my aviation journey.", img: "https://plus.unsplash.com/premium_photo-1661515266973-95b312c9fcd8?w=600" },
+  { title: "Nikhil Singh", desc: "CPL Ground Training Student", para:"What I appreciated most was the professional environment. The instructors don’t just teach for exams—they train you to think like a pilot. This mindset has been extremely valuable in my aviation journey.", img: "/HomePageTestimonial/Home-Page(TESTIMONIALS)-Slider 3.jpg.jpeg" },
 
-  { title: "Aditya Kumar", desc: "Pilot Training Candidate",  para:"Chetak Aviation helped me understand the realities of pilot training and career progression. The guidance I received was honest, practical, and aligned with DGCA standards.", img: "https://plus.unsplash.com/premium_photo-1661515916124-1802ce3e220d?w=600" },
+  { title: "Aditya Kumar", desc: "Pilot Training Candidate",  para:"Chetak Aviation helped me understand the realities of pilot training and career progression. The guidance I received was honest, practical, and aligned with DGCA standards.", img: "/HomePageTestimonial/Home-Page(TESTIMONIALS)-Slider 4.jpg.jpeg" },
 
-  { title: "Vivek Mishra", desc: "Aviation Student", para:"The academy maintains strong discipline and a safety-focused learning culture. It prepared me academically and mentally for the responsibilities that come with professional aviation.", img: "https://plus.unsplash.com/premium_photo-1661505014355-9b2db23156e4?w=600" },
+  { title: "Vivek Mishra", desc: "Aviation Student", para:"The academy maintains strong discipline and a safety-focused learning culture. It prepared me academically and mentally for the responsibilities that come with professional aviation.", img: "/HomePageTestimonial/Home-Page(TESTIMONIALS)-Slider 5.jpg.jpeg" },
 ];
 
 const TestimonialComponent = () => {
@@ -39,10 +39,10 @@ const TestimonialComponent = () => {
       >
         {DATA.map((item, index) => (
           <SwiperSlide key={index} className="h-auto ">
-            <div className="group   rounded-3xl overflow-hidden cursor-pointer transition-all duration-500 hover:bg-white hover:-translate-y-2 hover:shadow-2xl h-full flex flex-col bg-blue-800">
+            <div className="group rounded-3xl overflow-hidden cursor-pointer transition-all duration-500 hover:bg-white hover:-translate-y-2 hover:shadow-2xl h-full flex flex-col bg-blue-800">
               
               <div className="h-56 relative overflow-hidden ">
-                <img src={item.img} alt={item.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
+                <img src={item.img} alt={item.title} className="w-[439px] h-[224px] object-cover transition-transform duration-700 group-hover:scale-110" />
                 <div 
                   className="absolute bottom-0 left-0 w-full h-10 bg-transparent transition-colors group-hover:bg-white" 
                   style={{ clipPath: 'polygon(0 100%, 100% 100%, 100% 0)' }}

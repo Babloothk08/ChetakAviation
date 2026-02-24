@@ -7,7 +7,7 @@ function Navbar() {
   const [mobileCoursesOpen, setMobileCoursesOpen] = useState(false);
 
   return (
-    <nav className="w-full fixed top-0 left-0 z-50 bg-black/50 shadow-md">
+    <nav className="w-full sticky top-0 left-0 z-50 bg-black/50 shadow-md">
       <div className="max-w-7xl mx-auto px-6">
         <div className="flex md:justify-between items-center  h-28">
           <div className="flex md:items-center gap-2  md:p-12 md:pb-20 pr-49  cursor-pointer">

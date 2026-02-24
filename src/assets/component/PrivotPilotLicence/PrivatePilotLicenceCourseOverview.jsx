@@ -4,13 +4,16 @@ function PrivatePilotLicenceCourseOverview() {
   return (
     <section data-aos="fade-up" className="w-full bg-gray-100 py-10 md:py-10">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
+        <div className="">
+          <h1 className="text-blue-700 text-center rounded-full text-2xl md:text-4xl shadow-xl font-semibold">Course Overview</h1>
+        </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
 
             {/* RIGHT — VISUAL BLOCK */}
           <div className="relative flex justify-center">
 
-            <div className="relative w-full max-w-md md:max-w-lg">
+            <div className="relative w-full max-w-md md:max-w-lg pt-15">
 
               {/* Soft Background Accent */}
               <div className="absolute -top-10 -right-10 w-72 h-72 bg-blue-100 rounded-full blur-3xl opacity-70" />
@@ -20,7 +23,7 @@ function PrivatePilotLicenceCourseOverview() {
                 <img
                   src="/course/privatePilotLicence\Strong_Foundations_for_Safe_&_Confident_Flying.jpg"
                   alt="Private Pilot Licence Training"
-                  className="w-full h-[380px] md:h-[480px] object-cover"
+                  className="w-[515px] h-[380px] md:h-[450px] object-cover"
                 />
 
                 {/* Bottom Info Bar */}
@@ -39,10 +42,6 @@ function PrivatePilotLicenceCourseOverview() {
 
           {/* LEFT — TEXT CONTENT */}
           <div>
-
-            <span className="inline-block mb-4 px-6 py-2 rounded-full text-xl md:text-3xl font-semibold bg-blue-100 text-blue-700">
-              Course Overview
-            </span>
 
             <h2 className="mt-4 text-3xl md:text-4xl xl:text-5xl font-extrabold text-gray-400 leading-tight">
               Strong Foundations for

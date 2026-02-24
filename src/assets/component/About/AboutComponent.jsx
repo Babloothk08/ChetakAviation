@@ -1,9 +1,9 @@
 import React from 'react'
-import AboutUs from "/public/logo/AboutUs.jpg"
+import AboutUs from "/aboutUsPage/Home-Page(Chetak Aviation – A Flying Training Academy).jpg.jpeg"
 import { Link } from 'react-router-dom';
 function AboutComponent() {
   return (
-    <div data-aos="fade-up" className="w-full max-w-screen mx-auto px-6 py-10 bg-white">
+    <div data-aos="fade-up" className="w-full max-w-screen mx-auto px-10 py-10 bg-white">
       <div className="flex flex-col md:flex-row items-start justify-between gap-8 ">
 
         <div  className="w-full md:w-1/2 space-y-2 px-4">
@@ -20,7 +20,7 @@ function AboutComponent() {
         </div>
 
         <div  className="w-full md:w-1/2 flex justify-center items-center bg-gray-100 rounded-2xl h-92    ">
-          <img src={AboutUs} alt='about' className='h-full w-399 rounded-2xl cursor-pointer'/>
+          <img src={AboutUs} alt='about' className='h-full w-full rounded-2xl cursor-pointer'/>
         </div>
       </div>
       
