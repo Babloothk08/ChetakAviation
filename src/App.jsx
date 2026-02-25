@@ -14,6 +14,7 @@ import WatsAppIcon from "./assets/component/WatsAppIcon";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import PlaneCursor from "./assets/component/PlaneCursor";
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
     <>
       <BrowserRouter>
         <Navbar />
+        <PlaneCursor/>
 
         <Routes>
           <Route path="/" element={<Home />} />

@@ -22,7 +22,7 @@ const ImageZoomForAboutComponent = () => {
   }, []);
 
   return (
-    <div className="relative w-full h-screen bg-black overflow-hidden flex items-center justify-center touch-none">
+    <div className="relative w-full h-screen  overflow-hidden flex items-center justify-center touch-none">
       {/* Background Layers */}
       {[3, 2, 1, 0].map((depth) => {
         const layerTime = time + depth;

@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import ConversionPageBanner from "/course/conversionFlying/Conversion_Flying_Banner.jpg"
+import ConversionPageBanner from "/course/conversionFlying/CoursesBannerConversionFlying.jpg.jpeg"
 
 function ConversionFlyingBannerPage() {
   useEffect(() => {
@@ -7,7 +7,7 @@ function ConversionFlyingBannerPage() {
   });
   return (
     <div
-      className="min-h-screen w-full bg-cover bg-center bg-no-repeat"
+      className="h-[640px] w-full bg-cover bg-center bg-no-repeat"
       style={{
         backgroundImage: `url(${ConversionPageBanner})`,
       }}
