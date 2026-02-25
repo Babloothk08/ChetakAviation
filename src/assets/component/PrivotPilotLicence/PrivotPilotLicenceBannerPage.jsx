@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import PrivotPilotBannerPage from "/course/privatePilotLicence/Private_Pilot_Licence_Banner.jpg"
+import PrivotPilotBannerPage from "/course/privatePilotLicence/CoursesBannerPrivatePilotLicence.jpg.jpeg"
 
 function PrivotPilotLicenceBannerPage() {
   useEffect(() => {

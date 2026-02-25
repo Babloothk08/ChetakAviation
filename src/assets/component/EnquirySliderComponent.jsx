@@ -78,7 +78,7 @@ function EnquirySliderComponent() {
                 
                 <div className="absolute inset-0">
                   <img src={slide.image} className="w-[1370px] h-[650px] object-cover" alt="Aviation Training" />
-                  <div className="absolute inset-0 bg-linear-to-r from-slate-900/80 via-slate-900/40 to-transparent"></div>
+                  <div className="absolute inset-0 bg-linear-to-r  to-transparent"></div>
                 </div>
 
                 <div className="relative h-full flex items-center px-8 md:px-24">

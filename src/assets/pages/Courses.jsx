@@ -10,13 +10,13 @@ function Courses() {
     });
   return (
     <>
-    <div
-      className="h-[620px] w-full bg-cover bg-center bg-no-repeat"
-      style={{
-        backgroundImage: `url(${CourseBannerPage})`,
-      }}
-    >
-    </div>
+    <div className="h-full w-full overflow-hidden">
+  <img
+    src={CourseBannerPage}
+    alt="Courses Banner"
+    className="w-full h-[620px] object-cover"
+  />
+</div>
     
     <div data-aos="fade-out" className="bg-white pt-20 pb-16 px-6 md:px-20 lg:px-32 relative overflow-hidden">
       {/* Subtle Background Element */}

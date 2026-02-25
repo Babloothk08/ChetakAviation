@@ -16,7 +16,7 @@ function VideoComponent() {
 
       <div className="absolute inset-0 "></div>
 
-      <div className="relative z-10 flex items-center justify-center h-full px-6 text-center">
+      <div className="relative z-10 flex items-center justify-center h-full px-6 pt-35 text-center">
         <div className="max-w-4xl text-white">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             <span className="text-blue-600">Professional </span> Pilot Training{" "}

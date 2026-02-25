@@ -7,20 +7,20 @@ function Navbar() {
   const [mobileCoursesOpen, setMobileCoursesOpen] = useState(false);
 
   return (
-    <nav className="w-full sticky top-0 left-0 z-50 bg-black/50 shadow-md">
+    <nav className="w-full sticky top-0 z-50 backdrop-blur-md bg-gradient-to-r from-blue-700/90 via-gray-600/90 to-blue-00/90 shadow-lg border-b border-white/40">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="flex md:justify-between items-center  h-28">
+        <div className="flex md:justify-between items-center  h-22">
           <div className="flex md:items-center gap-2  md:p-12 md:pb-20 pr-49  cursor-pointer">
             <Link to="/">
               <img
                 src="/logo/LogoChetakAviation.png"
                 alt="Chetak Aviation"
-                className="w-32 h-35 pt-8  md:mb-1 mb-10 object-contain"
+                className="w-32 h-28 pt-8  md:mb-1 mb-10 object-contain"
               />
             </Link>
           </div>
 
-          <ul className="hidden md:flex gap-8 text-white font-medium">
+          <ul className="hidden md:flex gap-12 text-white font-medium">
             <Link to="/">
               <li className="hover:text-blue-600 cursor-pointer transition">
                 Home

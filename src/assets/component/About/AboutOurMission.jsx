@@ -1,5 +1,5 @@
 import React from "react";
-import OurMission from "/public/aboutUsPage/Our-Mission.jpg"
+import OurMission from "/aboutUsPage/Our-Mission.jpg"
 
 function AboutOurMission() {
   return (
