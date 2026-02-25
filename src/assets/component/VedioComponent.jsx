@@ -6,7 +6,7 @@ function VideoComponent() {
   return (
     <section  className="relative w-full h-screen overflow-hidden">
       <video
-        className="absolute inset-0 w-full h-full  object-cover"
+        className="absolute inset-0 w-full h-[620px]  object-cover"
         src={chetakBannerVideo}
         autoPlay
         muted
@@ -14,7 +14,7 @@ function VideoComponent() {
         playsInline
       />
 
-      <div className="absolute inset-0 bg-black/40"></div>
+      <div className="absolute inset-0 "></div>
 
       <div className="relative z-10 flex items-center justify-center h-full px-6 text-center">
         <div className="max-w-4xl text-white">
