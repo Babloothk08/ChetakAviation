@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import SuperFlowSlider from "../component/SuperSlider";
-import CourseBannerPage from "/public/course/Contect_Us_Bannerrr.jpg"
+import CourseBannerPage from "/course/bannerImage/Courses-banner-1.jpg.jpeg"
 import { motion } from 'framer-motion';
 import { FiCheckCircle, FiAward, FiNavigation } from 'react-icons/fi';
 

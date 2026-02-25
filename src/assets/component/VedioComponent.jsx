@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import chetakBannerVideo from "/chetakBannerVedio/ChetakBannerVideo.mp4"
+import chetakBannerVideo from "/chetakBannerVedio/CHETAK-HOME-PAGE-VIDEO.mp4"
 
 function VideoComponent() {
   return (
     <section  className="relative w-full h-screen overflow-hidden">
       <video
-        className="absolute inset-0 w-full h-full  object-cover"
+        className="absolute inset-0 w-[1920px] h-[620px]  object-cover"
         src={chetakBannerVideo}
         autoPlay
         muted
