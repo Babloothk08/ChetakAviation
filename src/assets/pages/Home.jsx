@@ -7,6 +7,7 @@ import QuestionsComponent from '../component/QuestionsComponent'
 import TestimonialComponent from '../component/TestimonialComponent'
 import AboutComponent from '../component/About/AboutComponent'
 import { useEffect } from 'react'
+// import GsapNewFile from '../component/GsapNewFile'
 
 function Home() {
   useEffect(() => {
@@ -21,6 +22,7 @@ function Home() {
       <EnquirySliderComponent/>
       <TestimonialComponent/>
       <QuestionsComponent/>
+      {/* <GsapNewFile/> */}
     </div>
   )
 }

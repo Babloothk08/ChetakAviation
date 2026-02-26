@@ -1,5 +1,5 @@
 import React from "react";
-import WhyChetakAviation from "/public/aboutUsPage/Why-Choose-Chetak-Aviation.jpg"
+import WhyChetakAviation from "/aboutUsPage/Why-Choose-Chetak-Aviation.jpg"
 
 function WhyChooseChetakAviation() {
   return (
