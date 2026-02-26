@@ -114,10 +114,10 @@ function Navbar() {
                 <li className="hover:text-blue-600 transition">Contact Us</li>
               </Link>
               <Link to="/contact">
-                <li className="hover:text-blue-600 transition">Contact Us</li>
+                <li className="hover:text-blue-600 transition">Coreer</li>
               </Link>
               <Link to="/contact">
-                <li className="hover:text-blue-600 transition">Contact Us</li>
+                <li className="hover:text-blue-600 transition">Brochure</li>
               </Link>
             </ul>
 
