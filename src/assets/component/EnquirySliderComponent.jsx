@@ -90,12 +90,12 @@ function EnquirySliderComponent() {
                     >
                       <div className="flex items-center gap-4 mb-6">
                         <span className="h-0.5 w-12 bg-blue-500"></span>
-                        <span className="text-blue-400 font-bold tracking-[0.3em] text-xs md:text-sm uppercase">
+                        <span className="text-blue-400 font-bold tracking-[0.3em] text-xs md:text-sm uppercase drop-shadow-[0_0_2px_black]">
                           {slide.subtitle}
                         </span>
                       </div>
 
-                      <h2 className="text-2xl md:text-4xl font-extrabold mb-8 leading-[1.1] tracking-tight text-white">
+                      <h2 className="text-2xl md:text-4xl font-extrabold mb-8 leading-[1.1] tracking-tight text-white drop-shadow-[0_0_2px_black]">
                         {slide.title}
                       </h2>
 
