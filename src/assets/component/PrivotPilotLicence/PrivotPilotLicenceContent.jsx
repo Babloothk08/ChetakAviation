@@ -18,7 +18,7 @@ function PrivotPilotLicenceContent() {
               Private Pilot Licence (PPL)
             </span>
 
-            <h1 className="mt-4 text-4xl md:text-5xl xl:text-6xl font-extrabold text-gray-400 leading-tight">
+            <h1 className="mt-4 text-4xl md:text-4xl xl:text-5xl font-extrabold text-gray-400 leading-tight">
               Fly for <span className="text-blue-700">Passion.</span>
               <br /> Learn with <span className="text-blue-700">Precision.</span>
             </h1>

@@ -19,9 +19,7 @@ function VideoComponent() {
       <div className="relative z-10 flex items-center justify-center h-full px-6 pt-45 text-center">
         <div className="max-w-4xl text-white">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            <span className="text-blue-600 drop-shadow-[0_0_2px_black]">Professional </span> <span className="font-bold text-blue-600 drop-shadow-[0_0_2px_black]">
-            Pilot Training</span>{" "}
-            <span className="text-blue-600 drop-shadow-[0_0_2px_black]">At Chetak </span><span className="font-bold text-blue-600 drop-shadow-[0_0_2px_black]">Aviation</span>
+            <span className="text-blue-700 ">Professional Pilot Training At Chetak Aviation</span> 
           </h1>
 
 
