@@ -1,9 +1,62 @@
-import React from "react";
-import WhyChetakAviation from "/aboutUsPage/Why-Choose-Chetak-Aviation.jpg"
+import React, { useEffect, useRef } from "react";
+import WhyChetakAviation from "/aboutUsPage/Why-Choose-Chetak-Aviation.jpg";
+import { FiPhoneCall, FiUsers, FiClock, FiStar, FiAward } from "react-icons/fi";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 function WhyChooseChetakAviation() {
+  const sectionRef = useRef(null);
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+
+      // Image animation
+      gsap.from(".image-box", {
+        x: -100,
+        opacity: 0,
+        duration: 1.2,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: "top 75%",
+        },
+      });
+
+      // Stats cards stagger animation
+      gsap.from(".stat-card", {
+        y: 80,
+        opacity: 0,
+        duration: 1,
+        stagger: 0.2,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: "top 70%",
+        },
+      });
+
+      // CTA animation
+      gsap.from(".cta-box", {
+        y: 50,
+        opacity: 0,
+        duration: 1,
+        delay: 0.4,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: "top 65%",
+        },
+      });
+
+    }, sectionRef);
+
+    return () => ctx.revert();
+  }, []);
+
   return (
-    <section className="w-full bg-white py-16 md:py-24">
+    <section ref={sectionRef} className="w-full bg-white py-16 md:py-24">
       <div className="max-w-7xl mx-auto px-6 md:px-12">
 
         {/* Heading */}
@@ -17,11 +70,10 @@ function WhyChooseChetakAviation() {
           </p>
         </div>
 
-        {/* Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
 
-          {/* Image Section */}
-          <div className="flex justify-center">
+          {/* LEFT IMAGE */}
+          <div className="flex justify-center image-box">
             <div className="relative w-full max-w-lg h-[520px] md:h-[600px] rounded-[2.5rem] overflow-hidden shadow-2xl group">
 
               <img
@@ -30,64 +82,77 @@ function WhyChooseChetakAviation() {
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
 
-              {/* Blue Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-blue-900/70 via-blue-900/20 to-transparent" />
+            </div>
+          </div>
 
-              {/* Overlay Text */}
-              <div className="absolute bottom-10 left-8 right-8 text-white">
-                <p className="text-xl md:text-2xl font-bold leading-snug">
-                  Your journey to the cockpit begins with the right foundation.
+          {/* RIGHT SIDE */}
+          <div className="flex flex-col gap-10">
+
+            {/* Stats Grid */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+
+              <div className="stat-card bg-slate-500 p-8 rounded-3xl shadow-xl">
+                <FiUsers className="text-white text-3xl mb-4" />
+                <h2 className="text-4xl font-black text-white">5,000+</h2>
+                <p className="text-slate-200 text-xs uppercase tracking-widest">
+                  Trained Students
                 </p>
-                <div className="mt-3 h-[2px] w-16 bg-blue-500" />
-                <p className="text-sm md:text-base mt-3 text-white/90">
-                  We prepare you not just to fly — but to fly professionally.
+              </div>
+
+              <div className="stat-card bg-gradient-to-br from-blue-600 to-blue-800 p-8 rounded-3xl shadow-xl text-white">
+                <FiAward className="text-3xl mb-4" />
+                <h2 className="text-4xl font-black">15+</h2>
+                <p className="text-xs uppercase tracking-widest">
+                  Years Experience
+                </p>
+              </div>
+
+              <div className="stat-card bg-white p-8 rounded-3xl shadow-xl">
+                <FiClock className="text-blue-600 text-3xl mb-4" />
+                <h2 className="text-4xl font-black text-slate-800">24/7</h2>
+                <p className="text-xs uppercase tracking-widest text-slate-400">
+                  Student Support
+                </p>
+              </div>
+
+              <div className="stat-card bg-slate-50 p-8 rounded-3xl shadow-xl">
+                <FiStar className="text-blue-600 text-3xl mb-4" />
+                <h2 className="text-4xl font-black text-slate-700">98%</h2>
+                <p className="text-xs uppercase tracking-widest text-slate-400">
+                  Success Rate
                 </p>
               </div>
 
             </div>
-          </div>
 
-          {/* Text Section */}
-          <div>
-            <h3 className="text-2xl md:text-4xl font-bold text-blue-800 mb-8">
-              Why Choose Chetak Aviation
-            </h3>
+            {/* CTA */}
+            <div className="cta-box bg-blue-50 border border-blue-100 rounded-3xl p-6 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-lg">
 
-            <p className="text-black/70 mb-8 leading-relaxed">
-              Choosing the right aviation academy is one of the most important
-              decisions in a pilot’s career. At Chetak Aviation, we provide a
-              structured, disciplined, and student-focused learning environment
-              that prepares aspiring pilots for the real demands of professional
-              aviation.
-            </p>
+              <a
+                href="tel:+18667603566"
+                className="px-10 py-4 bg-blue-600 hover:bg-blue-800 text-white font-bold uppercase text-xs rounded-full transition-all duration-300 hover:shadow-2xl"
+              >
+                Contact Chetak Aviation
+              </a>
 
-            {/* Features */}
-            <div className="space-y-5">
-              {[
-                "Experienced Aviation Instructors guiding students with clarity and real-world insight",
-                "DGCA-Oriented Ground Training aligned with current aviation standards",
-                "Concept-Based Learning for long-term understanding, not rote memorization",
-                "Student-Focused Approach with personal attention and small batches",
-                "Professional Aviation Culture that builds responsibility and confidence",
-                "Clear Career Guidance for a structured pilot training pathway",
-              ].map((item, index) => (
-                <div
-                  key={index}
-                  className="relative "
-                >
-                  <p className="text-black/80 leading-relaxed">
-                    {item}
+              <div className="flex items-center gap-4">
+                <div className="bg-white p-4 rounded-full shadow-md">
+                  <FiPhoneCall className="text-blue-600 text-xl" />
+                </div>
+                <div>
+                  <p className=" text-center text-xs uppercase text-slate-500 font-semibold">
+                    Quick Connect
+                  </p>
+                  <p className="font-black text-slate-900">
+                    +1 866 760 3566
                   </p>
                 </div>
-              ))}
+              </div>
+
             </div>
 
-            {/* Footer Line */}
-            <p className="mt-10 text-blue-700 font-semibold italic text-lg">
-              ✈️ Train with purpose. Learn with discipline. Fly with confidence.
-            </p>
           </div>
-
         </div>
       </div>
     </section>

@@ -20,15 +20,15 @@ function QuestionsComponent() {
 
   return (
     <div data-aos="fade-up" className='min-h-50% max-w-6xl mx-auto px-6 pb-10 text-white'>
-      <h1 className='pb-10 text-4xl font-black tracking-tight text-center md:text-left'>
-        <span className="text-blue-500 text-center">Frequently Asked Questions (FAQ)</span>
-      </h1>
+      <h1 className='text-4xl md:text-5xl text-center pb-5 font-black text-blue-600 tracking-tighter uppercase leading-tight'>
+            Frequently Asked <span className="text-slate-500 italic">Questions</span> (FAQ)
+          </h1>
 
       <div className='grid md:grid-cols-2 grid-cols-1 gap-6'>
         {faqs.map((faq, index) => (
           <div 
             key={index} 
-            className="bg-slate-900/50 border border-white/10 rounded-2xl p-6 h-fit cursor-pointer hover:border-blue-500/50 transition-colors"
+            className="bg-slate-800/50 border border-white/10 rounded-2xl p-6 h-fit cursor-pointer hover:border-blue-500/50 transition-colors"
             onClick={() => toggleQuestion(index)}
           >
             <div className="flex justify-between items-center gap-4">
