@@ -17,13 +17,10 @@ function Navbar() {
 
   return (
     <nav className="fixed top-0 left-0 w-full z-50">
-
       {/* WIDTH CONTROLLER */}
       <div
         className={`transition-all duration-500 ease-in-out ${
-          isScrolled
-            ? "w-full mt-0"
-            : "w-[95%] max-w-7xl mx-auto mt-6"
+          isScrolled ? "w-full mt-0" : "w-[95%] max-w-7xl mx-auto mt-6"
         }`}
       >
         {/* NAVBAR BODY */}
@@ -35,7 +32,6 @@ function Navbar() {
           }`}
         >
           <div className="flex justify-between items-center h-20 px-6">
-
             {/* LOGO */}
             <Link to="/" className="flex items-center">
               <img
@@ -47,11 +43,11 @@ function Navbar() {
 
             {/* DESKTOP MENU */}
             <ul className="hidden md:flex gap-10 text-white font-medium items-center">
-
               <Link to="/">
-                <li className="hover:text-blue-300 transition drop-shadow-[0_0_2px_black]">HOME</li>
+                <li className="hover:text-blue-300 transition drop-shadow-[0_0_2px_black]">
+                  HOME
+                </li>
               </Link>
-
               {/* COURSES DROPDOWN */}
               <div
                 className="relative"
@@ -63,25 +59,28 @@ function Navbar() {
                 </button>
 
                 {dropdownOpen && (
-                  <div className="absolute top-8 left-0 w-56 pt-3">
+                  <div className="absolute left-0 top-full mt-0 w-56">
                     <div className="bg-white text-blue-800 rounded-2xl shadow-lg overflow-hidden">
                       <Link to="/flightInstructorCourse">
-                        <div className="p-3 hover:bg-blue-800 hover:text-white transition">
+                        <div className="p-3 hover:bg-blue-800 hover:text-white transition cursor-pointer">
                           Flight Instructor Course
                         </div>
                       </Link>
+
                       <Link to="/PrivatePilotLicence">
-                        <div className="p-3 hover:bg-blue-800 hover:text-white transition">
+                        <div className="p-3 hover:bg-blue-800 hover:text-white transition cursor-pointer">
                           Private Pilot License
                         </div>
                       </Link>
+
                       <Link to="/ConversionFlying">
-                        <div className="p-3 hover:bg-blue-800 hover:text-white transition">
+                        <div className="p-3 hover:bg-blue-800 hover:text-white transition cursor-pointer">
                           Conversion Flying
                         </div>
                       </Link>
+
                       <Link to="/commercialPilotLicence">
-                        <div className="p-3 hover:bg-blue-800 hover:text-white transition">
+                        <div className="p-3 hover:bg-blue-800 hover:text-white transition cursor-pointer">
                           Commercial Pilot License
                         </div>
                       </Link>
@@ -91,21 +90,28 @@ function Navbar() {
               </div>
 
               <Link to="/about">
-                <li className="hover:text-blue-300 transition drop-shadow-[0_0_2px_black]">ABOUT US</li>
+                <li className="hover:text-blue-300 transition drop-shadow-[0_0_2px_black]">
+                  ABOUT US
+                </li>
               </Link>
 
               <Link to="/contact">
-                <li className="hover:text-blue-300 transition drop-shadow-[0_0_2px_black]">CONTACT US</li>
+                <li className="hover:text-blue-300 transition drop-shadow-[0_0_2px_black]">
+                  CONTACT US
+                </li>
               </Link>
 
               <Link to="/career">
-                <li className="hover:text-blue-300 transition drop-shadow-[0_0_2px_black]">CAREER</li>
+                <li className="hover:text-blue-300 transition drop-shadow-[0_0_2px_black]">
+                  CAREER
+                </li>
               </Link>
 
               <Link to="/brochure">
-                <li className="hover:text-blue-300 transition drop-shadow-[0_0_2px_black]">BROCHURE</li>
+                <li className="hover:text-blue-300 transition drop-shadow-[0_0_2px_black]">
+                  BROCHURE
+                </li>
               </Link>
-
             </ul>
 
             {/* ENROLL BUTTON */}
@@ -124,7 +130,6 @@ function Navbar() {
                 {mobileOpen ? <FiX size={26} /> : <FiMenu size={26} />}
               </button>
             </div>
-
           </div>
         </div>
       </div>
@@ -136,7 +141,10 @@ function Navbar() {
             <div className="border-b border-white/20 pb-2">Home</div>
           </Link>
 
-          <Link to="/flightInstructorCourse" onClick={() => setMobileOpen(false)}>
+          <Link
+            to="/flightInstructorCourse"
+            onClick={() => setMobileOpen(false)}
+          >
             <div className="border-b border-white/20 pb-2">
               Flight Instructor Course
             </div>
@@ -154,7 +162,10 @@ function Navbar() {
             </div>
           </Link>
 
-          <Link to="/commercialPilotLicence" onClick={() => setMobileOpen(false)}>
+          <Link
+            to="/commercialPilotLicence"
+            onClick={() => setMobileOpen(false)}
+          >
             <div className="border-b border-white/20 pb-2">
               Commercial Pilot License
             </div>
@@ -177,7 +188,6 @@ function Navbar() {
           </Link>
         </div>
       )}
-
     </nav>
   );
 }

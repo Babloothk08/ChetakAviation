@@ -50,14 +50,7 @@ const ImageZoomForAboutComponent = () => {
       {/* Branding Overlay */}
       <div className="absolute z-100 inset-0 flex items-center justify-center text-center pointer-events-none px-4">
         <div className="w-full max-w-7xl">
-          <div className="flex flex-col items-center">
-            <h1 className="text-white text-2xl md:text-9xl font-black tracking-[-0.02em] leading-none uppercase select-none drop-shadow-2xl">
-              Chetak
-            </h1>
-            <h1 className="text-white text-xl md:text-3xl  tracking-[0.4em] md:tracking-[0.8em] mt-2 md:mt-4 opacity-80 uppercase select-none pl-7">
-              Aviation
-            </h1>
-          </div>
+          
 
           <div className="w-12 md:w-24 h-1px bg-white/40 mx-auto my-8 md:my-16" />
           
