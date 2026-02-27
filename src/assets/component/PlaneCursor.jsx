@@ -30,3 +30,14 @@
 // }
 
 // export default PlaneCursor;
+import React from 'react'
+
+function PlaneCursor() {
+  return (
+    <div>
+      
+    </div>
+  )
+}
+
+export default PlaneCursor
