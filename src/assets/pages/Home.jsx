@@ -7,6 +7,8 @@ import QuestionsComponent from '../component/QuestionsComponent'
 import TestimonialComponent from '../component/TestimonialComponent'
 import AboutComponent from '../component/About/AboutComponent'
 import { useEffect } from 'react'
+import ServicesComponent from '../component/ServicesComponent'
+import FooterUpSlider from '../component/FooterUpSlider'
 // import GsapNewFile from '../component/GsapNewFile'
 
 function Home() {
@@ -21,7 +23,9 @@ function Home() {
       <LatestAnnouncement/>
       <EnquirySliderComponent/>
       <TestimonialComponent/>
+      <ServicesComponent/>
       <QuestionsComponent/>
+      <FooterUpSlider/>
       {/* <GsapNewFile/> */}
     </div>
   )

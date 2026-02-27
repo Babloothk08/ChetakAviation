@@ -3,7 +3,7 @@ import ImageZoomForAboutComponent from '../component/ImageZoomForAboutComponent'
 
 function About() {
   return (
-    <div>
+    <div className=''>
       <ImageZoomForAboutComponent/> 
     </div>
   )
