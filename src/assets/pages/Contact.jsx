@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
 import ContactData from '../component/contact/ContactData'
-import ContactBanner from "/public/contact/Contect_us_Banner.jpg"
+import ContactBanner from "/contact/contact-us-banner-chetak.jpg.jpeg"
 
 function Contact() {
   useEffect(() => {

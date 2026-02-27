@@ -16,20 +16,14 @@ function Navbar() {
   }, []);
 
   return (
-    <nav className="fixed top-0 left-0 w-full z-50">
+    <nav className="sticky top-0 left-0 w-full z-50">
       {/* WIDTH CONTROLLER */}
       <div
-        className={`transition-all duration-500 ease-in-out ${
-          isScrolled ? "w-full mt-0" : "w-[95%] max-w-7xl mx-auto mt-6"
-        }`}
+        
       >
         {/* NAVBAR BODY */}
         <div
-          className={`transition-all duration-500 backdrop-blur-md bg-gradient-to-r from-blue-700/90 via-gray-600/90 to-blue-700/90 shadow-lg ${
-            isScrolled
-              ? "rounded-none border-b border-white/30"
-              : "rounded-3xl border border-white/40"
-          }`}
+          className={`transition-all duration-500 backdrop-blur-md bg-gradient-to-r from-blue-700/90 via-gray-600/90 to-blue-700/90 shadow-lg `}
         >
           <div className="flex justify-between items-center h-20 px-6">
             {/* LOGO */}
@@ -101,7 +95,7 @@ function Navbar() {
                 </li>
               </Link>
 
-              <Link to="/career">
+              <Link to="/career-page">
                 <li className="hover:text-blue-300 transition drop-shadow-[0_0_2px_black]">
                   CAREER
                 </li>

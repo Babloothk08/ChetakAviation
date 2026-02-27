@@ -14,6 +14,8 @@ import WatsAppIcon from "./assets/component/WatsAppIcon";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import Career from "./assets/pages/Career";
+import BrochureComponent from "./assets/component/BrochureComponent";
 // import PlaneCursor from "./assets/component/PlaneCursor";
 
 
@@ -52,6 +54,8 @@ function App() {
             path="/PrivatePilotLicence"
             element={<PrivatePilotLicence />}
           />
+          <Route path="/career-page" element={<Career/>}/>
+          <Route path="/brochure" element={<BrochureComponent/>}/>
         </Routes>
         <WatsAppIcon/>
       </BrowserRouter>
