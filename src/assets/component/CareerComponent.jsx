@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import CareerPage from "/careerPage/career-banner-chetak.jpg.jpeg"
+import CareerPage from "/careerPage/Carrer-banner.jpg.jpeg"
 
 function CareerComponent() {
   useEffect(() => {
@@ -7,7 +7,7 @@ function CareerComponent() {
     });
     return (
       <div
-        className="h-[640px] w-full bg-cover bg-center bg-no-repeat"
+        className="min-h-screen w-full bg-cover bg-center bg-no-repeat"
         style={{
           backgroundImage: `url(${CareerPage})`,
         }}
