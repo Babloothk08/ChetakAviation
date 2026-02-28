@@ -33,20 +33,20 @@ function Footer() {
           <div>
             <h3 className="text-lg font-bold mb-6 text-blue-400 uppercase tracking-widest">Quick Links</h3>
             <ul className="space-y-4 text-gray-400">
-              <li><a href="#" className="hover:text-white hover:translate-x-2 transition-all inline-block">About Academy</a></li>
-              <li><a href="#" className="hover:text-white hover:translate-x-2 transition-all inline-block">Our Instructors</a></li>
-              <li><a href="#" className="hover:text-white hover:translate-x-2 transition-all inline-block">Photo Gallery</a></li>
-              <li><a href="#" className="hover:text-white hover:translate-x-2 transition-all inline-block">Latest News</a></li>
+              <li><a href="about" className="hover:text-white hover:translate-x-2 transition-all inline-block">About Academy</a></li>
+              <li><a href="courses" className="hover:text-white hover:translate-x-2 transition-all inline-block">Course</a></li>
+              <li><a href="contact" className="hover:text-white hover:translate-x-2 transition-all inline-block">Contact</a></li>
+              <li><a href="career-page" className="hover:text-white hover:translate-x-2 transition-all inline-block">Career</a></li>
             </ul>
           </div>
 
           <div>
             <h3 className="text-lg font-bold mb-6 text-blue-400 uppercase tracking-widest">Training</h3>
             <ul className="space-y-4 text-gray-400">
-              <li><a href="#" className="hover:text-white hover:translate-x-2 transition-all inline-block">CPL Program</a></li>
-              <li><a href="#" className="hover:text-white hover:translate-x-2 transition-all inline-block">PPL License</a></li>
-              <li><a href="#" className="hover:text-white hover:translate-x-2 transition-all inline-block">Simulator Sessions</a></li>
-              <li><a href="#" className="hover:text-white hover:translate-x-2 transition-all inline-block">Ground School</a></li>
+              <li><a href="CommercialPilotLicence" className="hover:text-white hover:translate-x-2 transition-all inline-block">CPL Program</a></li>
+              <li><a href="PrivatePilotLicence" className="hover:text-white hover:translate-x-2 transition-all inline-block">PPL License</a></li>
+              <li><a href="ConversionFlying" className="hover:text-white hover:translate-x-2 transition-all inline-block">Conversion Flying</a></li>
+              <li><a href="flightInstructorCourse" className="hover:text-white hover:translate-x-2 transition-all inline-block">Flight Instructor Course</a></li>
             </ul>
           </div>
 
@@ -74,8 +74,8 @@ function Footer() {
           <p>© 2026 Chetak Aviation Academy. All Rights Reserved.</p>
           <div className="flex gap-8">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
+            <a href="#" className="hover:text-white transition-colors">Return Policy Policy</a>
             <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
-            <a href="#" className="hover:text-white transition-colors">Sitemap</a>
           </div>
         </div>
 
@@ -85,3 +85,5 @@ function Footer() {
 }
 
 export default Footer;
+
+

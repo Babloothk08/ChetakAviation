@@ -1,74 +1,88 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 function CommercialPilotCourseOverview() {
+  const sectionRef = useRef(null);
+  const cardRef = useRef(null);
+
+  useEffect(() => {
+    gsap.fromTo(
+      cardRef.current,
+      { opacity: 0, y: 80, scale: 0.95 },
+      {
+        opacity: 1,
+        y: 0,
+        scale: 1,
+        duration: 1.2,
+        ease: "power4.out",
+        scrollTrigger: {
+          trigger: sectionRef.current,
+          start: "top 75%",
+        },
+      }
+    );
+  }, []);
+
   return (
-    <section data-aos="fade-up" className="w-full bg-gray-200 py-10 md:py-10">
-      <div className="max-w-7xl mx-auto px-6 md:px-12">
-        <div className="">
-          <h1 className="text-blue-700 text-center rounded-full text-2xl md:text-4xl shadow-xl font-semibold">Course Overview</h1>
-        </div>
+    <section
+      ref={sectionRef}
+      className="relative py-10 bg-gradient-to-br from-slate-100 via-white to-blue-50 overflow-hidden"
+    >
+      <div className="max-w-7xl mx-auto px-6">
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div
+          ref={cardRef}
+          className="relative backdrop-blur-xl bg-white/70 border border-slate-200 shadow-2xl rounded-[3rem] overflow-hidden"
+        >
+          <div className="grid lg:grid-cols-2 items-center">
 
-          {/* RIGHT — VISUAL BLOCK */}
-          <div className="relative flex justify-center">
-
-            <div className="relative w-full max-w-md md:max-w-lg pt-15">
-
-              {/* Soft Background Shape */}
-              <div className="absolute -top-10 -right-10 w-72 h-72 bg-blue-100 rounded-full blur-3xl opacity-70" />
-
-              <div className="relative bg-white rounded-[2.5rem] shadow-2xl border overflow-hidden ">
-
-                <div className="w-full h-full hover:scale-105 cursor-pointer hover:duration-1000 hover:ease-in-out hover:transition-transform">
-                  <img
-                  src="/course/commercialPilotLicence/Course-in-all-Page(Course-Overview)-3.jpg.jpeg"
-                  alt="Commercial Pilot Licence Training"
-                  className="w-full h-[380px] md:h-[450px]  object-cover"
-                />
-                </div>
-
-                {/* Bottom Info Bar */}
-                <div className="absolute bottom-0 inset-x-0 bg-white/95 backdrop-blur-md p-6 border-t">
-                  <p className="text-blue-800 font-bold text-lg">
-                    Professional Pilot Development Program
-                  </p>
-                  <p className="text-slate-600 font-semibold text-sm mt-1">
-                    Industry-ready training with DGCA-aligned standards
-                  </p>
-                </div>
-
-              </div>
+            {/* LEFT IMAGE SIDE */}
+            <div className="relative h-[450px] lg:h-full">
+              <img
+                src="/course/commercialPilotLicence/Course-in-all-Page(Course-Overview)-3.jpg.jpeg"
+                alt="Commercial Pilot Training"
+                className="w-full h-full object-cover"
+              />
             </div>
+
+            {/* RIGHT CONTENT SIDE */}
+            <div className="p-12">
+
+              <h1 className="text-4xl md:text-5xl font-extrabold text-slate-800 leading-tight">
+                Commercial Pilot
+                <span className="block text-blue-600 mt-2">
+                  Course Overview
+                </span>
+              </h1>
+
+              <div className="w-20 h-1 bg-blue-600 mt-6 rounded-full"></div>
+
+              <p className="mt-6 text-slate-600 text-lg leading-relaxed">
+                Our CPL program builds technical expertise, aviation
+                discipline, and operational awareness aligned with DGCA
+                standards.
+              </p>
+
+              <p className="mt-6 text-slate-600 text-lg leading-relaxed">
+                Structured ground training and extensive flying exposure
+                prepare students to become confident, industry-ready pilots.
+              </p>
+
+              <button className="mt-8 px-8 py-4 bg-blue-600 text-white rounded-xl font-semibold shadow-lg hover:bg-blue-700 transition-all duration-300">
+                Explore Program
+              </button>
+
+            </div>
+
           </div>
-
-          {/* LEFT — TEXT CONTENT */}
-          <div>
-
-            <h2 className="mt-8 text-3xl md:text-4xl xl:text-5xl font-extrabold text-gray-400 leading-tight">
-              Building Professional Excellence Through
-              <span className="text-blue-700"> Commercial Pilot Training</span>
-            </h2>
-
-            <p className="mt-5 text-slate-600 text-lg leading-relaxed max-w-xl">
-              The CPL program focuses on developing technical proficiency,
-              decision-making skills, and professional aviation discipline.
-              At Chetak Aviation, we prepare students with DGCA-oriented ground
-              training, a clear understanding of aviation regulations, and
-              real-world operational awareness required for commercial flying.
-            </p>
-
-            <p className="mt-6 text-slate-600 text-lg leading-relaxed max-w-xl">
-              Our approach ensures students are not only exam-ready
-            </p>
-
-          </div>
-
         </div>
+
       </div>
     </section>
   );
 }
 
 export default CommercialPilotCourseOverview;
-

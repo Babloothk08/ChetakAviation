@@ -9,6 +9,7 @@ import AboutComponent from '../component/About/AboutComponent'
 import { useEffect } from 'react'
 import ServicesComponent from '../component/ServicesComponent'
 import FooterUpSlider from '../component/FooterUpSlider'
+import VideoComponent2 from '../component/VideoComponent2'
 // import GsapNewFile from '../component/GsapNewFile'
 
 function Home() {
@@ -24,6 +25,7 @@ function Home() {
       <EnquirySliderComponent/>
       <TestimonialComponent/>
       <ServicesComponent/>
+      <VideoComponent2/>
       <QuestionsComponent/>
       <FooterUpSlider/>
       {/* <GsapNewFile/> */}
