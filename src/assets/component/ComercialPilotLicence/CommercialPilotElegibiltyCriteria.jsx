@@ -66,11 +66,11 @@ function CommercialPilotElegibiltyCriteria() {
               <div className="absolute -bottom-10 -left-10 w-72 h-72 bg-blue-100 rounded-full blur-3xl opacity-70" />
 
               <div className="relative h-full w-full hover:scale-105 hover:transition-transform cursor-pointer  ">
-                <div className="h-full w-full rounded-full overflow-hidden">
+                <div className="h-full w-full rounded-2xl overflow-hidden">
                   <img
-                  src="/course/commercialPilotLicence/Eligibility_Criteria_for_Commercial_Pilot_Licence.jpg"
+                  src="/course/commercialPilotLicence/EligibilityCriteriaforCommercialPilotLicence.jpg.jpeg"
                   alt="CPL Eligibility"
-                  className="w-[515px] h-[510px] object-cover"
+                  className="w-full h-full object-cover"
                 />
                 </div>
 

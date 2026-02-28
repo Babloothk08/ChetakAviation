@@ -50,9 +50,9 @@ function PrivotPilotLicenceContent() {
               <div className="relative overflow-hidden rounded-[2.5rem] shadow-2xl border border-blue-200">
 
                 <img
-                  src="/course/privatePilotLicence/Fly_for_Passion_Learn_with_Precision.jpg"
+                  src="/course/privatePilotLicence/510px520pxPrivatePilotLicence(PPL)FlyforPassion.LearnwithPrecision.jpg.jpeg"
                   alt="Private Pilot Licence Training"
-                  className="w-full h-[420px] md:h-[520px] object-cover"
+                  className="w-full h-full object-cover"
                 />
 
                 {/* Floating Badge */}

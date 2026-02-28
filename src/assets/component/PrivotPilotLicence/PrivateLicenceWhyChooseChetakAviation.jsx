@@ -126,9 +126,9 @@ function PrivateLicenceWhyChooseChetakAviation() {
           <div>
             <img
               ref={imageRef}
-              src="/course/courseSuperSlider/Course-Page(Course-Slider)-1.jpg.jpeg"
+              src="/public/course/privatePilotLicence/300px550pxWhyChooseChetakAviationforPPL-Training.jpg.jpeg"
               alt="Flight Instructor Training"
-              className="rounded-2xl h-[300px] w-full object-cover shadow-2xl"
+              className="rounded-2xl h-full w-full object-cover shadow-2xl"
             />
           </div>
 

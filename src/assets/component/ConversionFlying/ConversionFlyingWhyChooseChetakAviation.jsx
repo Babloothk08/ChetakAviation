@@ -126,9 +126,9 @@ function ConversionFlyingWhyChooseChetakAviation() {
           <div>
             <img
               ref={imageRef}
-              src="/course/courseSuperSlider/Course-Page(Course-Slider)-1.jpg.jpeg"
+              src="/course/conversionFlying/300px550pxWhyChooseChetakAviationforConversionFlying.jpg.jpeg"
               alt="Flight Instructor Training"
-              className="rounded-2xl h-[300px] w-full object-cover shadow-2xl"
+              className="rounded-2xl h-full w-full object-cover shadow-2xl"
             />
           </div>
 

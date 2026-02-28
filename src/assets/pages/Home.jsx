@@ -16,7 +16,7 @@ function Home() {
       window.scroll(0, 0);
     });
   return (
-    <div className='bg-yellow-50 shadow-2xl'>
+    <div className='bg-gray-200 shadow-2xl'>
       {/* <Navbar/> */}
       <VideoComponent/>
       <AboutComponent/>

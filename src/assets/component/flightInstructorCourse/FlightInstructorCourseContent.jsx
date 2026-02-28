@@ -53,9 +53,9 @@ function FlightInstructorCourseContent() {
               <div className="relative overflow-hidden rounded-[2.5rem] shadow-2xl border border-blue-200">
 
                 <img
-                  src="/course/flightInstructorCourse/Course-in-all-Page(Course-Overview)-2.jpg.jpeg"
+                  src="/course/flightInstructorCourse/510px520pxFlightInstructorCourse(FIC)BecomeaCertifiedFlightInstructor.jpg.jpeg"
                   alt="Flight Instructor Training"
-                  className="w-full h-[420px] md:h-[520px] object-cover"
+                  className="w-full h-full object-cover"
                 />
 
                 {/* Glass Overlay Badge */}

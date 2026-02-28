@@ -40,7 +40,7 @@ function PrivotLicenceEligibilityCriteria() {
                   key={index}
                   className="flex items-start gap-5 bg-white p-3 rounded-xl border shadow-sm"
                 >
-                  <div className="w-12 h-12 flex items-center justify-center rounded-full bg-blue-600 text-white font-extrabold text-lg shrink-0">
+                  <div className="w-12 h-14 flex items-center justify-center rounded-full bg-blue-600 text-white font-extrabold text-lg shrink-0">
                     ✓
                   </div>
                   <p className="text-gray-700 text-lg leading-relaxed font-medium">
@@ -70,9 +70,9 @@ function PrivotLicenceEligibilityCriteria() {
               <div className="relative bg-white rounded-[2.5rem] shadow-2xl border overflow-hidden ">
 
                 <img
-                  src="/course/privatePilotLicence/Eligibility_Criteria_for_Private_Pilot_Licence_(PPL).jpg"
+                  src="/course/privatePilotLicence/EligibilityCriteriaforFlightInstructorCourse.jpg.jpeg"
                   alt="Private Pilot Training Standards"
-                  className="w-full h-[380px] md:h-[480px] object-cover"
+                  className="w-[515px] h-[380px] md:h-[510px] object-cover"
                 />
 
                 {/* Soft Overlay */}
