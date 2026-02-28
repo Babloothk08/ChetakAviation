@@ -53,7 +53,7 @@ function CommercialPilotLicenceContent() {
                 <img
                   src="/course/commercialPilotLicence/Turn_Your_Passion_for_Flying-into_a_Professional_Career(FINAL).jpg"
                   alt="Commercial Pilot Licence Training"
-                  className="w-full h-[420px] md:h-[520px] object-cover"
+                  className="w-[510px] h-[420px] md:h-[520px] object-cover"
                 />
 
                 {/* Glass Overlay Badge */}
