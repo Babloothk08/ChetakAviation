@@ -24,12 +24,12 @@ const aviationServices = [
   {
     title: "Ground School Programs",
     desc: "Comprehensive ground classes covering Air Navigation and Meteorology.",
-    Image: "/public/course/conversionFlying/300px550pxWhyChooseChetakAviationforConversionFlying.jpg.jpeg",
+    Image: "/course/conversionFlying/300px550pxWhyChooseChetakAviationforConversionFlying.jpg.jpeg",
   },
   {
     title: "DGCA Exam Preparation",
     desc: "The Conversion Flying program at Chetak Aviation is designed for licensed pilots who need to transition to a different aircraft type or convert their foreign pilot licence to DGCA standards.",
-    Image: "/public/course/privatePilotLicence/EligibilityCriteriaforFlightInstructorCourse.jpg.jpeg",
+    Image: "/course/privatePilotLicence/EligibilityCriteriaforFlightInstructorCourse.jpg.jpeg",
   },
 ];
 
