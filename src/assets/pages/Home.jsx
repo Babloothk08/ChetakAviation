@@ -10,6 +10,7 @@ import { useEffect } from 'react'
 import ServicesComponent from '../component/ServicesComponent'
 import FooterUpSlider from '../component/FooterUpSlider'
 import VideoComponent2 from '../component/VideoComponent2'
+import AeroplaneMovingPng from '../component/AeroplaneMovingPng'
 // import GsapNewFile from '../component/GsapNewFile'
 
 function Home() {
@@ -23,6 +24,7 @@ function Home() {
       <AboutComponent/>
       <LatestAnnouncement/>
       <EnquirySliderComponent/>
+      <AeroplaneMovingPng/>
       <TestimonialComponent/>
       <ServicesComponent/>
       <VideoComponent2/>
