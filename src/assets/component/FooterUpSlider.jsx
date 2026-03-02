@@ -49,7 +49,7 @@ function FooterUpSlider() {
   };
 
   return (
-    <div className="w-full bg-blue-600 py-6 border-y border-white/10 shadow-2xl overflow-hidden">
+    <div className="w-full bg-blue-600 py-3 border-y border-white/10 shadow-2xl overflow-hidden">
       <div className="max-w-[100vw]">
         <Slider {...settings} className="footer-slider">
           {features.map((item, index) => (
