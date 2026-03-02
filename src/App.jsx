@@ -49,9 +49,9 @@ function App() {
             path="/commercialPilotLicence"
             element={<CommercialPilotLicence />}
           />
-          <Route path="/ConversionFlying" element={<ConversionFlying />} />
+          <Route path="/conversionFlying" element={<ConversionFlying />} />
           <Route
-            path="/PrivatePilotLicence"
+            path="/privatePilotLicence"
             element={<PrivatePilotLicence />}
           />
           <Route path="/career-page" element={<Career/>}/>

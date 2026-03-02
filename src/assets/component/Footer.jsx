@@ -33,20 +33,20 @@ function Footer() {
           <div>
             <h3 className="text-lg font-bold mb-6 text-blue-400 uppercase tracking-widest">Quick Links</h3>
             <ul className="space-y-4 text-gray-400">
-              <li><a href="about" className="hover:text-white hover:translate-x-2 transition-all inline-block">About Academy</a></li>
-              <li><a href="courses" className="hover:text-white hover:translate-x-2 transition-all inline-block">Course</a></li>
-              <li><a href="contact" className="hover:text-white hover:translate-x-2 transition-all inline-block">Contact</a></li>
-              <li><a href="career-page" className="hover:text-white hover:translate-x-2 transition-all inline-block">Career</a></li>
+              <li><a href="/about" className="hover:text-white hover:translate-x-2 transition-all inline-block">About Academy</a></li>
+              <li><a href="/courses" className="hover:text-white hover:translate-x-2 transition-all inline-block">Course</a></li>
+              <li><a href="/contact" className="hover:text-white hover:translate-x-2 transition-all inline-block">Contact</a></li>
+              <li><a href="/career-page" className="hover:text-white hover:translate-x-2 transition-all inline-block">Career</a></li>
             </ul>
           </div>
 
           <div>
             <h3 className="text-lg font-bold mb-6 text-blue-400 uppercase tracking-widest">Training</h3>
             <ul className="space-y-4 text-gray-400">
-              <li><a href="CommercialPilotLicence" className="hover:text-white hover:translate-x-2 transition-all inline-block">CPL Program</a></li>
-              <li><a href="PrivatePilotLicence" className="hover:text-white hover:translate-x-2 transition-all inline-block">PPL License</a></li>
-              <li><a href="ConversionFlying" className="hover:text-white hover:translate-x-2 transition-all inline-block">Conversion Flying</a></li>
-              <li><a href="flightInstructorCourse" className="hover:text-white hover:translate-x-2 transition-all inline-block">Flight Instructor Course</a></li>
+              <li><a href="/commercialPilotLicence" className="hover:text-white hover:translate-x-2 transition-all inline-block">CPL Program</a></li>
+              <li><a href="/privatePilotLicence" className="hover:text-white hover:translate-x-2 transition-all inline-block">PPL License</a></li>
+              <li><a href="/conversionFlying" className="hover:text-white hover:translate-x-2 transition-all inline-block">Conversion Flying</a></li>
+              <li><a href="/flightInstructorCourse" className="hover:text-white hover:translate-x-2 transition-all inline-block">Flight Instructor Course</a></li>
             </ul>
           </div>
 
