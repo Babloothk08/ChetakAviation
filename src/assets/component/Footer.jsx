@@ -1,6 +1,5 @@
 import React from 'react';
 import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin, FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa'; // Install: npm install react-icons
-import { Link } from 'react-router-dom';
 
 function Footer() {
   return (
@@ -24,8 +23,7 @@ function Footer() {
               skies begins with professional excellence.
             </p>
             <div className="flex gap-4">
-              <Link to="https://www.facebook.com/" className='w-10 h-10 flex items-center justify-center rounded-full bg-white/5 hover:bg-blue-600 transition-colors border border-white/10'><FaFacebook /></Link>
-              <a href="https://www.facebook.com/" className="w-10 h-10 flex items-center justify-center rounded-full bg-white/5 hover:bg-blue-600 transition-colors border border-white/10"></a>
+              <a href="https://www.facebook.com/" className="w-10 h-10 flex items-center justify-center rounded-full bg-white/5 hover:bg-blue-600 transition-colors border border-white/10"><FaFacebook /></a>
               <a href="https://x.com/" className="w-10 h-10 flex items-center justify-center rounded-full bg-white/5 hover:bg-blue-600 transition-colors border border-white/10"><FaTwitter /></a>
               <a href="https://www.instagram.com/" className="w-10 h-10 flex items-center justify-center rounded-full bg-white/5 hover:bg-blue-600 transition-colors border border-white/10"><FaInstagram /></a>
               <a href="https://www.linkedin.com/login" className="w-10 h-10 flex items-center justify-center rounded-full bg-white/5 hover:bg-blue-600 transition-colors border border-white/10"><FaLinkedin /></a>
