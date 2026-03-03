@@ -1,70 +1,99 @@
-import React from 'react';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import { Autoplay, Pagination } from 'swiper/modules';
-
-import 'swiper/css';
-import 'swiper/css/pagination';
+import React, { useEffect, useRef } from "react";
+import gsap from "gsap";
 
 const DATA = [
-  { title: "Aman Sharma", desc: "Commercial Pilot Trainee", para:"Chetak Aviation gave me a strong foundation in aviation theory and discipline. The instructors focus on concept clarity and DGCA requirements, which helped me gain confidence before moving into advanced flight training.",  img: "/HomePageTestimonial/Home-Page(TESTIMONIALS)-Slider 1.jpg.jpeg" },
+  { title: "Aman Sharma", desc: "Commercial Pilot Trainee", para:"Chetak Aviation gave me a strong foundation in aviation theory and discipline.",  img: "/HomePageTestimonial/Home-Page(TESTIMONIALS)-Slider 1.jpg.jpeg" },
 
-  { title: "Rohit Verma", desc: "Aspiring Airline Pilot", para:"The structured teaching approach and personal attention at Chetak Aviation made a huge difference in my learning. Complex subjects were explained clearly, and doubts were always addressed with patience and professionalism.",  img: "/HomePageTestimonial/Home-Page(TESTIMONIALS)-Slider 2.jpg.jpeg" },
+  { title: "Rohit Verma", desc: "Aspiring Airline Pilot", para:"The structured teaching approach and personal attention made learning easier.",  img: "/HomePageTestimonial/Home-Page(TESTIMONIALS)-Slider 2.jpg.jpeg" },
 
-  { title: "Ghanish", desc: "CPL Ground Training Student", para:"What I appreciated most was the professional environment. The instructors don’t just teach for exams—they train you to think like a pilot. This mindset has been extremely valuable in my aviation journey.", img: "/HomePageTestimonial/Home-Page(TESTIMONIALS)-Slider 3.jpg.jpeg" },
+  { title: "Ghanish", desc: "CPL Ground Training Student", para:"Professional environment where instructors train you to think like a pilot.", img: "/HomePageTestimonial/Home-Page(TESTIMONIALS)-Slider 3.jpg.jpeg" },
 
-  { title: "Shashank", desc: "Pilot Training Candidate",  para:"Chetak Aviation helped me understand the realities of pilot training and career progression. The guidance I received was honest, practical, and aligned with DGCA standards.", img: "/HomePageTestimonial/Home-Page(TESTIMONIALS)-Slider 4.jpg.jpeg" },
+  { title: "Shashank", desc: "Pilot Training Candidate",  para:"Honest guidance and practical training aligned with DGCA standards.", img: "/HomePageTestimonial/Home-Page(TESTIMONIALS)-Slider 4.jpg.jpeg" },
 
-  { title: "Rohit Kumar", desc: "Aviation Student", para:"The academy maintains strong discipline and a safety-focused learning culture. It prepared me academically and mentally for the responsibilities that come with professional aviation.", img: "/HomePageTestimonial/Home-Page(TESTIMONIALS)-Slider 5.jpg.jpeg" },
+  { title: "Rohit Kumar", desc: "Aviation Student", para:"Strong discipline and safety-focused learning culture.", img: "/HomePageTestimonial/Home-Page(TESTIMONIALS)-Slider 5.jpg.jpeg" },
 ];
 
-const TestimonialComponent = () => {
+function TestimonialComponent() {
+
+  const sliderRef = useRef(null);
+
+  useEffect(() => {
+
+    const ctx = gsap.context(() => {
+
+      gsap.to(".slider-track", {
+        xPercent: -50,
+        duration: 25,
+        ease: "none",
+        repeat: -1,
+      });
+
+    }, sliderRef);
+
+    return () => ctx.revert();
+
+  }, []);
+
   return (
-    <section data-aos="fade-out" className=" px-[5%] h-[75vh] flex flex-col justify-center overflow-hidden my-20">
+    <section ref={sliderRef} className="px-[5%] overflow-hidden my-20">
+
       <div className="text-center mb-12">
-        <h2 className="text-blue-900 text-4xl md:text-5xl font-black pb-2">CHETAK AVIATION</h2>
-        <h1 className="text-blue-800 text-xl md:text-2xl font-black">TESTIMONIALS</h1>
+        <h2 className="text-blue-900 text-4xl md:text-5xl font-black pb-2">
+          CHETAK AVIATION
+        </h2>
+        <h1 className="text-blue-800 text-xl md:text-2xl font-black">
+          TESTIMONIALS
+        </h1>
       </div>
 
-      <Swiper
-        slidesPerView={1}
-        spaceBetween={25}
-        loop={true}
-        autoplay={{ delay: 2000, disableOnInteraction: false }}
-        breakpoints={{
-          768: { slidesPerView: 2 },
-          1024: { slidesPerView: 3 },
-        }}
-        modules={[Autoplay, Pagination]}
-        className="w-full pb-16 [&_.swiper-pagination-bullet]:bg-white [&_.swiper-pagination-bullet-active]:w-6 [&_.swiper-pagination-bullet-active]:rounded-full"
-      >
-        {DATA.map((item, index) => (
-          <SwiperSlide key={index} className="h-auto ">
-            <div className="group rounded-3xl overflow-hidden cursor-pointer transition-all duration-500 hover:bg-white hover:-translate-y-2 hover:shadow-2xl h-full flex flex-col bg-blue-800">
-              
-              <div className="h-56 relative overflow-hidden ">
-                <img src={item.img} alt={item.title} className="w-[439px] h-[224px] object-cover transition-transform duration-700 group-hover:scale-110" />
-                <div 
-                  className="absolute bottom-0 left-0 w-full h-10 bg-transparent transition-colors group-hover:bg-white" 
-                  style={{ clipPath: 'polygon(0 100%, 100% 100%, 100% 0)' }}
+      <div className="overflow-hidden">
+
+        {/* track */}
+        <div className="slider-track flex gap-6 w-max">
+
+          {[...DATA, ...DATA].map((item, index) => (
+
+            <div
+              key={index}
+              className="w-[380px] bg-blue-800 rounded-3xl overflow-hidden flex-shrink-0"
+            >
+
+              {/* image */}
+              <div className="h-56 overflow-hidden">
+                <img
+                  src={item.img}
+                  alt={item.title}
+                  className="w-full h-full object-cover"
                 />
               </div>
-              
-              <div className="p-8 flex-grow">
-                <h3 className="text-white text-xl font-bold uppercase mb-2 transition-colors group-hover:text-blue-800">{item.title}</h3>
-                <p className="text-blue-100 text-sm leading-relaxed mb-1 transition-colors group-hover:text-blue-900/70">{item.desc}</p>
-                
-                <div className="flex items-center ">
-                  <div className="h-[2px]  transition-all duration-500 group-hover:bg-blue-800 " />
-                  <span className="text-white text-[10px] tracking-widest font-semibold text-2xl transition-colors group-hover:text-blue-800">{item.para}</span>
-                </div>
+
+              {/* text */}
+              <div className="p-4">
+
+                <h3 className="text-white text-xl font-bold uppercase mb-2">
+                  {item.title}
+                </h3>
+
+                <p className="text-blue-100 text-sm mb-3">
+                  {item.desc}
+                </p>
+
+                <p className="text-white text-sm leading-relaxed">
+                  {item.para}
+                </p>
+
               </div>
 
             </div>
-          </SwiperSlide>
-        ))}
-      </Swiper>
+
+          ))}
+
+        </div>
+
+      </div>
+
     </section>
   );
-};
+}
 
 export default TestimonialComponent;
