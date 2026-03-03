@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import ComercialPageBanner from "/course/commercialPilotLicence/CoursesBannerCommercialPilotLicenceCPL.jpeg";
+import ComercialPageBanner from "/course/commercialPilotLicence/CoursesbannerCommercialPilotLicenceCPLL.jpeg";
 
 function ComercialPilotLicenceBannerPage() {
   useEffect(() => {
@@ -7,7 +7,7 @@ function ComercialPilotLicenceBannerPage() {
   });
   return (
     <div
-      className="h-[640px] w-full bg-cover bg-center bg-no-repeat"
+      className="min-h-screen w-full bg-cover bg-center bg-no-repeat"
       style={{
         backgroundImage: `url(${ComercialPageBanner})`,
       }}

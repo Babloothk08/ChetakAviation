@@ -32,7 +32,7 @@ function App() {
 
   return (
     <>
-      <BrowserRouter>
+      
         <Navbar />
         {/* <PlaneCursor/> */}
 
@@ -58,7 +58,7 @@ function App() {
           <Route path="/brochure" element={<BrochureComponent/>}/>
         </Routes>
         <WatsAppIcon/>
-      </BrowserRouter>
+
       <Footer />
     </>
   );

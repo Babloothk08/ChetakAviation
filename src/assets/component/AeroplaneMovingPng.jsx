@@ -11,7 +11,7 @@ function AeroplaneMovingPng() {
   const headingRef = useRef(null);
 
   useEffect(() => {
-    const planeWidth = 550;
+    const planeWidth = window.innerWidth < 768 ? 220 : 550;
 
     // plane animation (same)
     gsap.fromTo(
@@ -77,18 +77,18 @@ function AeroplaneMovingPng() {
   return (
     <section
       ref={sectionRef}
-      className="relative py-20 bg-gradient-to-r from-blue-50 to-white overflow-hidden"
+      className="relative w-full h-full md:py-20 py-10 bg-gradient-to-r from-blue-50 to-white overflow-hidden"
     >
       {/* Plane */}
       <img
         ref={planeRef}
         src="/logo/AEROPLANE-PNG.png"
         alt="plane"
-        className="absolute -bottom-2 w-[550px] h-[200px] z-10"
+        className="absolute -bottom-2  z-10"
       />
 
       {/* Heading */}
-      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 mb-10">
+      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 md:mb-10 mb-2 ">
         <h1 ref={headingRef} className="text-4xl font-bold text-blue-700">
           MONTHLY FLYING <br />
           <span className="text-blue-900">DASHBOARD</span>
