@@ -2,8 +2,8 @@ import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-import img1 from "/superSlider/Commercial-Pilot-License_Course.jpg";
-import img2 from "/superSlider/Conversion_Flying_Course.jpg";
+import img1 from "/brochure/Brochure-TrainingEnvironment.jpeg";
+import img2 from "/brochure/Brochure-TrainingEnvironmentSecond.jpeg";
 import img3 from "/superSlider/Flight_Instructor_Course.jpg";
 import img4 from "/superSlider/Private_Pilot_License_Course.jpg";
 import img5 from "/superSlider/Commercial-Pilot-License_Course.jpg";
@@ -109,7 +109,7 @@ function BrochureComonentContent() {
             <div
               key={i}
               ref={(el) => (cardRef.current[i] = el)}
-              className="bg-white p-10 rounded-2xl shadow-lg text-center"
+              className="bg-white p-10 rounded-2xl shadow-lg text-center shadow-blue-200 cursor-pointer"
             >
 
               <h3 className="text-xl font-semibold mb-4 text-blue-700">{item}</h3>

@@ -108,7 +108,7 @@ function CareerComponent() {
           <div>
             <h2
               ref={(el) => (careerRef.current[0] = el)}
-              className="text-4xl font-bold mb-6"
+              className="text-4xl text-blue-800 font-bold mb-6"
             >
               Build Your Career With Us
             </h2>
@@ -144,7 +144,7 @@ function CareerComponent() {
               <div
                 key={i}
                 ref={(el) => (careerRef.current[i + 3] = el)}
-                className="bg-white p-6 rounded-xl shadow-lg text-center"
+                className="bg-blue-700 text-white  shadow-blue-500 shadow-2xl p-6 rounded-xl  text-center cursor-pointer"
               >
                 {item}
               </div>
@@ -162,7 +162,7 @@ function CareerComponent() {
 
         <div className="max-w-7xl mx-auto">
 
-          <h2 className="text-4xl font-bold text-center mb-16">
+          <h2 className="text-4xl text-blue-800 font-bold text-center mb-16">
             Why Work With Chetak Aviation
           </h2>
 
@@ -179,7 +179,7 @@ function CareerComponent() {
               <div
                 key={i}
                 ref={(el) => (floatingCards.current[i] = el)}
-                className="bg-blue-600 text-white p-8 rounded-2xl shadow-xl"
+                className="bg-blue-600 text-white p-8 rounded-2xl shadow-xl shadow-blue-300 hover:scale-110 hover:transition-transform cursor-pointer"
               >
                 <h3 className="text-2xl font-semibold mb-4">{title}</h3>
 
@@ -203,7 +203,7 @@ function CareerComponent() {
 
         <div className="max-w-6xl mx-auto">
 
-          <h2 className="text-4xl font-bold text-center mb-16">
+          <h2 className="text-4xl text-blue-800 font-bold text-center mb-16">
             Current Opportunities
           </h2>
 
@@ -217,7 +217,7 @@ function CareerComponent() {
             ].map((job, i) => (
               <div
                 key={i}
-                className="bg-white p-8 rounded-xl shadow-lg border-l-4 border-blue-600 hover:shadow-xl transition"
+                className="bg-white p-8 rounded-xl shadow-lg cursor-pointer shadow-blue-300 border-l-4 border-blue-600 hover:shadow-xl transition"
               >
 
                 <h3 className="text-xl font-semibold mb-2">{job}</h3>
@@ -257,13 +257,13 @@ function CareerComponent() {
                 <div
                   key={i}
                   ref={(el) => (galleryRef.current[i] = el)}
-                  className="relative overflow-hidden rounded-xl shadow-lg group"
+                  className="relative overflow-hidden rounded-xl shadow-lg group cursor-pointer"
                 >
 
                   <img
                     src={img}
                     alt="Chetak Aviation"
-                    className="w-[410px] h-[280px] object-cover group-hover:scale-110 transition duration-700"
+                    className="w-[410px] h-[280px] object-cover group-hover:scale-110 transition duration-700 "
                   />
 
                   <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
@@ -297,7 +297,7 @@ function CareerComponent() {
         </p>
 
         <button className="bg-white text-blue-600 px-10 py-4 rounded-xl font-semibold">
-          Apply Now
+          <a href="tel:+18667603566">Apply Now</a>
         </button>
 
       </section>

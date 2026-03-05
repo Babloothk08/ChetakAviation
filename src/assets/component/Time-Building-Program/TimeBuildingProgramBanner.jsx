@@ -1,5 +1,5 @@
 import React from 'react'
-import banner from "/broschure/brochure-banner.jpg.jpeg"
+import banner from "/timeBuildingProgram/TimeBuildingProgramBanner.jpeg"
 
 function TimeBuildingProgramBanner() {
   return (
