@@ -154,7 +154,7 @@ className="text-gray-600"
 <img
 src="https://images.unsplash.com/photo-1504196606672-aef5c9cefc92"
 alt="Pilot flying aircraft"
-className="w-full h-[420px] object-cover rounded-xl shadow-xl"
+className="w-[555px] h-[420px] object-cover rounded-xl mt-18 shadow-xl"
 />
 
 </div>

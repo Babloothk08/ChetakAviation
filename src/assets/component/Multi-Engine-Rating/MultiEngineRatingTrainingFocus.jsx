@@ -48,7 +48,21 @@ function MultiEngineRatingTrainingFocus() {
 
 <div className="grid lg:grid-cols-2 gap-12 items-center">
 
+{/* RIGHT IMAGE */}
 
+<div
+className={`transition-all duration-700 ${
+isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-16"
+}`}
+>
+
+<img
+src="/course/multi-engineRating/TrainingFocus.jpeg"
+alt="Multi Engine Training"
+className="w-full h-full mt-15 object-cover rounded-xl shadow-xl"
+/>
+
+</div>
 {/* LEFT CONTENT */}
 
 <div
@@ -91,21 +105,7 @@ style={{ transitionDelay: `${index * 120}ms` }}
 </div>
 
 
-{/* RIGHT IMAGE */}
 
-<div
-className={`transition-all duration-700 ${
-isVisible ? "opacity-100 translate-x-0" : "opacity-0 translate-x-16"
-}`}
->
-
-<img
-src="https://images.unsplash.com/photo-1559628233-100c798642d4"
-alt="Multi Engine Training"
-className="w-[520px] h-[440px] mt-15 object-cover rounded-xl shadow-xl"
-/>
-
-</div>
 
 
 </div>

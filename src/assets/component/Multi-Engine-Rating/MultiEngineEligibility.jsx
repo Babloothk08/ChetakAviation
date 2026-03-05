@@ -160,9 +160,9 @@ className="bg-gray-50 p-4 rounded-lg shadow"
 <div ref={imageRef} className="flex justify-center">
 
 <img
-src="https://images.unsplash.com/photo-1529070538774-1843cb3265df"
+src="/course/multi-engineRating/EligibilityforMulti-EngineRating.jpg.jpeg"
 alt="Pilot Training"
-className="rounded-xl shadow-lg h-[310px] w-[550px]"
+className="rounded-xl shadow-lg h-full w-full"
 />
 
 </div>
