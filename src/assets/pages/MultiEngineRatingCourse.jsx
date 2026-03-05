@@ -2,7 +2,7 @@ import React from 'react'
 import MultiEngineRatingBanner from '../component/Multi-Engine-Rating/MultiEngineRatingBanner'
 import MultiEngineRatingContent from '../component/Multi-Engine-Rating/MultiEngineRatingContent'
 import MultiEngineRatingTrainingFocus from '../component/Multi-Engine-Rating/MultiEngineRatingTrainingFocus'
-import MultiEngineRatingEligibility from '../component/Multi-Engine-Rating/MultiEngineratingEligibility'
+import MultiEngineRatingEligibility from '../component/Multi-Engine-Rating/MultiEngineText'
 
 
 function MultiEngineRatingCourse() {
