@@ -28,7 +28,7 @@ const aviationServices = [
   },
   {
     title: "DGCA Exam Preparation",
-    desc: "The Conversion Flying program at Chetak Aviation is designed for licensed pilots who need to transition to a different aircraft type or convert their foreign pilot licence to DGCA standards.",
+    desc: "The Conversion Flying program at Chetak Aviation is designed for licensed pilots who need to transition to a different aircraft",
     Image: "/course/privatePilotLicence/EligibilityCriteriaforFlightInstructorCourse.jpg.jpeg",
   },
 ];

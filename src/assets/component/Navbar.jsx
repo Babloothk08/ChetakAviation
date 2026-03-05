@@ -78,6 +78,18 @@ function Navbar() {
                           Commercial Pilot License
                         </div>
                       </Link>
+
+                      <Link to="/multi-engine-rating">
+                        <div className="p-3 hover:bg-blue-800 hover:text-white transition cursor-pointer">
+                          Multi-Engine Rating
+                        </div>
+                      </Link>
+
+                      <Link to="/time-building-program">
+                        <div className="p-3 hover:bg-blue-800 hover:text-white transition cursor-pointer">
+                          Time Building Program
+                        </div>
+                      </Link>
                     </div>
                   </div>
                 )}
