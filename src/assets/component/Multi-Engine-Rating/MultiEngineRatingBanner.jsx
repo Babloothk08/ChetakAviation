@@ -1,5 +1,5 @@
 import React from 'react'
-import banner from "/contact/contact-us-banner-chetak.jpg.jpeg"
+import banner from "/course/multi-engineRating/Multi-EngineRatingBanner.jpg.jpeg"
 
 function MultiEngineRatingBanner() {
   return (

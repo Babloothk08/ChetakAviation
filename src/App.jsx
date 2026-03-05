@@ -16,8 +16,8 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Career from "./assets/pages/Career";
 import BrochureComponent from "./assets/component/BrochureComponent";
-import TimeBuildingProgram from "./assets/pages/TimeBuildingProgram";
-import MultiEngineRating from "./assets/pages/MultiEngineRating";
+import TimeBuildingProgram from "./assets/pages/TimeBuildingProgramCourse";
+import MultiEngineRating from "./assets/pages/MultiEngineRatingClourse";
 // import PlaneCursor from "./assets/component/PlaneCursor";
 
 

@@ -5,8 +5,8 @@ import TimeBuildingProgramBanner from '../component/Time-Building-Program/TimeBu
 function TimeBuildingProgram() {
   return (
     <div>
-      <TimeBuildingProgramContent/>
       <TimeBuildingProgramBanner/>
+      <TimeBuildingProgramContent/>
     </div>
   )
 }
