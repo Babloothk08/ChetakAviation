@@ -15,9 +15,10 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Career from "./assets/pages/Career";
-import BrochureComponent from "./assets/component/BrochureComponent";
+// import BrochureComponent from "./assets/component/BrochureComponent";
 import MultiEngineRatingCourse from "./assets/pages/MultiEngineRatingCourse";
 import TimeBuildingProgramCourse from "./assets/pages/TimeBuildingProgramCourse";
+import Brochure from "./assets/pages/Brochure";
 // import PlaneCursor from "./assets/component/PlaneCursor";
 
 
@@ -61,7 +62,7 @@ function App() {
           {/* <Route path="/multi-engine-rating" element={<MultiEngineRatingCourse/>}/>
           <Route path="/time-building-program" element={<TimeBuildingProgram/>}/> */}
           <Route path="/career-page" element={<Career/>}/>
-          <Route path="/brochure" element={<BrochureComponent/>}/>
+          <Route path="/brochure" element={<Brochure/>}/>
         </Routes>
         <WatsAppIcon/>
 
