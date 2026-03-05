@@ -176,6 +176,22 @@ function Navbar() {
               Commercial Pilot License
             </div>
           </Link>
+          <Link
+            to="/multi-engine-rating"
+            onClick={() => setMobileOpen(false)}
+          >
+            <div className="border-b border-white/20 pb-2">
+              Multi-Engine Rating
+            </div>
+          </Link>
+          <Link
+            to="/time-building-program"
+            onClick={() => setMobileOpen(false)}
+          >
+            <div className="border-b border-white/20 pb-2">
+              Time Building Program
+            </div>
+          </Link>
 
           <Link to="/about" onClick={() => setMobileOpen(false)}>
             <div className="border-b border-white/20 pb-2">About Us</div>
