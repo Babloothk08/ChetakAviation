@@ -4,6 +4,7 @@ import MultiEngineRatingContent from '../component/Multi-Engine-Rating/MultiEngi
 import MultiEngineRatingTrainingFocus from '../component/Multi-Engine-Rating/MultiEngineRatingTrainingFocus'
 import MultiEngineRatingEligibility from '../component/Multi-Engine-Rating/MultiEngineratingEligibility'
 
+
 function MultiEngineRatingCourse() {
   return (
     <div>
