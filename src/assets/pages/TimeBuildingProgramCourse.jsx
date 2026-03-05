@@ -2,7 +2,7 @@ import React from 'react'
 import TimeBuildingProgramContent from '../component/Time-Building-Program/TimeBuildingProgramContent'
 import TimeBuildingProgramBanner from '../component/Time-Building-Program/TimeBuildingProgramBanner'
 
-function TimeBuildingProgram() {
+function TimeBuildingProgramCourse() {
   return (
     <div>
       <TimeBuildingProgramBanner/>
@@ -11,4 +11,4 @@ function TimeBuildingProgram() {
   )
 }
 
-export default TimeBuildingProgram
+export default TimeBuildingProgramCourse

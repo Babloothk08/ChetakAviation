@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import {  Route, Routes } from "react-router-dom";
 import "./App.css";
 import Navbar from "./assets/component/Navbar";
 import Home from "./assets/pages/Home";
@@ -16,8 +16,8 @@ import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Career from "./assets/pages/Career";
 import BrochureComponent from "./assets/component/BrochureComponent";
-import TimeBuildingProgram from "./assets/pages/TimeBuildingProgramCourse";
-import MultiEngineRating from "./assets/pages/MultiEngineRatingClourse";
+import MultiEngineRatingCourse from "./assets/pages/MultiEngineRatingCourse";
+import TimeBuildingProgramCourse from "./assets/pages/TimeBuildingProgramCourse";
 // import PlaneCursor from "./assets/component/PlaneCursor";
 
 
@@ -56,8 +56,10 @@ function App() {
             path="/privatePilotLicence"
             element={<PrivatePilotLicence />}
           />
-          <Route path="/multi-engine-rating" element={<MultiEngineRating/>}/>
-          <Route path="/time-building-program" element={<TimeBuildingProgram/>}/>
+          <Route path="/multi-engine-rating" element={<MultiEngineRatingCourse/>}/>
+          <Route path="/time-building-program" element={<TimeBuildingProgramCourse/>}/>
+          {/* <Route path="/multi-engine-rating" element={<MultiEngineRatingCourse/>}/>
+          <Route path="/time-building-program" element={<TimeBuildingProgram/>}/> */}
           <Route path="/career-page" element={<Career/>}/>
           <Route path="/brochure" element={<BrochureComponent/>}/>
         </Routes>
