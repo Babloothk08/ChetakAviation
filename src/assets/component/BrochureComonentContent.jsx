@@ -139,8 +139,8 @@ function BrochureComonentContent() {
 
             <img
               ref={(el) => (imageRef.current[0] = el)}
-              src={img1}
-              className="rounded-xl shadow-xl w-[550px] h-[340px]"
+              src="/brochure/pilot-license.jpg.jpeg"
+              className="rounded-xl shadow-xl w-full h-full"
             />
 
             <div>
@@ -187,8 +187,8 @@ function BrochureComonentContent() {
 
             <img
               ref={(el) => (imageRef.current[1] = el)}
-              src={img3}
-              className="rounded-xl shadow-xl"
+              src="/brochure/Flight-Instructor-Training.jpg.jpeg"
+              className="rounded-xl shadow-xl w-full h-full"
             />
 
           </div>

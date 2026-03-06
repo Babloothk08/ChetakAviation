@@ -4,12 +4,12 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import CareerPage from "/careerPage/Carrer-banner.jpg.jpeg";
 
-import gallery1 from "/superSlider/Commercial-Pilot-License_Course.jpg";
-import gallery2 from "/superSlider/Conversion_Flying_Course.jpg";
-import gallery3 from "/superSlider/Flight_Instructor_Course.jpg";
-import gallery4 from "/superSlider/Private_Pilot_License_Course.jpg";
-import gallery5 from "/superSlider/Commercial-Pilot-License_Course.jpg";
-import gallery6 from "/superSlider/Conversion_Flying_Course.jpg";
+import gallery1 from "/careerPage/Career-Page-Life-At-Chetak-Aviation.jpg";
+import gallery2 from "/careerPage/Life-At-ChetakAviationOne.jpeg";
+import gallery3 from "/careerPage/Life-At-Chetak-AviationTwo.jpeg";
+import gallery4 from "/careerPage/Life-At-Chetak-AviationThree.jpeg";
+import gallery5 from "/careerPage/Life-At-Chetak-AviationFour.jpeg";
+import gallery6 from "/careerPage/Life-At-Chetak-AviationFive.jpeg";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -263,13 +263,13 @@ function CareerComponent() {
                   <img
                     src={img}
                     alt="Chetak Aviation"
-                    className="w-[410px] h-[280px] object-cover group-hover:scale-110 transition duration-700 "
+                    className="w-full object-cover group-hover:scale-110 transition duration-700 "
                   />
 
                   <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">
 
                     <p className="text-white text-lg font-semibold">
-                      Chetak Aviation
+                      
                     </p>
 
                   </div>
