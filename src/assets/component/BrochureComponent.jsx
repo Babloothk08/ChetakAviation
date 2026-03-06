@@ -7,7 +7,7 @@ function BrochureComponent() {
       });
       return (
         <div
-          className="min-h-screen w-full bg-cover bg-center bg-no-repeat"
+          className="min-h-screen w-full bg-cover bg-center"
           style={{
             backgroundImage: `url(${Brochure})`,
           }}

@@ -3,13 +3,13 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import img1 from "/brochure/Brochure-TrainingEnvironment.jpeg";
-import img2 from "/brochure/Brochure-TrainingEnvironmentSecond.jpeg";
-import img3 from "/superSlider/Flight_Instructor_Course.jpg";
-import img4 from "/superSlider/Private_Pilot_License_Course.jpg";
-import img5 from "/superSlider/Commercial-Pilot-License_Course.jpg";
-import img6 from "/superSlider/Conversion_Flying_Course.jpg";
-import img7 from "/superSlider/Flight_Instructor_Course.jpg";
-import img8 from "/superSlider/Private_Pilot_License_Course.jpg";
+import img2 from "/brochure/Training-EnvironmentOne.jpeg";
+import img3 from "/brochure/Training-EnvironmentTwo.jpeg";
+import img4 from "/brochure/Training-EnvironmentThree.jpeg";
+import img5 from "/brochure/Training-EnvironmentFour.jpeg";
+import img6 from "/brochure/Training-EnvironmentFive.jpeg";
+import img7 from "/brochure/Training-EnvironmentSix.jpeg";
+import img8 from "/brochure/Training-EnvironmentSeven.jpeg";
 
 gsap.registerPlugin(ScrollTrigger);
 

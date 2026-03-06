@@ -82,7 +82,7 @@ function CareerComponent() {
       {/* HERO */}
 
       <div
-        className="h-[80vh] bg-cover bg-center flex items-center justify-center"
+        className="min-h-screen w-full bg-cover bg-center flex items-center justify-center"
         style={{ backgroundImage: `url(${CareerPage})` }}
       >
         <div className="bg-black/60 w-full h-full flex items-center justify-center text-center px-6">

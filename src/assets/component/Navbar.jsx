@@ -201,7 +201,7 @@ function Navbar() {
             <div className="border-b border-white/20 pb-2">Contact Us</div>
           </Link>
 
-          <Link to="/career" onClick={() => setMobileOpen(false)}>
+          <Link to="/career-page" onClick={() => setMobileOpen(false)}>
             <div className="border-b border-white/20 pb-2">Career</div>
           </Link>
 
