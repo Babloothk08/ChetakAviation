@@ -23,7 +23,7 @@ function Navbar() {
       >
         {/* NAVBAR BODY */}
         <div
-          className={`transition-all duration-500 backdrop-blur-md bg-gradient-to-r from-blue-700/90 via-gray-600/90 to-blue-700/90 shadow-lg `}
+          className={`transition-all duration-500 backdrop-blur-md bg-[#103057] from-blue-700/90 via-gray-600/90 to-blue-700/90 shadow-lg `}
         >
           <div className="flex justify-between items-center h-20 px-6">
             {/* LOGO */}
@@ -142,7 +142,7 @@ function Navbar() {
 
       {/* MOBILE MENU */}
       {mobileOpen && (
-        <div className="md:hidden bg-blue-800 text-white px-6 py-6 space-y-4 transition-all duration-300">
+        <div className="md:hidden bg-[#103057] text-white px-6 py-6 space-y-4 transition-all duration-300">
           <Link to="/" onClick={() => setMobileOpen(false)}>
             <div className="border-b border-white/20 pb-2">Home</div>
           </Link>

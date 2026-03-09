@@ -23,13 +23,13 @@ function Home() {
       <VideoComponent/>
       <AboutComponent/>
       <LatestAnnouncement/>
-      <EnquirySliderComponent/>
+      {/* <EnquirySliderComponent/> */}
       <AeroplaneMovingPng/>
       <TestimonialComponent/>
       <ServicesComponent/>
       <VideoComponent2/>
-      <QuestionsComponent/>
-      <FooterUpSlider/>
+      {/* <QuestionsComponent/> */}
+      {/* <FooterUpSlider/> */}
       {/* <GsapNewFile/> */}
     </div>
   )

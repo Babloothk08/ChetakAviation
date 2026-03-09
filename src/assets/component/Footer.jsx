@@ -34,7 +34,7 @@ function Footer() {
   ];
 
   return (
-    <footer className="bg-blue-950 text-white pt-14 pb-8">
+    <footer className="bg-[#103057] text-white pt-14 pb-8">
 
       <div className="max-w-7xl mx-auto px-6">
 
