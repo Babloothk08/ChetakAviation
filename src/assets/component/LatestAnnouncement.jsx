@@ -33,7 +33,7 @@ function LatestAnnouncement() {
   return (
     <div
       ref={sectionRef}
-      className="w-full max-w-screen mx-auto px-10 py-10 bg-blue-700 overflow-hidden"
+      className="w-full max-w-screen mx-auto px-10 py-10 bg-[#103057] overflow-hidden"
     >
       <h1 className="text-2xl font-bold text-center mb-10 text-white">
         Latest Announcements

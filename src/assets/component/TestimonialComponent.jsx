@@ -55,7 +55,7 @@ function TestimonialComponent() {
 
             <div
               key={index}
-              className="w-[380px] bg-blue-800 rounded-3xl overflow-hidden flex-shrink-0"
+              className="w-[380px] bg-[#103057] rounded-3xl overflow-hidden flex-shrink-0"
             >
 
               {/* image */}
