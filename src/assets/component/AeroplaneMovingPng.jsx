@@ -77,7 +77,7 @@ function AeroplaneMovingPng() {
   return (
     <section
       ref={sectionRef}
-      className="relative w-full h-full md:py-20 py-10 bg-gradient-to-r from-blue-50 to-white overflow-hidden"
+      className="relative w-full h-full md:py-21 py-10 bg-gradient-to-r from-blue-50 to-white overflow-hidden"
     >
       {/* Plane */}
       <img
@@ -88,7 +88,7 @@ function AeroplaneMovingPng() {
       />
 
       {/* Heading */}
-      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 md:mb-10 mb-2 ">
+      {/* <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 md:mb-10 mb-2 ">
         <h1 ref={headingRef} className="text-4xl font-bold text-blue-700">
           MONTHLY FLYING <br />
           <span className="text-blue-900">DASHBOARD</span>
@@ -99,7 +99,7 @@ function AeroplaneMovingPng() {
           aviation training. With state-of-the-art facilities and experienced
           instructors, we're dedicated to shaping the future of aviation.
         </p>
-      </div>
+      </div> */}
 
       {/* Stats */}
       <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-4 sm:grid-cols-2 gap-6">
@@ -107,11 +107,12 @@ function AeroplaneMovingPng() {
           <div
             key={index}
             ref={(el) => (cardsRef.current[index] = el)}
-            className="bg-white shadow-md rounded-xl p-6"
+            className="bg-white  rounded-xl p-6"
+            // className="bg-white shadow-md rounded-xl p-6"
           >
-            <h3 className="text-3xl font-bold text-blue-700">{item.number}</h3>
+            {/* <h3 className="text-3xl font-bold text-blue-700">{item.number}</h3> */}
 
-            <p className="text-gray-500">{item.label}</p>
+            {/* <p className="text-gray-500">{item.label}</p> */}
           </div>
         ))}
       </div>
