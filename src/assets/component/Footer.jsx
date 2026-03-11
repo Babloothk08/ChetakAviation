@@ -31,7 +31,7 @@ function Footer() {
   const socialLinks = [
     { icon: <FaFacebook />, link: "https://www.facebook.com/starallianceaviationacademy/" },
     { icon: <FaTwitter />, link: "https://x.com/staralliance_in/" },
-    { icon: <FaInstagram />, link: "https://www.instagram.com/" },
+    { icon: <FaInstagram />, link: "https://www.instagram.com/chetakaviation/" },
     { icon: <FaLinkedin />, link: "https://www.linkedin.com/company/starallianceaviationacademy/" },
     { icon: <FaPinterestP />, link: "https://in.pinterest.com/starallianceaviationacademy/" },
     { icon: <FaYoutube />, link: "https://www.youtube.com/@starallianceaviationacademy/" },
