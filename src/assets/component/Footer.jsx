@@ -8,6 +8,8 @@ import {
   FaEnvelope,
   FaPhone,
   FaMapMarkerAlt,
+  FaYoutube,
+  FaPinterestP,
 } from "react-icons/fa";
 
 function Footer() {
@@ -27,10 +29,12 @@ function Footer() {
   ];
 
   const socialLinks = [
-    { icon: <FaFacebook />, link: "https://www.facebook.com/" },
-    { icon: <FaTwitter />, link: "https://x.com/" },
+    { icon: <FaFacebook />, link: "https://www.facebook.com/starallianceaviationacademy/" },
+    { icon: <FaTwitter />, link: "https://x.com/staralliance_in/" },
     { icon: <FaInstagram />, link: "https://www.instagram.com/" },
-    { icon: <FaLinkedin />, link: "https://www.linkedin.com/" },
+    { icon: <FaLinkedin />, link: "https://www.linkedin.com/company/starallianceaviationacademy/" },
+    { icon: <FaPinterestP />, link: "https://in.pinterest.com/starallianceaviationacademy/" },
+    { icon: <FaYoutube />, link: "https://www.youtube.com/@starallianceaviationacademy/" },
   ];
 
   return (
@@ -60,7 +64,7 @@ function Footer() {
                   href={item.link}
                   target="_blank"
                   rel="noreferrer"
-                  className="w-9 h-9 flex items-center justify-center rounded-full bg-white/5 hover:bg-blue-600 transition border border-white/10"
+                  className="w-9 h-9 flex items-center justify-center rounded-full bg-white/5 hover:bg-[#ECAA05] transition border border-white/10"
                 >
                   {item.icon}
                 </a>
@@ -70,7 +74,7 @@ function Footer() {
 
           {/* QUICK LINKS */}
           <div className="">
-            <h3 className="text-lg font-semibold mb-6 text-blue-400 uppercase">
+            <h3 className="text-lg font-semibold mb-6 text-[#ECAA05] uppercase">
               Quick Links
             </h3>
 
@@ -79,7 +83,7 @@ function Footer() {
                 <li key={index}>
                   <Link
                     to={item.link}
-                    className="hover:text-white hover:translate-x-1 transition-all inline-block"
+                    className="hover:text-[#ECAA05] hover:font-bold  hover:translate-x-1 transition-all inline-block"
                   >
                     {item.name}
                   </Link>
@@ -90,16 +94,16 @@ function Footer() {
 
           {/* TRAINING */}
           <div>
-            <h3 className="text-lg font-semibold mb-6 text-blue-400 uppercase">
+            <h3 className="text-lg font-semibold mb-6 text-[#ECAA05] uppercase">
               Training
             </h3>
 
-            <ul className="space-y-3 text-gray-400 text-sm">
+            <ul className="space-y-3 text-gray-400 text-sm " >
               {trainingLinks.map((item, index) => (
                 <li key={index}>
                   <Link
                     to={item.link}
-                    className="hover:text-white hover:translate-x-1 transition-all inline-block"
+                    className="hover:text-[#ECAA05] hover:font-bold hover:translate-x-1 transition-all inline-block"
                   >
                     {item.name}
                   </Link>
@@ -110,24 +114,24 @@ function Footer() {
 
           {/* CONTACT */}
           <div>
-            <h3 className="text-lg font-semibold mb-6 text-blue-400 uppercase">
+            <h3 className="text-lg font-semibold mb-6 text-[#ECAA05] uppercase">
               Contact
             </h3>
 
             <ul className="space-y-4 text-gray-400 text-sm">
 
               <li className="flex gap-3 items-start">
-                <FaMapMarkerAlt className="text-blue-500 mt-1" />
+                <FaMapMarkerAlt className="text-[#ECAA05] mt-1" />
                 <span>Aviation Plaza, New Delhi, India</span>
               </li>
 
               <li className="flex gap-3 items-center">
-                <FaPhone className="text-blue-500" />
+                <FaPhone className="text-[#ECAA05]" />
                 <a href="tel:+18554682227">+18554682227</a>
               </li>
 
               <li className="flex gap-3 items-center">
-                <FaEnvelope className="text-blue-500" />
+                <FaEnvelope className="text-[#ECAA05]" />
                 <span>info@chetakaviation.com</span>
               </li>
 

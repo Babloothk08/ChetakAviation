@@ -41,7 +41,7 @@ function TestimonialComponent() {
         <h2 className="text-blue-900 text-4xl md:text-5xl font-black pb-2">
           CHETAK AVIATION
         </h2>
-        <h1 className="text-blue-800 text-xl md:text-2xl font-black">
+        <h1 className="text-[#ECAA05] text-xl md:text-2xl font-black">
           TESTIMONIALS
         </h1>
       </div>
@@ -70,7 +70,7 @@ function TestimonialComponent() {
               {/* text */}
               <div className="p-4">
 
-                <h3 className="text-white text-xl font-bold uppercase mb-2">
+                <h3 className="text-[#ECAA05] text-xl font-bold uppercase mb-2">
                   {item.title}
                 </h3>
 

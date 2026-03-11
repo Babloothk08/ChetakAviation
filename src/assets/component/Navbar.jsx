@@ -38,7 +38,7 @@ function Navbar() {
             {/* DESKTOP MENU */}
             <ul className="hidden md:flex gap-10 text-white font-medium items-center">
               <Link to="/">
-                <li className="hover:text-blue-300 transition drop-shadow-[0_0_2px_black]">
+                <li className="hover:text-[#ECAA05] transition drop-shadow-[0_0_2px_black]">
                   HOME
                 </li>
               </Link>
@@ -48,7 +48,7 @@ function Navbar() {
                 onMouseEnter={() => setDropdownOpen(true)}
                 onMouseLeave={() => setDropdownOpen(false)}
               >
-                <button className="hover:text-blue-300 transition drop-shadow-[0_0_2px_black]">
+                <button className="hover:text-[#ECAA05] transition drop-shadow-[0_0_2px_black]">
                   COURSES
                 </button>
 
@@ -96,25 +96,25 @@ function Navbar() {
               </div>
 
               <Link to="/about">
-                <li className="hover:text-blue-300 transition drop-shadow-[0_0_2px_black]">
+                <li className="hover:text-[#ECAA05] transition drop-shadow-[0_0_2px_black]">
                   ABOUT US
                 </li>
               </Link>
 
               <Link to="/contact">
-                <li className="hover:text-blue-300 transition drop-shadow-[0_0_2px_black]">
+                <li className="hover:text-[#ECAA05] transition drop-shadow-[0_0_2px_black]">
                   CONTACT US
                 </li>
               </Link>
 
               <Link to="/career-page">
-                <li className="hover:text-blue-300 transition drop-shadow-[0_0_2px_black]">
+                <li className="hover:text-[#ECAA05] transition drop-shadow-[0_0_2px_black]">
                   CAREER
                 </li>
               </Link>
 
               <Link to="/brochure">
-                <li className="hover:text-blue-300 transition drop-shadow-[0_0_2px_black]">
+                <li className="hover:text-[#ECAA05] transition drop-shadow-[0_0_2px_black]">
                   BROCHURE
                 </li>
               </Link>
@@ -124,7 +124,7 @@ function Navbar() {
             <div className="hidden md:block">
               <a
                 href="tel:+18667603566"
-                className="bg-white text-blue-700 px-6 py-2 rounded-full font-medium transition-all duration-300 hover:shadow-lg active:scale-95 drop-shadow-[0_0_2px_black]"
+                className="bg-[#ECAA05] text-white px-6 py-2 rounded-full font-medium transition-all duration-300 hover:shadow-lg active:scale-95 drop-shadow-[0_0_2px_black]"
               >
                 ENROLL NOW
               </a>

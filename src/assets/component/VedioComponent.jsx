@@ -25,7 +25,7 @@ function VideoComponent() {
             Professional Pilot Training At Chetak Aviation
           </h1>
 
-          <button className="px-8 py-3 bg-blue-700 hover:bg-blue-800 rounded-xl text-lg font-semibold transition cursor-pointer">
+          <button className="px-8 py-3 bg-[#ECAA05] hover:bg-blue-800 rounded-xl text-lg font-semibold transition cursor-pointer">
             <Link to="/contact">Enquiry Today</Link>
           </button>
         </div>

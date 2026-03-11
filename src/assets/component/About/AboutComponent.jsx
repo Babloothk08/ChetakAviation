@@ -69,7 +69,7 @@ function AboutComponent() {
       {/* Heading */}
       <h1
         ref={headingRef}
-        className="text-4xl md:text-5xl font-bold text-center text-blue-900 mb-10"
+        className="text-4xl md:text-5xl font-bold text-center text-[#ECAA05] mb-10"
       >
         Chetak Aviation – A Flying Training Academy
       </h1>
@@ -98,7 +98,7 @@ function AboutComponent() {
           </p>
 
           <Link to="/contact">
-            <button className="mt-4 px-6 py-3 bg-blue-700 text-white rounded-xl font-semibold hover:bg-blue-800 transition duration-300 shadow-md hover:shadow-xl">
+            <button className="mt-4 px-6 py-3 bg-[#ECAA05] text-white rounded-xl font-semibold hover:cursor-pointer hover:bg-blue-800 transition duration-300 shadow-md hover:shadow-xl">
               Enquiry Today
             </button>
           </Link>

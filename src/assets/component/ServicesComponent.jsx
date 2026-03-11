@@ -47,8 +47,8 @@ function ServicesComponent() {
 
         {/* Header */}
         <div className="text-center mb-12 space-y-3">
-          <h1 className="text-3xl md:text-5xl font-black text-slate-800 uppercase">
-            Chetak Aviation <span className="text-blue-600">Training Programs</span>
+          <h1 className="text-3xl md:text-5xl font-black text-[#ECAA05] uppercase">
+            Chetak Aviation <span className="text-blue-800">Training Programs</span>
           </h1>
           <p className="text-slate-500 max-w-2xl mx-auto text-sm md:text-base">
             Transform your aviation dreams into reality with industry-leading pilot training.
@@ -75,7 +75,7 @@ function ServicesComponent() {
 
               {/* Content */}
               <div className="p-5">
-                <h3 className="text-lg font-bold text-slate-800 mb-2">
+                <h3 className="text-lg font-bold text-[#ECAA05] mb-2">
                   {service.title}
                 </h3>
 
@@ -83,7 +83,7 @@ function ServicesComponent() {
                   {service.desc}
                 </p>
 
-                <div className="text-blue-600 text-[11px] font-semibold uppercase tracking-wider">
+                <div className=" text-[11px] text-[#ECAA05] font-semibold uppercase tracking-wider">
                   Click to view more
                 </div>
               </div>

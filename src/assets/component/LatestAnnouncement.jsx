@@ -35,7 +35,7 @@ function LatestAnnouncement() {
       ref={sectionRef}
       className="w-full max-w-screen mx-auto px-10 py-10 bg-[#103057] overflow-hidden"
     >
-      <h1 className="text-2xl font-bold text-center mb-10 text-white">
+      <h1 className="text-2xl font-bold text-center mb-10 text-[#ECAA05]">
         Latest Announcements
       </h1>
 
@@ -51,7 +51,7 @@ function LatestAnnouncement() {
           <img
             src={LatestUpdate}
             alt="Latest Announcement"
-            className="w-full h-full"
+            className="w-[710px] h-[390px]"
           />
         </div>
 
