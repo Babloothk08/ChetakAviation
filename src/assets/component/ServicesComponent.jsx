@@ -75,7 +75,7 @@ function ServicesComponent() {
 
               {/* Content */}
               <div className="p-5">
-                <h3 className="text-lg font-bold text-[#ECAA05] mb-2">
+                <h3 className="text-lg font-bold text-blue-900 mb-2">
                   {service.title}
                 </h3>
 
