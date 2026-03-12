@@ -69,7 +69,7 @@ function ServicesComponent() {
                 <img
                   src={service.Image}
                   alt={service.title}
-                  className="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                  className="w-[410px] h-[220px] object-cover group-hover:scale-105 transition duration-500"
                 />
               </div>
 

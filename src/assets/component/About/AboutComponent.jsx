@@ -82,26 +82,24 @@ function AboutComponent() {
           className="md:w-1/2 space-y-6 max-w-lg"
         >
           <p className="text-slate-600 leading-relaxed text-lg">
-            Chetak Aviation is a professional flying training academy in
-            Aligarh, dedicated to providing quality aviation education for
-            aspiring pilots.
+            Chetak Aviation is a professional flying training academy based in Aligarh, dedicated to shaping the next generation of skilled and responsible pilots. Our academy focuses on delivering high-quality aviation education through a balanced combination of theoretical knowledge and practical flight training.
+            With the guidance of experienced aviation instructors, students receive structured training designed to build strong flying fundamentals, safety awareness, and operational confidence. Our programs are developed to meet the standards of professional aviation training and help students progress toward successful careers in the aviation industry.
+             At Chetak Aviation, we believe that becoming a pilot requires more than technical skills—it requires discipline, precision, and a strong sense of responsibility in the cockpit.
+          </p>
+
+          {/* <p className="text-slate-600 leading-relaxed text-lg">
+            With the guidance of experienced aviation instructors, students receive structured training designed to build strong flying fundamentals, safety awareness, and operational confidence. Our programs are developed to meet the standards of professional aviation training and help students progress toward successful careers in the aviation industry.
           </p>
 
           <p className="text-slate-600 leading-relaxed text-lg">
-            Our training approach is guided by experienced aviation instructors
-            who understand the academic and practical demands of pilot training.
-          </p>
+            At Chetak Aviation, we believe that becoming a pilot requires more than technical skills—it requires discipline, precision, and a strong sense of responsibility in the cockpit.
+          </p> */}
 
-          <p className="text-slate-600 leading-relaxed text-lg">
-            We believe that becoming a pilot requires more than technical
-            knowledge—it requires the right mindset and responsibility.
-          </p>
-
-          <Link to="/contact">
+          {/* <Link to="/about">
             <button className="mt-4 px-6 py-3 bg-[#ECAA05] text-white rounded-xl font-semibold hover:cursor-pointer hover:bg-blue-800 transition duration-300 shadow-md hover:shadow-xl">
-              Enquiry Today
+              Read More
             </button>
-          </Link>
+          </Link> */}
         </div>
 
         {/* RIGHT SIDE IMAGE */}

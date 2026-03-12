@@ -24,9 +24,9 @@ function Home() {
       <AboutComponent/>
       <LatestAnnouncement/>
       {/* <EnquirySliderComponent/> */}
-      <AeroplaneMovingPng/>
-      <TestimonialComponent/>
       <ServicesComponent/>
+      <TestimonialComponent/>
+      <AeroplaneMovingPng/>
       <VideoComponent2/>
       {/* <QuestionsComponent/> */}
       {/* <FooterUpSlider/> */}
