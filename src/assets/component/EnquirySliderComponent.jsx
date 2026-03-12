@@ -14,25 +14,25 @@ const slides = [
     title: "Command the Skies with Confidence",
     subtitle: "ELITE PILOT TRAINING",
     // text: "Learn from experienced aviation professionals. Train with purpose. Fly with precision.",
-    image: "/HomePageImageSlider/Home-Page(Command-the-Skies-with-Confidence)-Slider 1.jpg.jpeg"
+    image: "/HomePageBanner/Website-Banner-Chetak-one.jpg.jpeg"
   },
   {
     title: "Command the Skies with Confidence",
     subtitle: "GLOBAL CERTIFICATION",
     // text: "Learn from experienced aviation professionals. Train with purpose. Fly with precision.",
-    image: "/HomePageImageSlider/Home-Page(Command-the-Skies-with-Confidence)-Slider 2.jpg.jpeg"
+    image: "/HomePageBanner/Website-Banner-ChetakTwo.jpg.jpeg"
   },
   {
     title: "Command the Skies with Confidence",
     subtitle: "PROFESSIONAL EXCELLENCE",
     // text: "Learn from experienced aviation professionals. Train with purpose. Fly with precision.",
-    image: "/HomePageImageSlider/Home-Page(Command-the-Skies-with-Confidence)-Slider 3.jpg.jpeg"
+    image: "/HomePageBanner/Website-Banner-ChetakThree.jpg.jpeg"
   },
   {
     title: "Command the Skies with Confidence",
     subtitle: "PROFESSIONAL EXCELLENCE",
     // text: "Learn from experienced aviation professionals. Train with purpose. Fly with precision.",
-    image: "/HomePageImageSlider/Home-Page(Command-the-Skies-with-Confidence)-Slider 4.jpg.jpeg"
+    image: "/HomePageBanner/Website-Banner-ChetakFour.jpg.jpeg"
   }
 ];
 
@@ -69,19 +69,19 @@ function EnquirySliderComponent() {
   };
 
   return (
-    <div data-aos="fade-up" className="w-full bg-slate-50 py-12">
-      <div className="max-w-350 mx-auto px-4">
-        <div className="relative h-125 md:h-162.5 overflow-hidden rounded-[2.5rem] shadow-2xl shadow-blue-900/10 border border-gray-200">
+    <div data-aos="fade-up" className="w-full bg-slate-50 ">
+      
+        <div className=" w-full  overflow-hidden ">
           <Slider {...settings}>
             {slides.map((slide, i) => (
-              <div key={i} className="relative h-125 md:h-162.5 outline-none">
+              <div key={i} className="relative min-h-screen outline-none">
                 
                 <div className="absolute inset-0">
-                  <img src={slide.image} className="w-[1370px] h-[650px] object-cover" alt="Aviation Training" />
+                  <img src={slide.image} className="w-full min-h-screen object-cover" alt="Aviation Training" />
                   <div className="absolute inset-0 bg-linear-to-r  to-transparent"></div>
                 </div>
 
-                <div className="relative h-full flex items-center px-8 md:px-24">
+                {/* <div className="relative h-full flex items-center px-8 md:px-24">
                   <div className="max-w-2xl text-white md:pt-80">
                     <motion.div
                       initial={{ opacity: 0, x: -30 }}
@@ -111,12 +111,12 @@ function EnquirySliderComponent() {
                       </div>
                     </motion.div>
                   </div>
-                </div>
+                </div> */}
               </div>
             ))}
           </Slider>
         </div>
-      </div>
+      
 
       <style jsx global>{`
         .slick-dots { bottom: 40px !important; }

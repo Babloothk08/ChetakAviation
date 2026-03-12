@@ -55,25 +55,25 @@ function Navbar() {
                 {dropdownOpen && (
                   <div className="absolute left-0 top-full mt-0 w-56">
                     <div className="bg-white text-blue-800 rounded-2xl shadow-lg overflow-hidden">
-                      <Link to="/flightInstructorCourse">
+                      <Link to="/flight-instructor-Course">
                         <div className="p-3 hover:bg-blue-800 hover:text-white transition cursor-pointer">
                           Flight Instructor Course
                         </div>
                       </Link>
 
-                      <Link to="/privatePilotLicence">
+                      <Link to="/private-pilot-licence">
                         <div className="p-3 hover:bg-blue-800 hover:text-white transition cursor-pointer">
                           Private Pilot License
                         </div>
                       </Link>
 
-                      <Link to="/conversionFlying">
+                      <Link to="/conversion-flying">
                         <div className="p-3 hover:bg-blue-800 hover:text-white transition cursor-pointer">
                           Conversion Flying
                         </div>
                       </Link>
 
-                      <Link to="/commercialPilotLicence">
+                      <Link to="/commercial pilot-licence">
                         <div className="p-3 hover:bg-blue-800 hover:text-white transition cursor-pointer">
                           Commercial Pilot License
                         </div>
@@ -95,13 +95,13 @@ function Navbar() {
                 )}
               </div>
 
-              <Link to="/about">
+              <Link to="/about-us">
                 <li className="hover:text-[#ECAA05] transition drop-shadow-[0_0_2px_black]">
                   ABOUT US
                 </li>
               </Link>
 
-              <Link to="/contact">
+              <Link to="/contact-us">
                 <li className="hover:text-[#ECAA05] transition drop-shadow-[0_0_2px_black]">
                   CONTACT US
                 </li>

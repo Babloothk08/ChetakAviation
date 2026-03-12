@@ -64,7 +64,7 @@ function AboutComponent() {
   return (
     <section
       ref={sectionRef}
-      className="w-full max-w-7xl mx-auto px-6 my-6 pt-10 pb-14 rounded-4xl bg-white"
+      className="w-full max-w-7xl mx-auto px-6 my-16 pt-10 pb-14 rounded-4xl bg-white"
     >
       {/* Heading */}
       <h1

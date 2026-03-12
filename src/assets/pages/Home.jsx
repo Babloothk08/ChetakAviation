@@ -3,12 +3,12 @@ import Navbar from '../component/Navbar'
 import VideoComponent from '../component/VedioComponent'
 import EnquirySliderComponent from '../component/EnquirySliderComponent'
 import LatestAnnouncement from '../component/LatestAnnouncement'
-import QuestionsComponent from '../component/QuestionsComponent'
+// import QuestionsComponent from '../component/QuestionsComponent'
 import TestimonialComponent from '../component/TestimonialComponent'
 import AboutComponent from '../component/About/AboutComponent'
 import { useEffect } from 'react'
 import ServicesComponent from '../component/ServicesComponent'
-import FooterUpSlider from '../component/FooterUpSlider'
+// import FooterUpSlider from '../component/FooterUpSlider'
 import VideoComponent2 from '../component/VideoComponent2'
 import AeroplaneMovingPng from '../component/AeroplaneMovingPng'
 // import GsapNewFile from '../component/GsapNewFile'
@@ -20,10 +20,11 @@ function Home() {
   return (
     <div className='bg-gray-200 shadow-2xl'>
       {/* <Navbar/> */}
-      <VideoComponent/>
+      <EnquirySliderComponent/>
+      {/* <VideoComponent/> */}
       <AboutComponent/>
       <LatestAnnouncement/>
-      {/* <EnquirySliderComponent/> */}
+      <EnquirySliderComponent/>
       <ServicesComponent/>
       <TestimonialComponent/>
       <AeroplaneMovingPng/>

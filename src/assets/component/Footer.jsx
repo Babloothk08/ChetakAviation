@@ -15,17 +15,18 @@ import {
 function Footer() {
 
   const quickLinks = [
-    { name: "About Academy", link: "/about" },
-    { name: "Course", link: "/courses" },
-    { name: "Contact", link: "/contact" },
-    { name: "Career", link: "/career-page" },
+    { name: "ABOUT US", link: "/about-us" },
+    { name: "COURSES", link: "/courses" },
+    { name: "CONTACT US", link: "/contact-us" },
+    { name: "CAREER", link: "/career-page" },
   ];
 
   const trainingLinks = [
-    { name: "CPL Program", link: "/commercialPilotLicence" },
-    { name: "PPL License", link: "/privatePilotLicence" },
-    { name: "Conversion Flying", link: "/conversionFlying" },
-    { name: "Flight Instructor Course", link: "/flightInstructorCourse" },
+    { name: "Flight Instructor Course", link: "/flight-instructor-course" },
+    { name: "Private Pilot License", link: "/private-pilot-licence" },
+    { name: "Conversion Flying", link: "/conversion-flying" },
+    { name: "Commercial Pilot Licence ", link: "/commercial-pilot-licence" },
+    
   ];
 
   const socialLinks = [

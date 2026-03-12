@@ -41,20 +41,20 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/about-us" element={<About />} />
+          <Route path="/contact-us" element={<Contact />} />
           <Route path="/courses" element={<Courses />} />
           <Route
-            path="/flightInstructorCourse"
+            path="/flight-instructor-course"
             element={<FlightInstructorCourse />}
           />
           <Route
-            path="/commercialPilotLicence"
+            path="/commercial-pilot-licence"
             element={<CommercialPilotLicence />}
           />
-          <Route path="/conversionFlying" element={<ConversionFlying />} />
+          <Route path="/conversion-flying" element={<ConversionFlying />} />
           <Route
-            path="/privatePilotLicence"
+            path="/private-pilot-licence"
             element={<PrivatePilotLicence />}
           />
           <Route path="/multi-engine-rating" element={<MultiEngineRatingCourse/>}/>
