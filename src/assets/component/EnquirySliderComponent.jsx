@@ -42,7 +42,7 @@ function EnquirySliderComponent() {
             <img
               src={slide.image}
               alt="banner"
-              className="w-full h-[90vh] object-cover"
+              className="w-full  object-cover"
             />
 
           </div>
