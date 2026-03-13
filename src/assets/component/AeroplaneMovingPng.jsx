@@ -77,7 +77,7 @@ function AeroplaneMovingPng() {
   return (
     <section
       ref={sectionRef}
-      className="relative w-full h-full md:py-11 py-10 bg-gradient-to-r from-blue-50 to-white overflow-hidden"
+      className="relative w-full h-50 md:py-11 py-10 bg-gradient-to-r from-blue-50 to-white overflow-hidden"
     >
       {/* Plane */}
       <img
