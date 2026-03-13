@@ -4,7 +4,7 @@ import gsap from "gsap";
 const DATA = [
   { title: "Aman Sharma", desc: "Commercial Pilot Trainee", para:"Chetak Aviation gave me a strong foundation in aviation theory and discipline.",  img: "/HomePageTestimonial/Home-Page(TESTIMONIALS)-Slider 1.jpg.jpeg" },
 
-  { title: "Rohit Verma", desc: "Aspiring Airline Pilot", para:"The structured teaching approach and personal attention made learning easier.",  img: "/HomePageTestimonial/Home-Page(TESTIMONIALS)-Slider 2.jpg.jpeg" },
+  { title: "Vishal Jakhar", desc: "Aspiring Airline Pilot", para:"The structured teaching approach and personal attention made learning easier.",  img: "/HomePageTestimonial/Home-Page(TESTIMONIALS)-Slider 2.jpg.jpeg" },
 
   { title: "Ghanish", desc: "CPL Ground Training Student", para:"Professional environment where instructors train you to think like a pilot.", img: "/HomePageTestimonial/Home-Page(TESTIMONIALS)-Slider 3.jpg.jpeg" },
 
