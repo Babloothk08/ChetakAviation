@@ -24,7 +24,7 @@ function Home() {
       {/* <VideoComponent/> */}
       <AboutComponent/>
       <LatestAnnouncement/>
-      <EnquirySliderComponent/>
+      {/* <EnquirySliderComponent/> */}
       <ServicesComponent/>
       <TestimonialComponent/>
       <AeroplaneMovingPng/>

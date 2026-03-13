@@ -35,7 +35,7 @@ const aviationServices = [
   {
     title: "Time Building Program",
     desc: "A Time Building Program is a structured flight training plan that allows pilots to accumulate the required flying hours needed to qualify for a Commercial Pilot Licence (CPL) .",
-    Image: "/brochure/Brochure-TrainingEnvironmentSecond.jpeg",
+    Image: "/timeBuildingProgram/Time-Building-Program-image.jpg.jpeg",
     link : "/time-building-program"
   },
 ];
