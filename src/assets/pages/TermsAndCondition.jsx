@@ -201,14 +201,14 @@ function TermsAndCondition() {
           </h2>
 
           <p className="fadeUp pt-3 text-gray-700 leading-relaxed">
-            Chetak Aviation <br/>
+            <span className="text-semibold text-lg">Chetak Aviation</span> <br/>
             Ozone City, Ozone Road <br/>
             Aligarh, Uttar Pradesh – 202002 <br/>
             India
           </p>
 
           <p className="fadeUp pt-3 text-gray-700 leading-relaxed">
-            Flying Training Base <br/>
+            <span className="font-semibold text-lg">Flying Training Base</span><br/>
             MS-10, NH-91 <br/>
             Dhanipur Airstrip <br/>
             Post Panethi <br/>
