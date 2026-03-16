@@ -142,12 +142,12 @@ function Footer() {
         </div>
 
         {/* BOTTOM BAR */}
-        <div className="border-t border-white/10 mt-12 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-gray-500 text-sm">
+        <div className="border-t border-white/10 mt-12 pt-6 flex flex-col md:flex-row justify-center items-center gap-4 text-gray-500 text-sm">
 
           <p>© 2026 Chetak Aviation Academy. All Rights Reserved.</p>
 
           <div className="flex gap-6">
-            <Link to="/privacy-policy" className="hover:text-white">
+            {/* <Link to="/privacy-policy" className="hover:text-white">
               Privacy Policy
             </Link>
 
@@ -157,7 +157,7 @@ function Footer() {
 
             <Link to="/terms" className="hover:text-white">
               Terms of Service
-            </Link>
+            </Link> */}
           </div>
 
         </div>
