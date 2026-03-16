@@ -73,7 +73,7 @@ function Navbar() {
                         </div>
                       </Link>
 
-                      <Link to="/commercial pilot-licence">
+                      <Link to="/commercial-pilot-licence">
                         <div className="p-3 hover:bg-blue-800 hover:text-white transition cursor-pointer">
                           Commercial Pilot License
                         </div>

@@ -16,7 +16,7 @@ function Footer() {
 
   const quickLinks = [
     { name: "ABOUT US", link: "/about-us" },
-    { name: "COURSES", link: "/courses" },
+    // { name: "COURSES", link: "/courses" },
     { name: "CONTACT US", link: "/contact-us" },
     { name: "CAREER", link: "/career-page" },
   ];
