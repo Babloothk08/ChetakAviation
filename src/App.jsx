@@ -19,6 +19,8 @@ import Career from "./assets/pages/Career";
 import MultiEngineRatingCourse from "./assets/pages/MultiEngineRatingCourse";
 import TimeBuildingProgramCourse from "./assets/pages/TimeBuildingProgramCourse";
 import Brochure from "./assets/pages/Brochure";
+import TermsAndCondition from "./assets/pages/TermsAndCondition";
+import PrivacyPolicy from "./assets/pages/PrivacyPolicy";
 // import PlaneCursor from "./assets/component/PlaneCursor";
 
 
@@ -63,6 +65,8 @@ function App() {
           <Route path="/time-building-program" element={<TimeBuildingProgram/>}/> */}
           <Route path="/career-page" element={<Career/>}/>
           <Route path="/brochure" element={<Brochure/>}/>
+          <Route path="/terms-conditions" element={<TermsAndCondition/>}/>
+          <Route path="/privacy-policy" element={<PrivacyPolicy/>}/>
         </Routes>
         <WatsAppIcon/>
 

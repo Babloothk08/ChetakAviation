@@ -123,7 +123,7 @@ function Navbar() {
             {/* ENROLL BUTTON */}
             <div className="hidden md:block">
               <a
-                href="tel:+18667603566"
+                href="tel:+8923836664"
                 className="bg-[#ECAA05] text-white px-6 py-2 rounded-full font-medium transition-all duration-300 hover:shadow-lg active:scale-95 drop-shadow-[0_0_2px_black]"
               >
                 ENROLL NOW

@@ -85,7 +85,7 @@ const SuperFlowSlider = () => {
                   >
                     <img 
                       src={slide.image} 
-                      className="absolute inset-0 w-[670px] h-[450px] object-cover" 
+                      className="absolute inset-0 w-full h-full object-cover" 
                       alt={slide.title} 
                     />
                     
@@ -110,7 +110,7 @@ const SuperFlowSlider = () => {
                               whileTap={{ scale: 0.9 }}
                               className=""
                             >
-                            <a href="tel:+18667603566" className='px-6 md:px-10 py-3 md:py-4 bg-blue-600 text-white text-[10px] md:text-xs font-black rounded-full shadow-xl shadow-blue-600/40 uppercase tracking-widest border border-blue-400/50 cursor-pointer'>
+                            <a href="tel:+8923836664" className='px-6 md:px-10 py-3 md:py-4 bg-blue-600 text-white text-[10px] md:text-xs font-black rounded-full shadow-xl shadow-blue-600/40 uppercase tracking-widest border border-blue-400/50 cursor-pointer'>
                               Explore Course
                             </a>
                              </motion.button>

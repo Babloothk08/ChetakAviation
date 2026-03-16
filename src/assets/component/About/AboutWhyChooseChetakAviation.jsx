@@ -130,7 +130,7 @@ function WhyChooseChetakAviation() {
             <div className="cta-box bg-blue-50 border border-blue-100 rounded-3xl p-6 flex flex-col sm:flex-row items-center justify-between gap-6 shadow-lg">
 
               <a
-                href="tel:+18667603566"
+                href="tel:+8923836664"
                 className="px-10 py-4 bg-blue-600 hover:bg-blue-800 text-white font-bold uppercase text-xs rounded-full transition-all duration-300 hover:shadow-2xl"
               >
                 Contact Chetak Aviation
@@ -145,7 +145,7 @@ function WhyChooseChetakAviation() {
                     Quick Connect
                   </p>
                   <p className="font-black text-slate-900">
-                    +1 866 760 3566
+                    +8923836664
                   </p>
                 </div>
               </div>

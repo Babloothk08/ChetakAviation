@@ -297,7 +297,7 @@ function CareerComponent() {
         </p>
 
         <button className="bg-white text-blue-600 px-10 py-4 rounded-xl font-semibold">
-          <a href="tel:+18667603566">Apply Now</a>
+          <a href="tel:+8923836664">Apply Now</a>
         </button>
 
       </section>

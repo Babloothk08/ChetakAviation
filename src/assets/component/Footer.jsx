@@ -19,6 +19,7 @@ function Footer() {
     // { name: "COURSES", link: "/courses" },
     { name: "CONTACT US", link: "/contact-us" },
     { name: "CAREER", link: "/career-page" },
+    { name: "BROCHURE", link: "/brochure" },
   ];
 
   const trainingLinks = [
@@ -122,18 +123,26 @@ function Footer() {
             <ul className="space-y-4 text-gray-400 text-sm">
 
               <li className="flex gap-3 items-start">
-                <FaMapMarkerAlt className="text-[#ECAA05] mt-1" />
-                <span>Aviation Plaza, New Delhi, India</span>
+                <FaMapMarkerAlt className="text-2xl text-[#ECAA05] mt-1" />
+                <span>E-551, 2nd, 3rd, and 4th Floor, Ramphal Chowk, Dwarka Sector – 7, Manyavar Showroom Building New Delhi-110075</span>
+              </li>
+              <li className="flex gap-3 items-start">
+                <FaMapMarkerAlt className=" text-[#ECAA05] mt-1" />
+                <span>Ozone City, Ozone Road, Aligarh, Uttar Pradesh – 202002, India</span>
+              </li>
+              <li className="flex gap-3 items-start">
+                <FaMapMarkerAlt className="text-lg text-[#ECAA05] mt-1" />
+                <span>MS-10, NH-91, Dhanipur Airstrip, Post Panethi, Aligarh, Uttar Pradesh – 202001, India</span>
               </li>
 
               <li className="flex gap-3 items-center">
                 <FaPhone className="text-[#ECAA05]" />
-                <a href="tel:+18554682227">+18554682227</a>
+                <a href="tel:+8923836664">8923836664</a>
               </li>
 
               <li className="flex gap-3 items-center">
                 <FaEnvelope className="text-[#ECAA05]" />
-                <span>chetakaviation@gmail.com</span>
+                <span>info@starallianceaviation.com</span>
               </li>
 
             </ul>
@@ -142,22 +151,22 @@ function Footer() {
         </div>
 
         {/* BOTTOM BAR */}
-        <div className="border-t border-white/10 mt-12 pt-6 flex flex-col md:flex-row justify-center items-center gap-4 text-gray-500 text-sm">
+        <div className="border-t border-white/10 mt-12 pt-6 flex flex-col md:flex-row justify-between items-center gap-4 text-gray-500 text-sm">
 
           <p>© 2026 Chetak Aviation Academy. All Rights Reserved.</p>
 
           <div className="flex gap-6">
-            {/* <Link to="/privacy-policy" className="hover:text-white">
+            <Link to="/privacy-policy" className="hover:text-white">
               Privacy Policy
             </Link>
 
-            <Link to="/refund-policy" className="hover:text-white">
+            {/* <Link to="/refund-policy" className="hover:text-white">
               Refund Policy
-            </Link>
-
-            <Link to="/terms" className="hover:text-white">
-              Terms of Service
             </Link> */}
+
+            <Link to="/terms-conditions" className="hover:text-white">
+              Terms And Conditions
+            </Link>
           </div>
 
         </div>
