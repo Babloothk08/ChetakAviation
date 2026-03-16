@@ -6,25 +6,25 @@ const aviationServices = [
     title: "Commercial Pilot Licence (CPL) Training in India",
     desc: "The Commercial Pilot Licence (CPL) training program at Chetak Aviation is designed for ambitious individuals who dream of becoming professional pilots.",
     Image: "/servicePhoto/Courses-COMMERCIAL-PILOT-LICENCE.jpg.jpeg",
-    link : "/commercialPilotLicence"
+    link : "/commercial-pilot-licence"
   },
   {
     title: "Conversion Flying Training in India",
     desc: "The Conversion Flying program at Chetak Aviation is designed for licensed pilots who need to transition to a different aircraft type or convert their foreign pilot licence to DGCA standards.",
     Image: "/servicePhoto/Courses-conversion-flying.jpg.jpeg",
-    link : "/conversionFlying"
+    link : "/conversion-flying"
   },
   {
     title: "Flight Instructor Course (FIC) Training in India",
     desc: "The Flight Instructor Course (FIC) at Chetak Aviation is designed for qualified Commercial Pilot Licence (CPL) holders who aspire to become certified flight instructors.",
     Image: "/servicePhoto/Courses-flight-instructor.jpg.jpeg",
-    link : "/flightInstructorCourse"
+    link : "/flight-instructor-course"
   },
   {
     title: "Private Pilot Licence (PPL) Training in India",
     desc: "The Private Pilot Licence (PPL) training program at Chetak Aviation is the ideal starting point for individuals who dream of flying an aircraft.",
     Image: "/servicePhoto/Courses-private-PILOT-LICENCE.jpg.jpeg",
-    link : "/privatePilotLicence"
+    link : "/private-pilot-licence"
   },
   {
     title: "Multi-Engine Rating Training",
