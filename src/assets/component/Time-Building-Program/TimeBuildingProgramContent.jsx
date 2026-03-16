@@ -152,9 +152,9 @@ className="text-gray-600"
 <div ref={imageRef}>
 
 <img
-src="https://images.unsplash.com/photo-1504196606672-aef5c9cefc92"
+src="/timeBuildingProgram/Time-Building-Program-image.jpg.jpeg"
 alt="Pilot flying aircraft"
-className="w-[545px] h-[420px] object-cover rounded-xl mt-18 shadow-xl"
+className="w-full h-full object-cover rounded-xl mt-18 shadow-xl"
 />
 
 </div>
