@@ -35,12 +35,12 @@ function ContactData() {
                     {
                       icon: <FiMail />,
                       label: "Email Us",
-                      val: "admissions@chetakaviation.com",
+                      val: "chetakaviation@gmail.com",
                     },
                     {
                       icon: <FiPhone />,
                       label: "Call Us",
-                      val: "+91 98765 43210",
+                      val: "+18554682227",
                     },
                     {
                       icon: <FiMapPin />,
@@ -69,14 +69,20 @@ function ContactData() {
 
               <div className="relative z-10 mt-12 pt-8 border-t border-white/20">
                 <div className="flex gap-6 text-sm font-medium text-blue-100">
-                  <a href="#" className="hover:text-white transition-colors">
+                  <a href="https://www.instagram.com/chetakaviation/" className="hover:text-white transition-colors">
                     Instagram
                   </a>
-                  <a href="#" className="hover:text-white transition-colors">
+                  <a href="https://www.linkedin.com/company/starallianceaviationacademy/" className="hover:text-white transition-colors">
                     LinkedIn
                   </a>
-                  <a href="#" className="hover:text-white transition-colors">
+                  <a href="https://x.com/staralliance_in/" className="hover:text-white transition-colors">
                     Twitter
+                  </a>
+                  <a href="https://www.facebook.com/starallianceaviationacademy/" className="hover:text-white transition-colors">
+                    Facebook
+                  </a>
+                  <a href="https://www.youtube.com/@starallianceaviationacademy/" className="hover:text-white transition-colors">
+                    Facebook
                   </a>
                 </div>
               </div>

@@ -133,7 +133,7 @@ function Footer() {
 
               <li className="flex gap-3 items-center">
                 <FaEnvelope className="text-[#ECAA05]" />
-                <span>info@chetakaviation.com</span>
+                <span>chetakaviation@gmail.com</span>
               </li>
 
             </ul>
