@@ -1,12 +1,56 @@
 import React, { useState, useEffect } from "react";
-import { FaFacebook, FaInstagram, FaLinkedin, FaPinterestP, FaTwitter, FaYoutube } from "react-icons/fa";
+import {
+  FaFacebook,
+  FaInstagram,
+  FaLinkedin,
+  FaPinterestP,
+  FaTwitter,
+  FaYoutube,
+} from "react-icons/fa";
 import { FiMenu, FiX } from "react-icons/fi";
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Navbar() {
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [showForm, setShowForm] = useState(false);
+  const navigate = useNavigate();
+  const [formData, setFormData] = useState({
+    name: "",
+    phone: "",
+  });
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    if (!formData.name || !formData.phone) {
+      alert("please fill all details");
+      return;
+    }
+    setShowForm(false);
+    navigate("/brochure");
+  };
+
+  const handleClose = () => {
+    setShowForm(false);
+    navigate("/brochure");
+  };
+
+  useEffect(() => {
+  if (showForm) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "auto";
+  }
+}, [showForm]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -17,20 +61,33 @@ function Navbar() {
   }, []);
 
   const socialLinks = [
-      { icon: <FaFacebook />, link: "https://www.facebook.com/starallianceaviationacademy/" },
-      { icon: <FaTwitter />, link: "https://x.com/staralliance_in/" },
-      { icon: <FaInstagram />, link: "https://www.instagram.com/chetakaviation/" },
-      { icon: <FaLinkedin />, link: "https://www.linkedin.com/company/starallianceaviationacademy/" },
-      { icon: <FaPinterestP />, link: "https://in.pinterest.com/starallianceaviationacademy/" },
-      { icon: <FaYoutube />, link: "https://www.youtube.com/@starallianceaviationacademy/" },
-    ];
+    {
+      icon: <FaFacebook />,
+      link: "https://www.facebook.com/starallianceaviationacademy/",
+    },
+    { icon: <FaTwitter />, link: "https://x.com/staralliance_in/" },
+    {
+      icon: <FaInstagram />,
+      link: "https://www.instagram.com/chetakaviation/",
+    },
+    {
+      icon: <FaLinkedin />,
+      link: "https://www.linkedin.com/company/starallianceaviationacademy/",
+    },
+    {
+      icon: <FaPinterestP />,
+      link: "https://in.pinterest.com/starallianceaviationacademy/",
+    },
+    {
+      icon: <FaYoutube />,
+      link: "https://www.youtube.com/@starallianceaviationacademy/",
+    },
+  ];
 
   return (
     <nav className="sticky top-0 left-0 w-full z-50">
       {/* WIDTH CONTROLLER */}
-      <div
-        
-      >
+      <div>
         {/* NAVBAR BODY */}
         <div
           className={`transition-all duration-500 backdrop-blur-md bg-[#103057] from-blue-700/90 via-gray-600/90 to-blue-700/90 shadow-lg `}
@@ -128,11 +185,12 @@ function Navbar() {
                 </li>
               </Link> */}
 
-              <Link to="/brochure">
-                <li className="hover:text-[#ECAA05] transition drop-shadow-[0_0_2px_black]">
-                  BROCHURE
-                </li>
-              </Link>
+              <li
+                onClick={() => setShowForm(true)}
+                className="hover:text-[#ECAA05] transition cursor-pointer"
+              >
+                BROCHURE
+              </li>
             </ul>
 
             {/* ENROLL BUTTON */}
@@ -196,10 +254,7 @@ function Navbar() {
               Commercial Pilot License
             </div>
           </Link>
-          <Link
-            to="/multi-engine-rating"
-            onClick={() => setMobileOpen(false)}
-          >
+          <Link to="/multi-engine-rating" onClick={() => setMobileOpen(false)}>
             <div className="border-b border-white/20 pb-2">
               Multi-Engine Rating
             </div>
@@ -225,9 +280,68 @@ function Navbar() {
             <div className="border-b border-white/20 pb-2">Career</div>
           </Link>
 
-          <Link to="/brochure" onClick={() => setMobileOpen(false)}>
-            <div>Brochure</div>
-          </Link>
+          <div
+            onClick={() => {
+              setMobileOpen(false);
+              setShowForm(true);
+            }}
+            className="border-b border-white/20 pb-2 cursor-pointer"
+          >
+            Brochure
+          </div>
+        </div>
+      )}
+      {showForm && (
+        <div className="fixed inset-0 bg-black/60 flex justify-center items-center z-50">
+          <div className="bg-white p-5 sm:p-6 rounded-2xl w-[92%] max-w-md relative animate-fadeIn">
+            {/* Close */}
+            <button
+              onClick={handleClose}
+              className="absolute top-3 right-4 text-xl font-bold text-gray-500 cursor-pointer"
+            >
+              ✕
+            </button>
+
+            <h2 className="text-2xl font-bold mb-4 text-[#103057]">
+              Book Your Slot
+            </h2>
+
+            <p className="text-sm text-gray-500 mb-4">
+              Enter your details and our team will assist you shortly.
+            </p>
+
+            <form onSubmit={handleSubmit} className="flex flex-col gap-4">
+              <input
+                type="text"
+                name="name"
+                placeholder="Your Name"
+                onChange={handleChange}
+                className="border p-2 rounded-md"
+              />
+              <input
+                type="email"
+                name="email"
+                placeholder="Email Address"
+                onChange={handleChange}
+                className="border p-2 rounded-md"
+              />
+
+              <input
+                type="tel"
+                name="phone"
+                placeholder="Phone Number"
+                onChange={handleChange}
+                className="border p-2 rounded-md"
+              />
+
+              <button
+                type="submit"
+                className="bg-[#ECAA05] cursor-pointer hover:bg-[#d99a04] text-white py-2 rounded-md font-semibold"
+              >
+                Continue
+              </button>
+            </form>
+          </div>
         </div>
       )}
     </nav>
