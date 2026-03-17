@@ -7,104 +7,96 @@ gsap.registerPlugin(ScrollTrigger);
 function AeroplaneMovingPng() {
   const planeRef = useRef(null);
   const sectionRef = useRef(null);
-  const cardsRef = useRef([]);
   const headingRef = useRef(null);
+  const textRef = useRef(null);
 
   useEffect(() => {
     const plane = planeRef.current;
 
-    // plane animation (same)
+    // ✈️ Plane animation (unchanged)
     gsap.fromTo(
       plane,
-      {  x: () => -plane.offsetWidth   // left se start
+      {
+        x: () => -plane.offsetWidth,
       },
       {
-        x: () => window.innerWidth + plane.offsetWidth, // right ke bahar tak
+        x: () => window.innerWidth + plane.offsetWidth,
         ease: "none",
         scrollTrigger: {
           trigger: sectionRef.current,
           start: "top bottom",
           end: "bottom top",
           scrub: true,
-          invalidateOnRefresh: true
+          invalidateOnRefresh: true,
         },
-      },
+      }
     );
 
-    // cards animation
+    // 🔥 Heading animation
     gsap.fromTo(
-      cardsRef.current,
-      { y: 60, opacity: 0 },
+      headingRef.current,
+      { y: 50, opacity: 0 },
       {
         y: 0,
         opacity: 1,
         duration: 1,
-        stagger: 0.2,
-        ease: "power3.out",
         scrollTrigger: {
           trigger: sectionRef.current,
           start: "top 80%",
-          toggleActions: "play none none reverse",
         },
-      },
+      }
     );
 
+    // 🔥 Text animation
     gsap.fromTo(
-      headingRef.current,
-      { y: 80, opacity: 0 },
+      textRef.current,
+      { y: 50, opacity: 0 },
       {
         y: 0,
         opacity: 1,
-        duration: 1.2,
-        ease: "power4.out",
+        duration: 1,
+        delay: 0.2,
         scrollTrigger: {
-          trigger: headingRef.current,
-          start: "top 85%",
+          trigger: sectionRef.current,
+          start: "top 75%",
         },
-      },
+      }
     );
   }, []);
-
-  // const stats = [
-  //   { number: "11", label: "Aircraft" },
-  //   { number: "120+", label: "Students" },
-  //   { number: "4500+", label: "Flying Hours" },
-  //   { number: "25+", label: "Destinations" },
-  //   { number: "30+", label: "Instructors" },
-  //   { number: "15+", label: "Years Experience" },
-  //   { number: "100%", label: "Safety Record" },
-  //   { number: "98%", label: "Success Rate" },
-  // ];
 
   return (
     <section
       ref={sectionRef}
-      className="relative w-full h-50 md:py-11 py-10 bg-gradient-to-r from-blue-50 to-white overflow-hidden"
+      className="relative w-full py-16 bg-white overflow-hidden"
     >
-      {/* Plane */}
+      {/* ✅ Light background effect */}
+      <div className="absolute inset-0 bg-gradient-to-r from-white via-[#ECAA05]/10 to-white"></div>
+
+      {/* ✈️ Plane (UNCHANGED) */}
       <img
         ref={planeRef}
         src="/logo/AEROPLANE-PNG.png"
         alt="plane"
-        className="absolute -bottom-2  z-10"
+        className="absolute -bottom-2 z-10"
       />
 
-      {/* Heading */}
-      {/* <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 md:mb-10 mb-2 ">
-        <h1 ref={headingRef} className="text-4xl font-bold text-blue-700">
-          MONTHLY FLYING <br />
-          <span className="text-blue-900">DASHBOARD</span>
+      {/* ✅ Text Content */}
+      <div className="relative z-0 max-w-7xl mx-auto px-6">
+        <h1
+          ref={headingRef}
+          className="text-3xl md:text-5xl font-bold text-[#103057]"
+        >
+          Elevate Your Aviation Journey <br />
+          <span className="text-[#ECAA05]">Fly Beyond Limits</span>
         </h1>
 
-        <p className="text-gray-600 text-lg">
-          Our monthly statistics showcase our commitment to excellence in
-          aviation training. With state-of-the-art facilities and experienced
-          instructors, we're dedicated to shaping the future of aviation.
+        <p
+          ref={textRef}
+          className="mt-4 text-[#103057]/80 max-w-xl"
+        >
+          Experience world-class aviation training with expert instructors and modern aircraft.
         </p>
-      </div> */}
-
-      {/* Stats */}
-     
+      </div>
     </section>
   );
 }
