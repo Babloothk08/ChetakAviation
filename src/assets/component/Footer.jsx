@@ -97,7 +97,7 @@ function Footer() {
           {/* TRAINING */}
           <div>
             <h3 className="text-lg font-semibold mb-6 text-[#ECAA05] uppercase">
-              Training
+              Courses
             </h3>
 
             <ul className="space-y-3 text-gray-400 text-sm " >
@@ -121,23 +121,19 @@ function Footer() {
             </h3>
 
             <ul className="space-y-4 text-gray-400 text-sm">
-
-              <li className="flex gap-3 items-start">
-                <FaMapMarkerAlt className="text-2xl text-[#ECAA05] mt-1" />
-                <span>E-551, 2nd, 3rd, and 4th Floor, Ramphal Chowk, Dwarka Sector – 7, Manyavar Showroom Building New Delhi-110075</span>
-              </li>
-              <li className="flex gap-3 items-start">
-                <FaMapMarkerAlt className=" text-[#ECAA05] mt-1" />
-                <span>Ozone City, Ozone Road, Aligarh, Uttar Pradesh – 202002, India</span>
-              </li>
+              
               <li className="flex gap-3 items-start">
                 <FaMapMarkerAlt className="text-lg text-[#ECAA05] mt-1" />
                 <span>MS-10, NH-91, Dhanipur Airstrip, Post Panethi, Aligarh, Uttar Pradesh – 202001, India</span>
               </li>
+              <li className="flex gap-3 items-start">
+                <FaMapMarkerAlt className="text-2xl text-[#ECAA05] mt-1" />
+                <span>E-551, 2nd, 3rd, and 4th Floor, Ramphal Chowk, Dwarka Sector – 7, Manyavar Showroom Building New Delhi-110075</span>
+              </li>
 
               <li className="flex gap-3 items-center">
                 <FaPhone className="text-[#ECAA05]" />
-                <a href="tel:+8923836664">8923836664</a>
+                <a href="tel:+8923836664">8923836664, 9289595558, 011-45517009</a>
               </li>
 
               <li className="flex gap-3 items-center">

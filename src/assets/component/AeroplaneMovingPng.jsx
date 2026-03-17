@@ -63,16 +63,16 @@ function AeroplaneMovingPng() {
     );
   }, []);
 
-  const stats = [
-    { number: "11", label: "Aircraft" },
-    { number: "120+", label: "Students" },
-    { number: "4500+", label: "Flying Hours" },
-    { number: "25+", label: "Destinations" },
-    { number: "30+", label: "Instructors" },
-    { number: "15+", label: "Years Experience" },
-    { number: "100%", label: "Safety Record" },
-    { number: "98%", label: "Success Rate" },
-  ];
+  // const stats = [
+  //   { number: "11", label: "Aircraft" },
+  //   { number: "120+", label: "Students" },
+  //   { number: "4500+", label: "Flying Hours" },
+  //   { number: "25+", label: "Destinations" },
+  //   { number: "30+", label: "Instructors" },
+  //   { number: "15+", label: "Years Experience" },
+  //   { number: "100%", label: "Safety Record" },
+  //   { number: "98%", label: "Success Rate" },
+  // ];
 
   return (
     <section
@@ -102,20 +102,7 @@ function AeroplaneMovingPng() {
       </div> */}
 
       {/* Stats */}
-      <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-4 sm:grid-cols-2 gap-6">
-        {stats.map((item, index) => (
-          <div
-            key={index}
-            ref={(el) => (cardsRef.current[index] = el)}
-            className="bg-white  rounded-xl p-6"
-            // className="bg-white shadow-md rounded-xl p-6"
-          >
-            {/* <h3 className="text-3xl font-bold text-blue-700">{item.number}</h3> */}
-
-            {/* <p className="text-gray-500">{item.label}</p> */}
-          </div>
-        ))}
-      </div>
+     
     </section>
   );
 }

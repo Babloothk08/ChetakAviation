@@ -45,18 +45,14 @@ function ContactData() {
                     {
                       icon: <FiMapPin />,
                       // label: "Academy Base",
-                      val: "E-551, 2nd, 3rd, and 4th Floor, Ramphal Chowk, Dwarka Sector – 7, Manyavar Showroom Building New Delhi-110075",
-                    },
-                    {
-                      icon: <FiMapPin />,
-                      // label: "Academy Base",
-                      val: "Ozone City, Ozone Road, Aligarh, Uttar Pradesh – 202002, India",
-                    },
-                    {
-                      icon: <FiMapPin />,
-                      // label: "Academy Base",
                       val: "MS-10, NH-91, Dhanipur Airstrip, Post Panethi, Aligarh, Uttar Pradesh – 202001, India",
                     },
+                    {
+                      icon: <FiMapPin />,
+                      // label: "Academy Base",
+                      val: "E-551, 2nd, 3rd, and 4th Floor, Ramphal Chowk, Dwarka Sector – 7, Manyavar Showroom Building New Delhi-110075",
+                    },
+                    
                   ].map((item, i) => (
                     <motion.div
                       key={i}

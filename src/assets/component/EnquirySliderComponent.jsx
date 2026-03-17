@@ -70,13 +70,13 @@ const slides = [
     image: "/HomePageBanner/Website-Banner-Chetak-one.jpg.jpeg",
   },
   {
-    image: "/HomePageBanner/Website-Banner-ChetakTwo.jpg.jpeg",
+    image: "/HomePageBanner/BannerTwohomepage.jpg.jpeg",
   },
   {
-    image: "/HomePageImageSlider/homepage-Banner-Size.jpg",
+    image: "/HomePageBanner/BannerThree.jpeg",
   },
   {
-    image: "/HomePageImageSlider/home-page-bannersize.jpg",
+    image: "/HomePageBanner/Website-Banner-ChetakFour.jpg.jpeg",
   },
 ];
 

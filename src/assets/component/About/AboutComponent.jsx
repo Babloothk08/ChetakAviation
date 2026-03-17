@@ -110,7 +110,7 @@ function AboutComponent() {
           <img
             src={AboutUs}
             alt="about"
-            className="w-full h-auto object-contain rounded-2xl"
+            className="w-[570px] h-[400px] object-cover object-center rounded-2xl"
           />
         </div>
 

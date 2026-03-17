@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { FaFacebook, FaInstagram, FaLinkedin, FaPinterestP, FaTwitter, FaYoutube } from "react-icons/fa";
 import { FiMenu, FiX } from "react-icons/fi";
 import { Link } from "react-router-dom";
 
@@ -15,6 +16,15 @@ function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const socialLinks = [
+      { icon: <FaFacebook />, link: "https://www.facebook.com/starallianceaviationacademy/" },
+      { icon: <FaTwitter />, link: "https://x.com/staralliance_in/" },
+      { icon: <FaInstagram />, link: "https://www.instagram.com/chetakaviation/" },
+      { icon: <FaLinkedin />, link: "https://www.linkedin.com/company/starallianceaviationacademy/" },
+      { icon: <FaPinterestP />, link: "https://in.pinterest.com/starallianceaviationacademy/" },
+      { icon: <FaYoutube />, link: "https://www.youtube.com/@starallianceaviationacademy/" },
+    ];
+
   return (
     <nav className="sticky top-0 left-0 w-full z-50">
       {/* WIDTH CONTROLLER */}
@@ -25,13 +35,13 @@ function Navbar() {
         <div
           className={`transition-all duration-500 backdrop-blur-md bg-[#103057] from-blue-700/90 via-gray-600/90 to-blue-700/90 shadow-lg `}
         >
-          <div className="flex justify-between items-center h-20 px-6">
+          <div className="flex justify-between items-center h-25 px-6">
             {/* LOGO */}
             <Link to="/" className="flex items-center">
               <img
                 src="/logo/LogoChetakAviation.png"
                 alt="Chetak Aviation"
-                className="w-24 object-contain"
+                className="w-30 object-contain"
               />
             </Link>
 
@@ -40,6 +50,12 @@ function Navbar() {
               <Link to="/">
                 <li className="hover:text-[#ECAA05] transition drop-shadow-[0_0_2px_black]">
                   HOME
+                </li>
+              </Link>
+
+              <Link to="/about-us">
+                <li className="hover:text-[#ECAA05] transition drop-shadow-[0_0_2px_black]">
+                  ABOUT US
                 </li>
               </Link>
               {/* COURSES DROPDOWN */}
@@ -94,10 +110,9 @@ function Navbar() {
                   </div>
                 )}
               </div>
-
-              <Link to="/about-us">
+              <Link to="/gallery">
                 <li className="hover:text-[#ECAA05] transition drop-shadow-[0_0_2px_black]">
-                  ABOUT US
+                  GALLERY
                 </li>
               </Link>
 
@@ -107,11 +122,11 @@ function Navbar() {
                 </li>
               </Link>
 
-              <Link to="/career-page">
+              {/* <Link to="/career-page">
                 <li className="hover:text-[#ECAA05] transition drop-shadow-[0_0_2px_black]">
                   CAREER
                 </li>
-              </Link>
+              </Link> */}
 
               <Link to="/brochure">
                 <li className="hover:text-[#ECAA05] transition drop-shadow-[0_0_2px_black]">
@@ -121,13 +136,18 @@ function Navbar() {
             </ul>
 
             {/* ENROLL BUTTON */}
-            <div className="hidden md:block">
-              <a
-                href="tel:+8923836664"
-                className="bg-[#ECAA05] text-white px-6 py-2 rounded-full font-medium transition-all duration-300 hover:shadow-lg active:scale-95 drop-shadow-[0_0_2px_black]"
-              >
-                ENROLL NOW
-              </a>
+            <div className="flex gap-3">
+              {socialLinks.map((item, index) => (
+                <a
+                  key={index}
+                  href={item.link}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="w-8 h-8 flex items-center justify-center rounded-full text-white hover:bg-[#ECAA05]  transition border border-white/20"
+                >
+                  {item.icon}
+                </a>
+              ))}
             </div>
 
             {/* MOBILE ICON */}
