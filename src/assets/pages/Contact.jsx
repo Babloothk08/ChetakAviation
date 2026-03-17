@@ -9,11 +9,8 @@ function Contact() {
   return (
      <>
      <div
-      className="min-h-screen w-full bg-cover bg-center bg-no-repeat"
-      style={{
-        backgroundImage:`url(${ContactBanner})`,
-      }}
-    >
+      className="md:min-h-screen w-full ">
+      <img src={ContactBanner} alt="ContactBanner" className='bg-cover bg-center bg-no-repeat' />
     </div>
     <ContactData/>
      </>

@@ -7,11 +7,9 @@ function ComercialPilotLicenceBannerPage() {
   });
   return (
     <div
-      className="min-h-screen w-full bg-cover bg-center bg-no-repeat"
-      style={{
-        backgroundImage: `url(${ComercialPageBanner})`,
-      }}
-    ></div>
+      className="md:min-h-screen w-full ">
+      <img src={ComercialPageBanner} alt="" className="bg-cover bg-center bg-no-repeat"/>
+    </div>
   );
 }
 

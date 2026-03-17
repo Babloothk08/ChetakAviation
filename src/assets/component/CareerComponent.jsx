@@ -158,7 +158,7 @@ function CareerComponent() {
 
       {/* WHY WORK */}
 
-      <section className="py-24 px-6">
+      {/* <section className="py-24 px-6">
 
         <div className="max-w-7xl mx-auto">
 
@@ -195,11 +195,11 @@ function CareerComponent() {
 
         </div>
 
-      </section>
+      </section> */}
 
       {/* CURRENT OPPORTUNITIES */}
 
-      <section className="py-24 px-6 bg-gray-50">
+      {/* <section className="py-24 px-6 bg-gray-50">
 
         <div className="max-w-6xl mx-auto">
 
@@ -233,7 +233,7 @@ function CareerComponent() {
 
         </div>
 
-      </section>
+      </section> */}
 
       {/* LIFE AT CHETAK AVIATION */}
 

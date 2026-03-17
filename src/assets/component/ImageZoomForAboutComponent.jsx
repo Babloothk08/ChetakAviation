@@ -16,11 +16,9 @@ const ImageZoomForAboutComponent = () => {
     });
     return (
       <div
-        className="min-h-screen w-full bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage: `url(${AboutImage})`,
-        }}
-      ></div>
+        className="md:min-h-screen w-full ">
+          <img src={AboutImage} alt="AboutImage" className="bg-cover bg-center bg-no-repeat" />
+       </div>
     );
   }
 //   const [time, setTime] = useState(0);

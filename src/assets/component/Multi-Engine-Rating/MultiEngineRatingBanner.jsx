@@ -6,8 +6,8 @@ function MultiEngineRatingBanner() {
       window.scroll(0, 0);
     });
   return (
-      <div className='min-h-screen w-full'>
-        <img src={banner} alt="TimeBuildingProgramBanner" />
+      <div className='md:min-h-screen w-full'>
+        <img src={banner} alt="TimeBuildingProgramBanner" className='bg-cover bg-center' />
       </div>
     )
   }

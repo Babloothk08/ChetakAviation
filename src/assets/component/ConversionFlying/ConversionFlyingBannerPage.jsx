@@ -7,11 +7,9 @@ function ConversionFlyingBannerPage() {
   });
   return (
     <div
-      className="min-h-screen w-full bg-cover bg-center bg-no-repeat"
-      style={{
-        backgroundImage: `url(${ConversionPageBanner})`,
-      }}
-    ></div>
+      className="md:min-h-screen w-full overflow-hidden">
+      <img src={ConversionPageBanner} alt="CoversionFlying" className="w-full md:h-screen object-cover" />
+    </div>
   );
 }
 

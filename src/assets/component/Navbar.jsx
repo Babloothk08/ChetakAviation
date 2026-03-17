@@ -226,7 +226,7 @@ function Navbar() {
           </Link>
 
           <Link
-            to="/flightInstructorCourse"
+            to="/flight-instructor-course"
             onClick={() => setMobileOpen(false)}
           >
             <div className="border-b border-white/20 pb-2">
@@ -234,20 +234,20 @@ function Navbar() {
             </div>
           </Link>
 
-          <Link to="/PrivatePilotLicence" onClick={() => setMobileOpen(false)}>
+          <Link to="/private-pilot-licence" onClick={() => setMobileOpen(false)}>
             <div className="border-b border-white/20 pb-2">
               Private Pilot License
             </div>
           </Link>
 
-          <Link to="/ConversionFlying" onClick={() => setMobileOpen(false)}>
+          <Link to="/conversion-flying" onClick={() => setMobileOpen(false)}>
             <div className="border-b border-white/20 pb-2">
               Conversion Flying
             </div>
           </Link>
 
           <Link
-            to="/commercialPilotLicence"
+            to="/commercial-pilot-licence"
             onClick={() => setMobileOpen(false)}
           >
             <div className="border-b border-white/20 pb-2">
@@ -268,16 +268,16 @@ function Navbar() {
             </div>
           </Link>
 
-          <Link to="/about" onClick={() => setMobileOpen(false)}>
+          <Link to="/about-us" onClick={() => setMobileOpen(false)}>
             <div className="border-b border-white/20 pb-2">About Us</div>
           </Link>
 
-          <Link to="/contact" onClick={() => setMobileOpen(false)}>
+          <Link to="/contact-us" onClick={() => setMobileOpen(false)}>
             <div className="border-b border-white/20 pb-2">Contact Us</div>
           </Link>
 
-          <Link to="/career-page" onClick={() => setMobileOpen(false)}>
-            <div className="border-b border-white/20 pb-2">Career</div>
+          <Link to="/gallery" onClick={() => setMobileOpen(false)}>
+            <div className="border-b border-white/20 pb-2">Gallery</div>
           </Link>
 
           <div

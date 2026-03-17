@@ -7,11 +7,9 @@ function PrivotPilotLicenceBannerPage() {
   },[]);
   return (
     <div
-      className="min-h-screen w-full bg-cover bg-center bg-no-repeat"
-      style={{
-        backgroundImage: `url(${PrivotPilotBannerPage})`,
-      }}
-    ></div>
+      className="md:min-h-screen w-full ">
+      <img src={PrivotPilotBannerPage} alt="PrivotPilotBannerPage" className="bg-cover bg-center bg-no-repeat" />
+    </div>
   );
 }
 

@@ -81,7 +81,7 @@ function AboutComponent() {
           ref={textRef}
           className="md:w-1/2 space-y-6 max-w-lg"
         >
-          <p className="text-slate-600 leading-relaxed text-lg">
+          <p className="text-slate-600 leading-relaxed text-lg text-center">
             Chetak Aviation is a professional flying training academy based in Aligarh, dedicated to shaping the next generation of skilled and responsible pilots. Our academy focuses on delivering high-quality aviation education through a balanced combination of theoretical knowledge and practical flight training.
             With the guidance of experienced aviation instructors, students receive structured training designed to build strong flying fundamentals, safety awareness, and operational confidence. Our programs are developed to meet the standards of professional aviation training and help students progress toward successful careers in the aviation industry.
              At Chetak Aviation, we believe that becoming a pilot requires more than technical skills—it requires discipline, precision, and a strong sense of responsibility in the cockpit.

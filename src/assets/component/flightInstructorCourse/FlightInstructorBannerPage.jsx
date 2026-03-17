@@ -7,11 +7,9 @@ function FlightInstructorBannerPage() {
   });
   return (
     <div
-      className="min-h-screen w-full bg-cover bg-center bg-no-repeat"
-      style={{
-        backgroundImage: `url(${FlightInstructorPageBanner})`,
-      }}
-    ></div>
+      className="md:min-h-screen w-full ">
+      <img src={FlightInstructorPageBanner} alt="FlightInstructorPageBanner" className="bg-cover bg-center bg-no-repeat"/>
+    </div>
   );
 }
 
