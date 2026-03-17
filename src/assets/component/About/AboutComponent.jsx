@@ -1,5 +1,5 @@
 import React, { useEffect, useRef } from "react";
-import AboutUs from "/aboutUsPage/Home-Page(Chetak Aviation – A Flying Training Academy).jpg.jpeg";
+import AboutUs from "/aboutUsPage/ChetakAviation–AFlyingTrainingAcademy.jpg.jpeg";
 import { Link } from "react-router-dom";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -110,7 +110,7 @@ function AboutComponent() {
           <img
             src={AboutUs}
             alt="about"
-            className="w-[570px] h-[400px] object-cover object-center rounded-2xl"
+            className="w-full h-full object-cover object-center rounded-2xl"
           />
         </div>
 
