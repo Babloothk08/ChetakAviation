@@ -11,20 +11,22 @@ function AeroplaneMovingPng() {
   const headingRef = useRef(null);
 
   useEffect(() => {
-    const planeWidth = window.innerWidth < 768 ? 220 : 550;
+    const plane = planeRef.current;
 
     // plane animation (same)
     gsap.fromTo(
-      planeRef.current,
-      { x: -(window.innerWidth + planeWidth) },
+      plane,
+      {  x: () => -plane.offsetWidth   // left se start
+      },
       {
-        x: window.innerWidth + planeWidth,
+        x: () => window.innerWidth + plane.offsetWidth, // right ke bahar tak
         ease: "none",
         scrollTrigger: {
           trigger: sectionRef.current,
           start: "top bottom",
           end: "bottom top",
           scrub: true,
+          invalidateOnRefresh: true
         },
       },
     );
