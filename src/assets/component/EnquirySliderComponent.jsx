@@ -127,7 +127,7 @@ function EnquirySliderComponent() {
             <img
               src={slide.image}
               alt="banner"
-              className="w-full object-cover"
+              className="w-full min-h-screen object-cover"
             />
           </div>
         ))}

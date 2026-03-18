@@ -124,11 +124,11 @@ function Footer() {
               
               <li className="flex gap-3 items-start">
                 <FaMapMarkerAlt className="text-lg text-[#ECAA05] mt-1" />
-                <span>MS-10, NH-91, Dhanipur Airstrip, Post Panethi, Aligarh, Uttar Pradesh – 202001, India</span>
+                <span>FTO Base- MS-10, NH-91, Dhanipur Airstrip, Post Panethi, Aligarh, Uttar Pradesh – 202001, India</span>
               </li>
               <li className="flex gap-3 items-start">
                 <FaMapMarkerAlt className="text-2xl text-[#ECAA05] mt-1" />
-                <span>E-551, 2nd, 3rd, and 4th Floor, Ramphal Chowk, Dwarka Sector – 7, Manyavar Showroom Building New Delhi-110075</span>
+                <span>Registration Office- E-551, 2nd, 3rd, and 4th Floor, Ramphal Chowk, Dwarka Sector – 7, Manyavar Showroom Building New Delhi-110075</span>
               </li>
 
               <li className="flex gap-3 items-center">
