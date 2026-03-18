@@ -67,16 +67,16 @@ import "slick-carousel/slick/slick-theme.css";
 
 const slides = [
   {
-    image: "/HomePageBanner/WebsiteBannerChetak.jpg.jpeg",
+    image: "/chetakBannerVedio/Onehomepagebannersize.jpg.jpeg",
   },
   {
-    image: "/HomePageBanner/BannerTwohomepage.jpg.jpeg",
+    image: "/chetakBannerVedio/Twohomepagebannersize.jpg.jpeg",
   },
   {
-    image: "/HomePageBanner/BannerThree.jpeg",
+    image: "/chetakBannerVedio/Threehomepagebannersize.jpg.jpeg",
   },
   {
-    image: "/HomePageBanner/Website-Banner-ChetakFour.jpg.jpeg",
+    image: "/chetakBannerVedio/Fourhomepagebannersize.jpg.jpeg",
   },
 ];
 

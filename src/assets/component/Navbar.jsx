@@ -126,7 +126,7 @@ function Navbar() {
         ${
           isScrolled
             ? "w-full bg-[#103057] shadow-lg"
-            : "md:w-[88%] lg:w-[80%] md:mx-auto md:mt-4 bg-[#103057]/95 backdrop-blur-md md:rounded-xl w-full"
+            : "md:w-[70%] md:mx-auto md:mt-4 bg-[#103057]/95 backdrop-blur-md md:rounded-xl w-full"
         }`}
       >
         <div className="flex justify-between items-center h-24 px-6">
