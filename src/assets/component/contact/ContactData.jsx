@@ -5,7 +5,7 @@ import { FiMail, FiPhone, FiMapPin, FiSend } from "react-icons/fi";
 function ContactData() {
   return (
     <>
-      <div  className="min-h-screen bg-gradient-to-br from-blue-50 to-white flex items-center justify-center py-16 px-4 md:px-10">
+      <div className="min-h-screen bg-gradient-to-br from-blue-50 to-white flex items-center justify-center py-16 px-4 md:px-10">
         <div className="max-w-7xl w-full">
           {/* Main Card */}
           <div className="flex flex-col lg:flex-row bg-white rounded-[2.5rem] overflow-hidden shadow-[0_20px_50px_rgba(37,99,235,0.1)] border border-blue-100">
@@ -44,15 +44,27 @@ function ContactData() {
                     },
                     {
                       icon: <FiMapPin />,
-                      // label: "Academy Base",
-                      val: "MS-10, NH-91, Dhanipur Airstrip, Post Panethi, Aligarh, Uttar Pradesh – 202001, India",
+                      val: (
+                        <>
+                          <span className="text-[#ECAA05] font-bold">FTO Base - </span>
+                          val: "MS-10, NH-91, Dhanipur Airstrip, Post Panethi,
+                          Aligarh, Uttar Pradesh – 202001, India",
+                        </>
+                      ),
                     },
                     {
                       icon: <FiMapPin />,
-                      // label: "Academy Base",
-                      val: "E-551, 2nd, 3rd, and 4th Floor, Ramphal Chowk, Dwarka Sector – 7, Manyavar Showroom Building New Delhi-110075",
+                      val: (
+                        <>
+                          <span className="text-[#ECAA05] font-bold">
+                            Registration Office -{" "}
+                          </span>
+                          "E-551, 2nd, 3rd, and 4th Floor, Ramphal Chowk, Dwarka
+                          Sector – 7, Manyavar Showroom Building New
+                          Delhi-110075",
+                        </>
+                      ),
                     },
-                    
                   ].map((item, i) => (
                     <motion.div
                       key={i}
@@ -75,19 +87,34 @@ function ContactData() {
 
               <div className="relative z-10 mt-12 pt-8 border-t border-white/20">
                 <div className="flex gap-6 text-sm font-medium text-blue-100">
-                  <a href="https://www.instagram.com/chetakaviation/" className="hover:text-white transition-colors">
+                  <a
+                    href="https://www.instagram.com/chetakaviation/"
+                    className="hover:text-white transition-colors"
+                  >
                     Instagram
                   </a>
-                  <a href="https://www.linkedin.com/company/starallianceaviationacademy/" className="hover:text-white transition-colors">
+                  <a
+                    href="https://www.linkedin.com/company/starallianceaviationacademy/"
+                    className="hover:text-white transition-colors"
+                  >
                     LinkedIn
                   </a>
-                  <a href="https://x.com/staralliance_in/" className="hover:text-white transition-colors">
+                  <a
+                    href="https://x.com/staralliance_in/"
+                    className="hover:text-white transition-colors"
+                  >
                     Twitter
                   </a>
-                  <a href="https://www.facebook.com/starallianceaviationacademy/" className="hover:text-white transition-colors">
+                  <a
+                    href="https://www.facebook.com/starallianceaviationacademy/"
+                    className="hover:text-white transition-colors"
+                  >
                     Facebook
                   </a>
-                  <a href="https://www.youtube.com/@starallianceaviationacademy/" className="hover:text-white transition-colors">
+                  <a
+                    href="https://www.youtube.com/@starallianceaviationacademy/"
+                    className="hover:text-white transition-colors"
+                  >
                     Facebook
                   </a>
                 </div>
@@ -180,8 +207,8 @@ function ContactData() {
       </div>
       <div className="w-full h-[450px] rounded-[2.5rem] overflow-hidden shadow-xl border-4 border-white px-10">
         <iframe
-          title="Chetak Aviation Location"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3525.684112345678!2d78.106543!3d27.889012!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3974a49c9d5e7f1b%3A0x1c8b3d6e5a4f321!2sDhanipur%20Airport%2C%20Aligarh!5e0!3m2!1sen!2sin!4v1700000000000"
+          title="Location"
+          src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3527.3938034609996!2d78.14686207547278!3d27.859170876095835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjfCsDUxJzMzLjAiTiA3OMKwMDgnNTguMCJF!5e0!3m2!1sen!2sin!4v1773910579518!5m2!1sen!2sin"
           width="100%"
           height="100%"
           style={{ border: 0 }}

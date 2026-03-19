@@ -51,9 +51,9 @@ function CommercialPilotLicenceContent() {
               <div className="relative overflow-hidden rounded-[2.5rem] shadow-2xl border border-blue-200">
 
                 <img
-                  src="/course/commercialPilotLicence/510px520pxCommercialPilotLicence(CPL)TurnYourPassionforFlying-into-a-ProfessionalCareer.jpg.jpeg"
+                  src="/course/commercialPilotLicence\CPLImage.jpg.jpeg"
                   alt="Commercial Pilot Licence Training"
-                  className="w-full h-full  object-cover"
+                  className="w-full  object-cover"
                 />
 
                 {/* Glass Overlay Badge */}

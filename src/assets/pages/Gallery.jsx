@@ -61,7 +61,7 @@ function Gallery() {
                   <img
                     src={img}
                     alt="Chetak Aviation"
-                    className="w-full object-cover group-hover:scale-110 transition duration-700 "
+                    className="[410px] h-[280px] object-cover group-hover:scale-110 transition duration-700 "
                   />
 
                   <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition flex items-center justify-center">

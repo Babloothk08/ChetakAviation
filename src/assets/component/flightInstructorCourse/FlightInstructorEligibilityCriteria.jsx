@@ -50,10 +50,7 @@ function FlightInstructorEligibilityCriteria() {
             </div>
 
             {/* Support Line */}
-            <p className="mt-10 text-blue-700 font-semibold italic text-lg max-w-xl">
-              Our team also provides guidance on documentation and regulatory
-              steps required for FIC enrollment.
-            </p>
+            
 
           </div>
 
@@ -77,13 +74,8 @@ function FlightInstructorEligibilityCriteria() {
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent" />
 
                 <div className="absolute bottom-0 inset-x-0 p-6 text-white">
-                  <p className="text-xl font-bold">
-                    Entry into Professional Aviation Training
-                  </p>
-                  <p className="text-sm mt-1 text-slate-200">
-                    Meeting regulatory standards is the first step to becoming
-                    a certified flight instructor
-                  </p>
+                  
+                  
                 </div>
 
               </div>

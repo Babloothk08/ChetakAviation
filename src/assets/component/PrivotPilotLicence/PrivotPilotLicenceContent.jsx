@@ -4,7 +4,7 @@ function PrivotPilotLicenceContent() {
   return (
     <section data-aos="fade-up" className="relative w-full bg-white overflow-hidden">
 
-      {/* Subtle Background */}
+      
       <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-white" />
 
       <div className="relative max-w-7xl mx-auto px-6 md:px-12 py-20 md:py-28">
@@ -44,7 +44,7 @@ function PrivotPilotLicenceContent() {
 
             <div className="relative w-full max-w-md md:max-w-lg">
 
-              {/* Soft Blue Glow */}
+              
               <div className="absolute -inset-4 bg-blue-100 rounded-[2.5rem] blur-2xl opacity-70" />
 
               <div className="relative overflow-hidden rounded-[2.5rem] shadow-2xl border border-blue-200">
@@ -55,7 +55,7 @@ function PrivotPilotLicenceContent() {
                   className="w-full h-full object-cover"
                 />
 
-                {/* Floating Badge */}
+              
                 <div className="absolute bottom-6 left-6 bg-white/90 backdrop-blur-md px-6 py-4 rounded-2xl shadow-lg">
                   <p className="text-blue-700 font-black text-2xl leading-none">
                     PPL

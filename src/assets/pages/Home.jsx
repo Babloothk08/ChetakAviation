@@ -11,6 +11,7 @@ import ServicesComponent from '../component/ServicesComponent'
 // import FooterUpSlider from '../component/FooterUpSlider'
 import VideoComponent2 from '../component/VideoComponent2'
 import AeroplaneMovingPng from '../component/AeroplaneMovingPng'
+import Table from '../component/Table'
 // import GsapNewFile from '../component/GsapNewFile'
 
 function Home() {
@@ -23,6 +24,7 @@ function Home() {
       <EnquirySliderComponent/>
       {/* <VideoComponent/> */}
       <AboutComponent/>
+      <Table/>
       <LatestAnnouncement/>
       {/* <EnquirySliderComponent/> */}
       <ServicesComponent/>

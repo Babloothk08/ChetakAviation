@@ -95,12 +95,12 @@ function Navbar() {
     <nav className="fixed top-0 left-0 w-full z-50">
       {/* TOP BAR */}
       {!isScrolled && (
-        <div className="hidden md:flex justify-center bg-white/20 backdrop-blur-md text-white text-sm py-2">
+        <div className="hidden md:flex justify-center bg-white/20 backdrop-blur-md text-white/90 text-sm py-2">
           <div className="w-full max-w-[1320px] flex justify-between items-center px-6">
             <span>Book Online • You can request appointment 24 hours</span>
 
             <div className="flex items-center gap-4">
-              <span>Phone: +91 8923836664</span>
+              <span>Phone: +91 9289595558</span>
 
               <div className="flex gap-3">
                 {socialLinks.map((item, index) => (
@@ -126,7 +126,7 @@ function Navbar() {
         ${
           isScrolled
             ? "w-full bg-[#103057] shadow-lg"
-            : "md:w-[70%] md:mx-auto md:mt-4 bg-[#103057]/95 backdrop-blur-md md:rounded-xl w-full"
+            : "md:w-[70%] md:mx-auto  bg-[#103057]/95 backdrop-blur-md md:rounded-xl w-full"
         }`}
       >
         <div className="flex justify-between items-center h-24 px-6">
@@ -162,6 +162,12 @@ function Navbar() {
               {dropdownOpen && (
                 <div className="absolute left-0 top-full w-56">
                   <div className="bg-white text-blue-800 rounded-xl shadow-lg overflow-hidden">
+                    <Link to="/commercial-pilot-licence">
+                      <div className="p-3 hover:bg-blue-800 hover:text-white">
+                        Commercial Pilot License
+                      </div>
+                    </Link>
+
                     <Link to="/flight-instructor-course">
                       <div className="p-3 hover:bg-blue-800 hover:text-white">
                         Flight Instructor Course
@@ -180,11 +186,7 @@ function Navbar() {
                       </div>
                     </Link>
 
-                    <Link to="/commercial-pilot-licence">
-                      <div className="p-3 hover:bg-blue-800 hover:text-white">
-                        Commercial Pilot License
-                      </div>
-                    </Link>
+                    
                   </div>
                 </div>
               )}

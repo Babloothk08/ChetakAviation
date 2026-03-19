@@ -51,11 +51,7 @@ function PrivotLicenceEligibilityCriteria() {
 
             </div>
 
-            {/* Support Line */}
-            <p className="mt-10 text-blue-700 font-semibold italic text-lg max-w-xl">
-              Our team assists students with medical guidance and licensing
-              procedures throughout the enrollment process.
-            </p>
+           
 
           </div>
 
@@ -78,14 +74,7 @@ function PrivotLicenceEligibilityCriteria() {
                 {/* Soft Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-blue-900/40 via-transparent to-transparent" />
 
-                <div className="absolute bottom-0 inset-x-0 p-6 text-white">
-                  <p className="text-xl font-bold">
-                    Your First Step into Aviation
-                  </p>
-                  <p className="text-sm mt-1 text-gray-200">
-                    Strong foundations create safe and confident pilots
-                  </p>
-                </div>
+                
 
               </div>
             </div>

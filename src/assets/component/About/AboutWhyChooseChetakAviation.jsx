@@ -94,7 +94,7 @@ function WhyChooseChetakAviation() {
 
               <div className="stat-card bg-slate-500 p-8 rounded-3xl shadow-xl">
                 <FiUsers className="text-white text-3xl mb-4" />
-                <h2 className="text-4xl font-black text-white">5,000+</h2>
+                <h2 className="text-4xl font-black text-white">500+</h2>
                 <p className="text-slate-200 text-xs uppercase tracking-widest">
                   Trained Students
                 </p>
@@ -102,7 +102,7 @@ function WhyChooseChetakAviation() {
 
               <div className="stat-card bg-gradient-to-br from-blue-600 to-blue-800 p-8 rounded-3xl shadow-xl text-white">
                 <FiAward className="text-3xl mb-4" />
-                <h2 className="text-4xl font-black">15+</h2>
+                <h2 className="text-4xl font-black">5+</h2>
                 <p className="text-xs uppercase tracking-widest">
                   Years Experience
                 </p>
@@ -118,7 +118,7 @@ function WhyChooseChetakAviation() {
 
               <div className="stat-card bg-slate-50 p-8 rounded-3xl shadow-xl">
                 <FiStar className="text-blue-600 text-3xl mb-4" />
-                <h2 className="text-4xl font-black text-slate-700">98%</h2>
+                <h2 className="text-4xl font-black text-slate-700">100%</h2>
                 <p className="text-xs uppercase tracking-widest text-slate-400">
                   Success Rate
                 </p>

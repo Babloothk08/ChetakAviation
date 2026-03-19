@@ -21,12 +21,8 @@ function CommercialPilotElegibiltyCriteria() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center pt-5">
 
-          {/* LEFT — ELIGIBILITY TEXT BLOCK */}
+       
           <div>
-
-            
-
-            {/* Criteria List */}
             <div className="mt-10 space-y-6 max-w-xl">
 
               {[
@@ -50,19 +46,19 @@ function CommercialPilotElegibiltyCriteria() {
 
             </div>
 
-            {/* Support Line */}
-            <p className="mt-10 text-blue-700 font-semibold italic text-lg max-w-xl">
+            
+            {/* <p className="mt-10 text-blue-700 font-semibold italic text-lg max-w-xl">
               Our team provides step-by-step guidance for medical, documentation, and training pathway planning.
-            </p>
+            </p> */}
 
           </div>
 
-          {/* RIGHT — VISUAL INFO PANEL */}
+          
           <div className="relative flex justify-center">
 
             <div className="relative w-full  max-w-md md:max-w-lg">
 
-              {/* Background Glow */}
+              
               <div className="absolute -bottom-10 -left-10 w-72 h-72 bg-blue-100 rounded-full blur-3xl opacity-70" />
 
               <div className="relative h-full w-full hover:scale-105 hover:transition-transform cursor-pointer  ">
@@ -74,9 +70,9 @@ function CommercialPilotElegibiltyCriteria() {
                 />
                 </div>
 
-                {/* Overlay Info */}
+               
                 <div className="absolute inset-0   via-transparent to-transparent" />
-
+{/* 
                 <div className="absolute bottom-0 inset-x-0 p-6 text-white">
                   <p className="text-xl font-bold">
                     Start Your Journey to a Commercial Pilot Licence
@@ -84,7 +80,7 @@ function CommercialPilotElegibiltyCriteria() {
                   <p className="text-sm mt-1 text-slate-200">
                     Meeting eligibility criteria is the first step toward professional aviation training
                   </p>
-                </div>
+                </div> */}
 
               </div>
             </div>

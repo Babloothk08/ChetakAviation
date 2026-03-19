@@ -4,7 +4,7 @@ function FlightInstructorCourseContent() {
   return (
     <section data-aos="fade-up" className="relative w-full bg-white overflow-hidden">
 
-      {/* Background Subtle Pattern */}
+   
       <div className="absolute inset-0 bg-gradient-to-br from-blue-50 via-white to-white" />
 
       <div className="relative max-w-7xl mx-auto px-6 md:px-12 py-20 md:py-28">
@@ -15,7 +15,7 @@ function FlightInstructorCourseContent() {
           <div>
 
             <span className="inline-block mb-4 px-5 py-2 rounded-full text-xl md:text-3xl font-semibold bg-blue-100 text-blue-700">
-              Flight Instructor Course (FIC)
+              Flight Instructor Course
             </span>
 
             <h1 className="mt-4 text-4xl md:text-5xl xl:text-6xl font-extrabold text-gray-400 leading-tight">
@@ -38,8 +38,7 @@ function FlightInstructorCourseContent() {
               aviators.
             </p>
 
-            {/* CTA */}
-                      </div>
+          </div>
 
           {/* RIGHT IMAGE */}
           <div className="relative flex justify-center">

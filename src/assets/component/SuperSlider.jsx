@@ -8,22 +8,22 @@ const slides = [
   {
     image: "/course/courseSuperSlider/Course-Page(Course-Slider)-1.jpg.jpeg",
     // title: "Precision Training",
-    desc: "Experience the cockpit of a modern Boeing 737 simulator."
+    // desc: "Experience the cockpit of a modern Boeing 737 simulator."
   },
   {
     image: "/course/courseSuperSlider/Course-Page(Course-Slider)-2.jpg.jpeg",
     // title: "Elite Mentorship",
-    desc: "Learn from captains with over 20,000 flight hours."
+    // desc: "Learn from captains with over 20,000 flight hours."
   },
   {
     image: "/course/courseSuperSlider/Course-Page(Course-Slider)-3.jpg.jpeg",
     // title: "Modern Fleet",
-    desc: "Our diamond aircraft are equipped with the latest Garmin G1000."
+    // desc: "Our diamond aircraft are equipped with the latest Garmin G1000."
   },
   {
     image: "/course/courseSuperSlider/Course-Page(Course-Slider)-4.jpg.jpeg",
     // title: "Global Reach",
-    desc: "Certifications recognized by EASA, FAA, and DGCA."
+    // desc: "Certifications recognized by EASA, FAA, and DGCA."
   }
 ];
 
@@ -110,9 +110,9 @@ const SuperFlowSlider = () => {
                               whileTap={{ scale: 0.9 }}
                               className=""
                             >
-                            <a href="tel:+8923836664" className='px-6 md:px-10 py-3 md:py-4 bg-blue-600 text-white text-[10px] md:text-xs font-black rounded-full shadow-xl shadow-blue-600/40 uppercase tracking-widest border border-blue-400/50 cursor-pointer'>
+                            {/* <a href="tel:+8923836664" className='px-6 md:px-10 py-3 md:py-4 bg-blue-600 text-white text-[10px] md:text-xs font-black rounded-full shadow-xl shadow-blue-600/40 uppercase tracking-widest border border-blue-400/50 cursor-pointer'>
                               Explore Course
-                            </a>
+                            </a> */}
                              </motion.button>
                           </div>
                         </motion.div>
@@ -126,7 +126,7 @@ const SuperFlowSlider = () => {
         </div>
       </div>
 
-      {/* 🔹 FIXED: Slick Dots Responsiveness */}
+      
       <style jsx global>{`
         .slick-custom-style .slick-list {
           overflow: visible !important;

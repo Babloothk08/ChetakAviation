@@ -32,7 +32,7 @@ function AboutComponentCard() {
           A History of <span className="text-blue-600">Achievements</span>
         </motion.h1>
         <p className="text-slate-500 text-lg leading-relaxed">
-          Founded in 1969, we have spent more than five decades delivering over 9,000 aircraft 
+          Founded in 2021, we have spent more than five decades delivering over 500 aircraft 
           to more than 100 countries. We design unique DNA into every model we certify.
         </p>
       </div>
