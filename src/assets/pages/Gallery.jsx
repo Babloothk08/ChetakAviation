@@ -10,6 +10,11 @@ import gallery3 from "/careerPage/Life-At-Chetak-AviationTwo.jpeg";
 import gallery4 from "/careerPage/Life-At-Chetak-AviationThree.jpeg";
 import gallery5 from "/careerPage/Life-At-Chetak-AviationFour.jpeg";
 import gallery6 from "/careerPage/Life-At-Chetak-AviationFive.jpeg";
+import gallery7 from "/careerPage/GalleryOne.jpeg";
+import gallery8 from "/careerPage/GalleryTwo.jpeg";
+import gallery9 from "/careerPage/GalleryThree.jpeg";
+import gallery10 from "/careerPage/GalleryFour.jpeg";
+import gallery11 from "/careerPage/GalleryFive.jpeg";
 import GalleryBanner from "../component/GalleryBanner";
 
 gsap.registerPlugin(ScrollTrigger);
@@ -50,7 +55,7 @@ function Gallery() {
 
           <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-8">
 
-            {[gallery1, gallery2, gallery3, gallery4, gallery5, gallery6].map(
+            {[gallery1, gallery2, gallery3, gallery4, gallery5, gallery6, gallery7, gallery8, gallery9, gallery10, gallery11].map(
               (img, i) => (
                 <div
                   key={i}
